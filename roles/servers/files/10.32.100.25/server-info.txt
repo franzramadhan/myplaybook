@@ -1,0 +1,193 @@
+This is information for host: 10.32.100.25
+
+Host information: 
+1. Hostname : cirebon.1rstwap.com
+2. Network Configuration:
+# Intel Corporation 82574L Gigabit Network Connection
+DEVICE=eth0
+BOOTPROTO=static
+HWADDR=E8:39:35:E9:B9:34
+ONBOOT=yes
+HOSTNAME=collector.1rstwap.com
+IPADDR=10.32.100.25
+NETMASK=255.255.255.224
+GATEWAY=10.32.100.1
+# Intel Corporation 82574L Gigabit Network Connection
+DEVICE=eth1
+BOOTPROTO=dhcp
+HWADDR=E8:39:35:E9:B9:35
+ONBOOT=no
+HOTPLUG=no
+DHCP_HOSTNAME=collector.1rstwap.com
+3. DNS Information: 
+- nameservers: 10.32.16.238
+
+Users and Groups Information:
+1. Non system users:
+ops
+yule
+senops
+sysmon
+pollux
+2. Non system groups:
+ops
+yule
+firstops
+sysmon
+pollux
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      3083/snmpd          
+tcp        0      0 127.0.0.1:587               0.0.0.0:*                   LISTEN      3127/sendmail       
+tcp        0      0 10.32.100.25:11             0.0.0.0:*                   LISTEN      3032/syslog-ng      
+tcp        0      0 127.0.0.1:465               0.0.0.0:*                   LISTEN      3127/sendmail       
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      3100/sshd           
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      3127/sendmail       
+tcp        0      0 ::1:587                     :::*                        LISTEN      3127/sendmail       
+tcp        0      0 :::49777                    :::*                        LISTEN      4144/yule           
+tcp        0      0 ::1:465                     :::*                        LISTEN      3127/sendmail       
+tcp        0      0 :::22                       :::*                        LISTEN      3100/sshd           
+tcp        0      0 ::1:25                      :::*                        LISTEN      3127/sendmail       
+udp        0      0 10.32.100.25:514            0.0.0.0:*                               3032/syslog-ng      
+udp        0      0 127.0.0.1:25375             0.0.0.0:*                               3083/snmpd          
+udp        0      0 127.0.0.1:25376             0.0.0.0:*                               3582/cmapeerd       
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               3083/snmpd          
+udp        0      0 127.0.0.1:25393             0.0.0.0:*                               3821/cmanicd        
+udp        0      0 10.32.100.25:1111           0.0.0.0:*                               3032/syslog-ng      
+2. Runlevel 3:
+
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/md7              185G   55G  121G  32% /
+/dev/md6               19G  6.1G   12G  34% /tmp
+/dev/md4               38G  5.3G   31G  15% /var
+/dev/md3               38G  3.3G   33G  10% /usr
+/dev/md2              757G  660G   58G  92% /DB_ARCHIVE
+/dev/md1              757G  701G   17G  98% /LOG_ARCHIVE
+/dev/md0              3.9G   85M  3.6G   3% /boot
+tmpfs                 988M     0  988M   0% /dev/shm
+2. List Block Devices:
+
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    ACCEPT     udp  --  10.32.10.86          0.0.0.0/0           limit: avg 1/min burst 5 udp dpt:11 
+2    ACCEPT     tcp  --  10.32.10.86          0.0.0.0/0           limit: avg 1/min burst 5 tcp dpt:11 
+3    DROP       tcp  --  10.32.10.86          0.0.0.0/0           tcp dpt:11 
+4    DROP       udp  --  10.32.10.86          0.0.0.0/0           udp dpt:11 
+
+Chain FORWARD (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Table: nat
+Chain PREROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain POSTROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Table: mangle
+Chain PREROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain POSTROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Table: raw
+Chain PREROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Syslog-ng:
+1. Information:
+
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+*/2 * * * *     /usr/sbin/ntpdate -b 10.32.10.53 > /dev/null 2>&1
+0   0 * * *	/usr/bin/rotatelog
+50 23 * * *	/usr/bin/isoqlog 
+*   * * * * 	/root/bin/logcheck.sh >> /var/log/logcheck.log
+0  0 * * *	/usr/local/script/server-arch/bin/server-arch
+0 21 * * *      /usr/local/script/DB_demo/bin/run.sh
+0 16 * * *      /usr/local/script/DB_kediri/bin/run.sh
+0 16 * * *      /usr/local/script/DB_queue/bin/run.sh
+0 16 * * *	/usr/local/script/DB_singasari/bin/run.sh
+0 * * * *      /usr/local/script/mulyadi/log-analyzer/do-it-all.sh
+*/5 * * * *	/etc/snmp/local-snmp-cronjob > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat
+2. Sudoers: 
+Defaults    requiretty
+Defaults   !visiblepw
+Defaults    env_reset,timestamp_timeout=7200
+Defaults    env_keep = "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR \
+                        LS_COLORS MAIL PS1 PS2 QTDIR USERNAME \
+                        LANG LC_ADDRESS LC_CTYPE LC_COLLATE LC_IDENTIFICATION \
+                        LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC \
+                        LC_PAPER LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS \
+                        _XKB_CHARSET XAUTHORITY"
+root	ALL=(ALL) 	ALL
+ops	ALL= NOPASSWD:/etc/init.d/httpd, /usr/bin/tail, /usr/bin/less, /bin/more, /var/log/*, /etc/*
+User_Alias ARCHIVE_SYSADMINS = senops 
+User_Alias ARCHIVE_ADMINS = ops 
+User_Alias SYSLOG_SYSADMINS = senops 
+User_Alias SYSLOG_ADMINS = ops 
+User_Alias SAMHAIN_SYSADMINS = senops 
+User_Alias SAMHAIN_ADMINS = ops 
+User_Alias SENOPS_ADMINS = senops
+Cmnd_Alias ARCHIVE_FULL = /usr/bin/tail /usr/local/script/thariq/server-arch/var/log/server-arch.log \
+			, /usr/bin/less /usr/local/script/thariq/server-arch/var/log/server-arch.log \
+			, /bin/rm /usr/local/script/thariq/server-arch/var/server-arch.lock \
+Cmnd_Alias SYSLOG_FULL = /usr/bin/tail /var/log/* \
+		, /usr/bin/less /var/log/* \
+		, /etc/init.d/syslog-ng
+Cmnd_Alias SYSLOG = /usr/bin/tail /var/log/* \
+		, /usr/bin/less /var/log/*
+Cmnd_Alias SAMHAIN_FULL = /etc/init.d/yule \
+			, /usr/bin/less /usr/local/samhain/var/log/yule/yule_log \
+			, /usr/bin/tail /usr/local/samhain/var/log/yule/yule_log 
+Cmnd_Alias SAMHAIN = /usr/bin/less /usr/local/samhain/var/log/yule/yule_log \
+		, /usr/bin/tail /usr/local/samhain/var/log/yule/yule_log
+ARCHIVE_SYSADMINS ALL = ARCHIVE_FULL
+ARCHIVE_ADMINS ALL = ARCHIVE_FULL
+SYSLOG_SYSADMINS ALL = SYSLOG_FULL
+SYSLOG_ADMINS ALL = SYSLOG
+SAMHAIN_SYSADMINS ALL = SAMHAIN_FULL
+SAMHAIN_ADMINS ALL = SAMHAIN		
+SENOPS_ADMINS ALL = (ALL:ALL) ALL
+3. Extended sudoers:

@@ -1,0 +1,11 @@
+---
+
+- name: Set pager off
+  command: set cli pager off
+
+- name: Show running configuration
+  command: show config running
+  register: running_config
+
+- name: Get the running config
+  local_action: template src="config.j2" dest="/tmp/pa_config.txt"

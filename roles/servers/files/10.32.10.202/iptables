@@ -1,0 +1,94 @@
+# Firewall configuration written by system-config-firewall
+# Manual customization of this file is not recommended.
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+:MYQUEUE_GRP - [0:0]
+:LOGGING - [0:0]
+
+# default policy for input and output
+-A INPUT -i lo -j ACCEPT
+-A INPUT -p tcp -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A INPUT -p udp -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A INPUT -p icmp -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A OUTPUT -p tcp -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A OUTPUT -p udp -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A OUTPUT -p icmp -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Allow incoming ssh for eth1
+-A INPUT -i eth1 -p tcp -s 10.32.16.179 --dport 22 -m state --state NEW -j ACCEPT
+-A INPUT -i eth1 -p tcp -s 10.32.16.180 --dport 22 -m state --state NEW -j ACCEPT
+-A INPUT -i eth1 -p tcp -s 10.32.16.181 --dport 22 -m state --state NEW -j ACCEPT
+-A INPUT -i eth1 -p tcp -s 10.32.5.0/24 --dport 22 -m state --state NEW -j ACCEPT
+
+# Allow incoming monit monitoring access for eth1
+-A INPUT -i eth1 -p tcp -s 10.32.5.0/24 --dport 2812 -m state --state NEW -j ACCEPT
+
+# Allow incoming/outgoing munin-node monitoring using stunnel access and mysql
+-A INPUT -i eth1 -p tcp -s 10.32.16.179 --dport 4949 -m state --state NEW -j ACCEPT
+-A INPUT -i eth1 -p tcp -s 10.32.16.179 --dport 3306 -m state --state NEW -j ACCEPT
+
+# Allow incoming SNMP request to eth1
+-A INPUT -i eth1 -p udp -s 10.32.16.180 --dport 161 -m state --state NEW -j ACCEPT
+-A INPUT -i eth1 -p udp -s 10.32.16.181 --dport 161 -m state --state NEW -j ACCEPT
+-A INPUT -i eth1 -p udp -s 10.32.16.179 --dport 161 -m state --state NEW -j ACCEPT
+
+# Allow connection from majapahit/waigama eth1
+#-A INPUT -i eth1 -p tcp -s 10.32.10.8 -d 10.32.10.200 -m state --state NEW -j ACCEPT
+#-A INPUT -i eth1 -p tcp -s 10.32.10.9 -d 10.32.10.200 -m state --state NEW -j ACCEPT
+
+-A INPUT -i eth1 -p tcp -s 10.32.10.8 -m state --state NEW -j ACCEPT
+-A INPUT -i eth1 -p tcp -s 10.32.10.9 -m state --state NEW -j ACCEPT
+#-A INPUT -i eth1 -p tcp -s 10.32.100.25 -m state --state NEW -j ACCEPT
+
+
+# Allow connection from cirebon eth1
+-A INPUT -i eth1 -p tcp -s 10.32.100.25 -m state --state NEW -j ACCEPT
+-A INPUT -i eth1 -s 10.32.100.25 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+
+# Allow int eth1 for Queue MD (Modem)
+-A INPUT -i eth1 -p tcp -s 10.32.16.28 -m tcp --match multiport --dports 2060:2063 -m state --state NEW -j ACCEPT
+-A INPUT -i eth1 -p tcp -s 10.32.16.24 -m tcp --match multiport --dports 2060:2063 -m state --state NEW -j ACCEPT
+
+# Rule for Queue AppSite ports and Qlatin LI eth1
+#-A INPUT -i eth1 -d 10.32.10.200 -p tcp -m tcp --match multiport --dports 3306,2034,2293,22021:22025 -m state --state NEW -j MYQUEUE_GRP
+-A INPUT -i eth1 -p tcp -m tcp --match multiport --dports 3306,2034,2240,2243,2118,2118,2123,2163,2283,2293,22021:22025,22032:22033 -m state --state NEW -j MYQUEUE_GRP
+-A MYQUEUE_GRP -s 10.32.10.26 -j ACCEPT
+-A MYQUEUE_GRP -s 10.32.10.28 -j ACCEPT
+-A MYQUEUE_GRP -s 10.32.10.31 -j ACCEPT
+-A MYQUEUE_GRP -s 10.32.10.32 -j ACCEPT
+-A MYQUEUE_GRP -s 10.32.10.72 -j ACCEPT
+-A MYQUEUE_GRP -s 10.32.10.78 -j ACCEPT
+-A MYQUEUE_GRP -s 10.32.10.80 -j ACCEPT
+-A MYQUEUE_GRP -s 10.32.10.85 -j ACCEPT
+-A MYQUEUE_GRP -s 10.32.10.87 -j ACCEPT
+-A MYQUEUE_GRP -s 10.32.10.89 -j ACCEPT
+-A MYQUEUE_GRP -s 10.32.10.104 -j ACCEPT
+#additional from old tuyul
+-A MYQUEUE_GRP -s 10.32.16.179 -j ACCEPT
+
+# Allow connection to it's own interface
+-A OUTPUT -o lo -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.10.202 -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.10.200 -j ACCEPT
+
+# Allow connection to outbound packet for necessary service
+-A OUTPUT -p icmp -m state --state NEW -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.10.52 -p udp --dport 53 -m state --state NEW -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.10.53 -p udp --dport 123 -m state --state NEW -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.15.190 -p tcp --dport 80 -m state --state NEW -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.10.11 -p tcp --dport 25 -m state --state NEW -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.100.25 -p tcp --dport 11 -m state --state NEW -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.100.8 -p tcp --match multiport --dports 3306,22 -m state --state NEW -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.100.7 -p tcp --match multiport --dports 3306,22 -m state --state NEW -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.100.25 -p tcp --match multiport --dports 3306,22 -m state --state NEW -j ACCEPT
+-A OUTPUT -o eth1 -d 10.32.100.18 -p tcp --dport 11 -m state --state NEW -j ACCEPT
+
+
+# default policy for LOGGING
+-A INPUT -j LOGGING
+-A LOGGING -m limit --limit 5/min -j LOG --log-prefix "IPTables Packet Dropped: " --log-level 3
+-A LOGGING -j DROP
+COMMIT

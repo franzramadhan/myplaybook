@@ -1,0 +1,65 @@
+---
+- name: List all installed packages
+  command: bash -c "/usr/bin/dpkg -l | awk -v OFS='\t' '{print $2, $3}' | tail -n +6 | tee /tmp/installed-packages.txt"
+  register: installed_packages
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get CPU name
+  command: bash -c "cat /proc/cpuinfo |grep name|uniq|awk -F ":" '{print $2}'"
+  register: cpu_name
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Print partition table
+  shell: df -h
+  register: partition_table
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Check if USB is already disabled
+  command: bash -c "grep -E 'usb-storage|uas' /etc/modprobe.d/blacklist.conf"
+  register: usb_restriction
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Check active user
+  command: bash -c "grep -E '100[0-9]' /etc/passwd |awk -F ":" '{print $1}'"
+  register: active_users
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Check active group
+  command: bash -c "grep -E '100[0-9]' /etc/group |awk -F ":" '{print $1}'"
+  register: active_groups
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get sudoers configuration
+  command: bash -c "cat /etc/sudoers|grep -v ^#|awk NF"
+  register: sudoers_config
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get NTP configuration
+  command: bash -c "cat /etc/ntp.conf|grep 'server 10.32.16.238' "
+  register: ntp_conf
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get All Required Configuration
+  template: src=pc-info.txt.j2 dest=/tmp/pc-info.txt
+
+- name: Pulling the List of Installed Packages
+  fetch: src=/tmp/installed-packages.txt dest={{ working_dir }}/playbooks/roles/workstation/files/{{ inventory_hostname }}/installed-packages.txt flat=yes
+
+- name: Pulling the Configuration Result
+  fetch: src=/tmp/pc-info.txt dest={{ working_dir }}/playbooks/roles/workstation/files/{{ inventory_hostname }}/pc-info.txt flat=yes

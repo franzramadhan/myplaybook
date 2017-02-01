@@ -1,0 +1,61 @@
+[Inotify]
+InotifyActive = yes
+InotifyWatches = 1048576
+
+[Misc]
+
+#[ReadOnly]
+#dir = 0/
+
+[ReadOnly]
+dir = 99/etc
+
+
+[ReadOnly]
+dir = 99/boot
+
+[ReadOnly]
+dir = 99/bin
+dir = 99/sbin
+
+[ReadOnly]
+dir = 99/lib
+
+#[IgnoreAll]
+#dir = -1/lib/kbd
+
+
+[ReadOnly]
+dir = 99/usr/lib
+dir = 99/usr/sbin
+dir = 99/usr/bin
+
+[IgnoreNone]
+
+[Prelink]
+
+[User0]
+[User1]
+[EventSeverity]
+[Log]
+
+MailSeverity==crit
+ 
+[Misc]
+Daemon = yes
+ChecksumTest=check
+SetLoopTime = 600
+SetFileCheckTime = 7200
+SyslogFacility=LOG_LOCAL2
+
+
+SetMailAddress=aditya.hilman@1rstwap.com
+
+SetMailRelay = 10.32.10.11
+
+MailSubject = MailFromSamhain
+
+SetMailSender = samhain.singasari@1rstwap.com
+
+
+[EOF]

@@ -1,0 +1,6 @@
+---
+- hosts: pan
+  connection: paramiko
+  remote_user: admin3
+  roles:
+    - pan

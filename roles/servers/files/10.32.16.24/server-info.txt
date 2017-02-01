@@ -1,0 +1,209 @@
+This is information for host: 10.32.16.24
+
+Host information: 
+1. Hostname : gsmserver.1rstwap.com
+2. Network Configuration:
+DEVICE="eth0"
+BOOTPROTO="static"
+HWADDR="74:D4:35:24:81:C4"
+ONBOOT="yes"
+IPADDR=10.32.16.24
+NETMASK=255.255.255.0
+GATEWAY=10.32.16.254
+UUID="c86732ea-a66e-4c31-b3c1-df491dd0dfeb"
+3. DNS Information: 
+- nameservers: 10.32.16.238
+
+Users and Groups Information:
+1. Non system users:
+senops
+gsmserver
+ops
+gsm1
+gsm2
+sysmon
+archive
+2. Non system groups:
+senops
+gsmserver
+ops
+gsm1
+gsm2
+sysmon
+archive
+monit
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1756/snmpd          
+tcp        0      0 0.0.0.0:139                 0.0.0.0:*                   LISTEN      1902/smbd           
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1772/sshd           
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      1849/master         
+tcp        0      0 0.0.0.0:2812                0.0.0.0:*                   LISTEN      5308/monit          
+tcp        0      0 0.0.0.0:445                 0.0.0.0:*                   LISTEN      1902/smbd           
+tcp        0      0 :::139                      :::*                        LISTEN      1902/smbd           
+tcp        0      0 :::22                       :::*                        LISTEN      1772/sshd           
+tcp        0      0 ::1:25                      :::*                        LISTEN      1849/master         
+tcp        0      0 :::445                      :::*                        LISTEN      1902/smbd           
+udp        0      0 10.32.16.255:137            0.0.0.0:*                               1868/nmbd           
+udp        0      0 10.32.16.24:137             0.0.0.0:*                               1868/nmbd           
+udp        0      0 0.0.0.0:137                 0.0.0.0:*                               1868/nmbd           
+udp        0      0 10.32.16.255:138            0.0.0.0:*                               1868/nmbd           
+udp        0      0 10.32.16.24:138             0.0.0.0:*                               1868/nmbd           
+udp        0      0 0.0.0.0:138                 0.0.0.0:*                               1868/nmbd           
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1756/snmpd          
+2. Runlevel 3:
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ip6tables      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+lm_sensors     	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+nmb            	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+postfix        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+smb            	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sms1           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sms2           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sms3           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sms3.cdma      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sms4           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+syslog-ng      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/vg_gsmserver-root
+                       15G  636M   14G   5% /
+tmpfs                 1.9G     0  1.9G   0% /dev/shm
+/dev/sda1             2.0G  169M  1.8G   9% /boot
+/dev/mapper/vg_gsmserver-home
+                       25G  251M   23G   2% /home
+/dev/mapper/vg_gsmserver-backup
+                       20G  172M   19G   1% /backup
+/dev/mapper/vg_gsmserver-tmp
+                      4.9G  149M  4.5G   4% /tmp
+/dev/mapper/vg_gsmserver-usr
+                       20G  2.1G   17G  12% /usr
+/dev/mapper/vg_gsmserver-var
+                      370G  5.5G  346G   2% /var
+2. List Block Devices:
+NAME                           MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda                              8:0    0 465.8G  0 disk 
+├─sda1                           8:1    0     2G  0 part /boot
+└─sda2                           8:2    0 463.8G  0 part 
+  ├─vg_gsmserver-root (dm-0)   253:0    0  14.7G  0 lvm  /
+  ├─vg_gsmserver-tmp (dm-1)    253:1    0   4.9G  0 lvm  /tmp
+  ├─vg_gsmserver-usr (dm-2)    253:2    0  19.5G  0 lvm  /usr
+  ├─vg_gsmserver-var (dm-3)    253:3    0 375.9G  0 lvm  /var
+  ├─vg_gsmserver-home (dm-4)   253:4    0  24.8G  0 lvm  /home
+  ├─vg_gsmserver-SWAP (dm-5)   253:5    0     4G  0 lvm  [SWAP]
+  └─vg_gsmserver-backup (dm-6) 253:6    0    20G  0 lvm  /backup
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.6.4
+Installer-Version: 3.6.4
+Revision: 
+Compile-Date: Jun 23 2015 12:42:27
+Available-Modules: afsocket-tls,afsocket,afstomp,dbparser,csvparser,syslogformat,linux-kmsg-format,confgen,graphite,basicfuncs,cryptofuncs,system-source,afsocket-notls,pseudofile,afuser,affile,afamqp,afprog
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+10 * * * *	/usr/sbin/ntpdate 10.32.16.238 2> /dev/null 1> /dev/null
+*/1 * * * *	/usr/local/script/bufferusb2_1/bin/bufferusb2_1.sh 2> /dev/null 1> /dev/null
+0 17 * * *  	/usr/local/script/client-arch/bin/client-arch > /dev/null 2>&1
+*/5 * * * *	/etc/snmp/local-snmp-cronjob > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat 
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat
+*/5 * * * *     /usr/local/script/svcmon-agent/bin/genstat-bulk > /dev/null 2>&1
+0 0 * * *       /usr/local/script/rotate_inbox_sms1.sh 2> /dev/null 1> /dev/null
+0 0 * * *	/usr/local/script/rotate_inbox_sms2.sh 2> /dev/null 1> /dev/null
+0 0 * * *       /usr/local/script/rotate_inbox_sms3.sh 2> /dev/null 1> /dev/null
+0 0 * * *       /usr/local/script/rotate_inbox_sms4.sh 2> /dev/null 1> /dev/null
+0 0 * * *	/usr/local/script/rotate_inbox_sms5.sh 2> /dev/null 1> /dev/null
+0 0 * * *	/usr/local/script/rotate_inbox_sms6.sh 2> /dev/null 1> /dev/null
+0 0 * * *       /usr/local/script/rotate_inbox_cdma.sh 2> /dev/null 1> /dev/null
+0 */1 * * *	/usr/local/script/modem-hearbeat/modem-hearbeat 1
+0 */1 * * *     /usr/local/script/modem-hearbeat/modem-hearbeat 2
+0 */1 * * *     /usr/local/script/modem-hearbeat/modem-hearbeat 3
+0 */1 * * *     /usr/local/script/modem-hearbeat/modem-hearbeat 4
+0 */1 * * *     /usr/local/script/modem-hearbeat/modem-hearbeat 5
+0 */1 * * *	/usr/local/script/modem-hearbeat/modem-hearbeat 6
+0 */1 * * *     /usr/local/script/modem-hearbeat/modem-hearbeat 7
+2. Sudoers: 
+Defaults    requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+ %wheel	ALL=(ALL)	ALL
+User_Alias SAMBA_ADMINS = ops
+User_Alias APACHE_SYSADMINS = senops
+User_Alias APACHE_ADMINS = ops
+User_Alias SMS3_SYSADMINS = senops
+User_Alias SMS3_ADMINS = ops
+Cmnd_Alias HTTP_FULL = /etc/init.d/httpd, /bin/vi /etc/httpd/* \
+                       , /usr/bin/tail /var/log/* \
+                       , /usr/bin/less /var/log/*
+Cmnd_Alias HTTP = /etc/init.d/httpd, /usr/bin/tail -f /var/log/* \
+                  , /usr/bin/less /var/log/*
+Cmnd_Alias SMS3_FULL = /etc/init.d/sms3, /bin/vi /etc/smsd.conf \
+                        , /usr/bin/tail /var/log/* \
+                        , /usr/bin/less /var/log/*
+Cmnd_Alias SMS3 = /etc/init.d/sms1, /etc/init.d/sms2, /bin/vi /etc/sms1.conf, /usr/bin/tail /var/log/* \
+                   , /etc/init.d/sms3, /usr/bin/less /var/log/*, /bin/vi /usr/local/gsmforwarder/* \
+                   , /etc/init.d/sms3.cdma, /bin/vi /etc/smsd.cdma.conf, /bin/vi /etc/sms2.conf \
+                   , /etc/init.d/sms4, /bin/vi /var/spool/sms.cdma/failed/*, /bin/mv , /usr/bin/poweroff \
+                   , /bin/vi /etc/sms3.conf, /bin/vi /etc/sms4.conf, /bin/cp, /bin/kill, /etc/init.d/qpopper, /etc/init.d/sms5 \
+		   , /bin/vi /etc/sms5.conf, /bin/vi /etc/sms6.conf, /etc/init.d/sms6, /etc/init.d/sms7, /bin/vi /etc/sms7.conf \
+		   , /etc/init.d/monit
+Cmnd_Alias SAMBA = /etc/init.d/smb
+APACHE_ADMINS ALL = HTTP
+APACHE_SYSADMINS ALL = HTTP_FULL
+SMS3_ADMINS ALL = SMS3
+SMS3_SYSADMINS ALL = SMS3_FULL
+SAMBA_ADMINS ALL = SAMBA
+3. Extended sudoers:

@@ -1,0 +1,118 @@
+---
+- name: Get network configuration
+  command: bash -c "cat /etc/sysconfig/network-scripts/ifcfg-eth*"
+  register: network_configs
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get list of non system users
+  command: bash -c "grep -E '100[0-9]|50[0-9]' /etc/passwd |awk -F ":" '{print $1}'"
+  register: non_system_users
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get list of non system groups
+  command: bash -c "grep -E '100[0-9]|50[0-9]' /etc/group |awk -F ":" '{print $1}'"
+  register: non_system_groups
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Print partition table
+  shell: df -h
+  register: partition_table
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: List block devices
+  shell: lsblk
+  register: block_devices
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get running services on run level 3
+  command: bash -c "chkconfig | grep '3:on'"
+  register: runlevel_3
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get running services and listening ports
+  command: bash -c "netstat -tulpn|tail -n +2"
+  register: running_services
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get iptables configuration
+  command: bash -c "/sbin/service iptables status"
+  register: iptables_status
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get syslog-ng information
+  shell: syslog-ng -V
+  register: syslogng_information
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get sudoers configuration
+  command: bash -c "cat /etc/sudoers|grep -v ^#|awk NF"
+  register: sudoers_config
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get extended sudoers configuration
+  command: bash -c "cat /etc/sudoers.d/* | grep -v ^# | awk NF"
+  register: sudoers_extended_config
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Get crontab list
+  command: bash -c "crontab -l | grep -v ^# | awk NF"
+  register: crontab_list
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Fetch iptables configuration
+  fetch: src=/etc/sysconfig/iptables dest={{ working_dir }}/files/{{ inventory_hostname }}/iptables flat=yes
+
+- name: Fetch syslog-ng configuration
+  fetch: src=/etc/syslog-ng/syslog-ng.conf dest={{ working_dir }}/files/{{ inventory_hostname }}/syslog-ng.conf flat=yes
+
+- name: Fetch monit configuration
+  fetch: src=/etc/monit.conf dest={{ working_dir }}/files/{{ inventory_hostname }}/monit.conf flat=yes
+
+# - name: Fetch extended monit configuration
+#   synchronize: mode=pull src=/etc/monit.d dest={{ working_dir }}/files/{{ inventory_hostname }}/
+#   ignore_errors: yes
+
+- name: Get list of installed softwares
+  command: bash -c "rpm -qa | sort | tee -a /tmp/installed-packages.txt"
+  register: installed_softwares
+  ignore_errors: yes
+  async: 50
+  poll: 5
+
+- name: Fetch samhain configuration
+  fetch: src=/etc/samhainrc dest={{ working_dir }}/files/{{ inventory_hostname }}/samhainrc flat=yes
+
+- name: Fetch installed packages
+  fetch: src=/tmp/installed-packages.txt dest={{ working_dir }}/files/{{ inventory_hostname }}/installed-packages.txt flat=yes
+
+- name: Get All Required Configuration
+  template: src=server-info.txt.j2 dest=/tmp/server-info.txt
+
+- name: Fetch server configurations
+  fetch: src=/tmp/server-info.txt dest={{ working_dir }}/files/{{ inventory_hostname }}/server-info.txt flat=yes
+
+# - name: Verify backup configuration

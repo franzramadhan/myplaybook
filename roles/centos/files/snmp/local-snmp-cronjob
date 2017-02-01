@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#  Local cron job jpr@2014
+#
+#####################################################################
+
+STORE=/var/local/snmp
+
+# update smart parameters
+for devfull in /dev/sd?; do
+    dev=`basename $devfull`
+    /usr/sbin/smartctl -n idle -a $devfull >$STORE/smart-$dev.TMP
+    mv $STORE/smart-$dev.TMP $STORE/smart-$dev
+done

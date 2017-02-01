@@ -1,0 +1,272 @@
+This is information for host: 10.32.100.8
+
+Host information: 
+1. Hostname : pajajaran.1rstwap.com
+2. Network Configuration:
+DEVICE="eth0"
+BOOTPROTO="static"
+DNS1="10.32.10.53"
+DNS2="10.32.10.52"
+GATEWAY="10.32.100.1"
+#HWADDR="E8:39:35:22:BC:2C"
+IPADDR="10.32.100.8"
+NETMASK="255.255.255.224"
+NM_CONTROLLED="no"
+ONBOOT="yes"
+TYPE="Ethernet"
+UUID="da396e0b-9899-4542-8db7-4363dfc64174"
+DEVICE=eth1
+HWADDR=E8:39:35:22:BC:2E
+TYPE=Ethernet
+UUID=76dda984-04d5-4a25-b224-292878076836
+ONBOOT=no
+NM_CONTROLLED=yes
+BOOTPROTO=dhcp
+DEVICE=eth2
+HWADDR=E8:39:35:22:BC:30
+TYPE=Ethernet
+UUID=8bdb43b6-6c73-40f3-8560-4c1acaeccd12
+ONBOOT=no
+NM_CONTROLLED=yes
+BOOTPROTO=dhcp
+DEVICE=eth3
+HWADDR=E8:39:35:22:BC:32
+TYPE=Ethernet
+UUID=ee1d883f-e1f3-46b5-8fc6-9e896e309266
+ONBOOT=no
+NM_CONTROLLED=yes
+BOOTPROTO=dhcp
+3. DNS Information: 
+- nameservers: 10.32.10.53
+
+Users and Groups Information:
+1. Non system users:
+senops
+ops
+logrotate
+sysmon
+2. Non system groups:
+senops
+firstops
+ops
+logrotate
+sysmon
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      8791/snmpd          
+tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      9564/mysqld         
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      8812/sshd           
+tcp        0      0 10.32.100.8:2812            0.0.0.0:*                   LISTEN      11012/monit         
+tcp        0      0 :::22                       :::*                        LISTEN      8812/sshd           
+udp        0      0 0.0.0.0:56327               0.0.0.0:*                               9802/cmahostd       
+udp        0      0 127.0.0.1:25375             0.0.0.0:*                               8791/snmpd          
+udp        0      0 127.0.0.1:25376             0.0.0.0:*                               9907/cmapeerd       
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               8791/snmpd          
+udp        0      0 127.0.0.1:25393             0.0.0.0:*                               10088/cmanicd       
+udp        0      0 0.0.0.0:631                 0.0.0.0:*                               1899/portreserve    
+2. Runlevel 3:
+abrt-ccpp      	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+abrtd          	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+acpid          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+atd            	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+autofs         	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+certmonger     	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+cpuspeed       	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+haldaemon      	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+hp-asrd        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+hp-health      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+hp-snmp-agents 	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ip6tables      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+irqbalance     	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+kdump          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+mcelogd        	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+mdmonitor      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+messagebus     	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+mysql          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+portreserve    	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+rsyslog        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/vg_app-lv_root
+                      9.8G  515M  8.8G   6% /
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+/dev/sda1             488M  112M  352M  25% /boot
+/dev/mapper/vg_data-lv_db
+                      550G  134G  389G  26% /data
+/dev/mapper/vg_app-lv_home
+                      9.8G   28M  9.2G   1% /home
+/dev/mapper/vg_app-lv_tmp
+                       99G   64M   94G   1% /tmp
+/dev/mapper/vg_app-lv_usr
+                      9.8G  1.8G  7.5G  20% /usr
+/dev/mapper/vg_app-lv_var
+                       50G  349M   47G   1% /var
+2. List Block Devices:
+NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sdb                         8:16   0 558.7G  0 disk 
+└─sdb1                      8:17   0 558.7G  0 part 
+  └─vg_data-lv_db (dm-2)  253:2    0 558.7G  0 lvm  /data
+sda                         8:0    0 279.4G  0 disk 
+├─sda1                      8:1    0   512M  0 part /boot
+└─sda2                      8:2    0 278.9G  0 part 
+  ├─vg_app-lv_root (dm-0) 253:0    0    10G  0 lvm  /
+  ├─vg_app-lv_swap (dm-1) 253:1    0     8G  0 lvm  [SWAP]
+  ├─vg_app-lv_var (dm-3)  253:3    0    50G  0 lvm  /var
+  ├─vg_app-lv_home (dm-4) 253:4    0    10G  0 lvm  /home
+  ├─vg_app-lv_tmp (dm-5)  253:5    0   100G  0 lvm  /tmp
+  └─vg_app-lv_usr (dm-6)  253:6    0    10G  0 lvm  /usr
+sr0                        11:0    1  1024M  0 rom  
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state NEW,RELATED,ESTABLISHED 
+3    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           icmp type 11 
+4    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+5    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+7    ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW,ESTABLISHED 
+8    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:2812 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  10.32.6.13           0.0.0.0/0           tcp dpt:3306 
+10   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+11   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.7          tcp dpt:3306 
+12   ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:3306 
+13   ACCEPT     all  --  10.32.100.19         0.0.0.0/0           
+14   ACCEPT     all  --  10.32.100.17         0.0.0.0/0           
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+3    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+4    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+5    ACCEPT     udp  --  0.0.0.0/0            10.32.10.53         multiport dports 53,123 state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  0.0.0.0/0            10.32.15.190        multiport dports 80,443 state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        tcp dpt:11 
+8    ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        tcp dpt:11 state NEW 
+9    ACCEPT     all  --  0.0.0.0/0            10.32.100.19        
+10   ACCEPT     all  --  0.0.0.0/0            10.32.100.17        
+11   ACCEPT     tcp  --  0.0.0.0/0            10.32.16.179        tcp dpt:25 state NEW,ESTABLISHED 
+12   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain LOGGING (2 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Incoming Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+3    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Outgoing Dropped: ' 
+4    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.7.2
+Installer-Version: 3.7.2
+Revision: 
+Compile-Date: Nov  5 2015 11:34:20
+Available-Modules: linux-kmsg-format,afsql,confgen,afstomp,afprog,csvparser,cryptofuncs,pseudofile,afamqp,afsocket,kvformat,dbparser,affile,json-plugin,syslogformat,basicfuncs,graphite,system-source,afuser
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+MAILTO=""
+*/15 * * * *	ntpdate 10.32.10.53 > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat > /dev/null 2>&1
+2. Sudoers: 
+User_Alias APACHE_SYSADMINS = senops 
+User_Alias APACHE_ADMINS = ops 
+User_Alias MYSQL_SYSADMINS = senops 
+User_Alias MYSQL_ADMINS = ops
+User_Alias ADMINS=senops,mysql
+Cmnd_Alias HTTP_FULL = /etc/init.d/httpd, /bin/vi /etc/httpd/* \
+                       , /usr/bin/tail /var/log/* \
+                       , /usr/bin/less /var/log/* 
+Cmnd_Alias HTTP = /etc/init.d/httpd, /usr/bin/tail -f /var/log/* \
+                  , /usr/bin/less /var/log/* 
+Cmnd_Alias MYSQL_FULL = /etc/init.d/mysqld, /bin/vi /etc/my.cnf \
+                        , /usr/bin/tail /var/log/* \
+                        , /usr/bin/less /var/log/* 
+Cmnd_Alias MYSQL = /etc/init.d/mysqld, /usr/bin/tail /var/log/* \
+                   , /usr/bin/less /var/log/* 
+APACHE_ADMINS ALL = HTTP 
+APACHE_SYSADMINS ALL = HTTP_FULL 
+MYSQL_ADMINS ALL = MYSQL 
+MYSQL_SYSADMINS ALL = MYSQL_FULL 
+Cmnd_Alias   MONIT = /etc/init.d/monit stop ,\
+                         /sbin/service monit stop
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/du ,\
+                        /usr/bin/monit status ,\
+                        /bin/ls 
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /usr/bin/monit ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Defaults    !requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset,timestamp_timeout=7200
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+ %wheel	ALL=(ALL)	ALL
+ %wheel	ALL=(ALL) ALL
+ %wheel ALL=(ALL) NOPASSWD: RSYNC
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+ops ALL = NOPASSWD:NOEXEC:BASIC
+3. Extended sudoers:

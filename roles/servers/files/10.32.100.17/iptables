@@ -1,0 +1,89 @@
+*nat
+:PREROUTING ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+COMMIT
+
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+:LOGGING - [0:0]
+
+###################################### INPUT RULES ############################################
+## Allow from loopback
+-A INPUT -i lo -j ACCEPT
+
+## Allow input that the output has been established
+-A INPUT -m state --state ESTABLISHED -j ACCEPT
+
+## Allow ICMP packets
+-A INPUT -p icmp --icmp-type 11 -j ACCEPT
+
+## Garbd incoming from demo
+-A INPUT -p tcp -m tcp --dport 4567 -m state --state NEW,ESTABLISHED -j ACCEPT
+## Garbd incoming from sms-core
+-A INPUT -p tcp -m tcp --dport 4568 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 3456 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+-A INPUT -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## SSH
+-A INPUT -s 10.32.5.0/255.255.255.0 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -s 10.32.16.179 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -s 10.32.100.18 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -s 10.32.100.25 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -s 10.32.16.180 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow SNMP from Monitoring Server
+-A INPUT -s 10.32.16.179 -p udp -m udp --dport 161 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow Monit Access from Admin VLAN
+-A INPUT -s 10.32.5.0/255.255.255.0 -p tcp -m tcp --dport 2812 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Logging other incoming
+-A INPUT -m limit --limit 5/min -j LOG --log-prefix "Incoming Dropped: " --log-level 5
+
+
+###################################### FORWARD RULES ############################################
+## Allow forward that has been established 
+-A FORWARD -m state --state ESTABLISHED -j ACCEPT
+
+## Logging other Forward
+-A FORWARD -m limit --limit 5/min -j LOG --log-prefix "Forwarding Dropped: " --log-level 5
+
+###################################### OUTPUT RULES ############################################
+## Allow output from loopback
+-A OUTPUT -o lo -j ACCEPT
+
+## Allow output that the input has been established
+-A OUTPUT -p tcp -m state --state ESTABLISHED -j ACCEPT 
+-A OUTPUT -p udp -m state --state ESTABLISHED -j ACCEPT 
+
+## Allow ping outside
+-A OUTPUT -p icmp -j ACCEPT
+
+## garbd output 
+-A OUTPUT -p tcp -m tcp --dport 4567 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -p tcp -m tcp --dport 4568 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -p tcp -m tcp --dport 3456 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.0.0/16 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow syslog-ng
+-A OUTPUT -d 10.32.100.18 -p tcp -m multiport --dports 11,20700:27999  -j ACCEPT
+
+## Allow output to service hosts for service domain(tcp/53), ntp(tcp/123), http(tcp/80), and https(tcp/443)
+-A OUTPUT -d 10.32.10.53 -p  udp -m multiport --dports 123 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.16.238 -p udp -m multiport --dports 53,123 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.15.190 -p tcp -m multiport --dports 80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Email for monit
+-A OUTPUT -d 10.32.16.179 -p tcp -m tcp --dport 25 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Logging other OUTPUT
+-A OUTPUT -m limit --limit 5/min -j LOG --log-prefix "Outgoing Dropped: " --log-level 5
+
+
+## Commit coy
+COMMIT
+

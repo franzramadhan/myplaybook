@@ -1,0 +1,250 @@
+This is information for host: 10.32.100.19
+
+Host information: 
+1. Hostname : kediri.1rstwap.com
+2. Network Configuration:
+DEVICE=eth1
+HWADDR=00:22:64:FC:85:F6
+TYPE=Ethernet
+UUID=4fc8ce86-db2f-448a-a5c8-9977fee081ff
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=static
+IPADDR=10.32.100.19
+NETMASK=255.255.255.224
+DEVICE=eth1:1
+HWADDR=00:22:64:FC:85:F6
+TYPE=Ethernet
+UUID=4fc8ce86-db2f-448a-a5c8-9977fee081ff
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=static
+IPADDR=10.32.100.7
+NETMASK=255.255.255.224
+3. DNS Information: 
+- nameservers: 10.32.10.53
+
+Users and Groups Information:
+1. Non system users:
+app
+sysmon
+senops
+archive
+2. Non system groups:
+app
+sysmon
+firstops
+archive
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1326/sshd           
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1305/snmpd          
+tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      2662/mysqld         
+tcp        0      0 :::22                       :::*                        LISTEN      1326/sshd           
+udp        0      0 0.0.0.0:51156               0.0.0.0:*                               2890/cmahostd       
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1305/snmpd          
+udp        0      0 127.0.0.1:25375             0.0.0.0:*                               1305/snmpd          
+udp        0      0 127.0.0.1:25376             0.0.0.0:*                               2995/cmapeerd       
+udp        0      0 127.0.0.1:25393             0.0.0.0:*                               3173/cmanicd        
+2. Runlevel 3:
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+hp-asrd        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+hp-health      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+hp-snmp-agents 	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+mysql          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+syslog-ng      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroupKediri-LogVolRoot
+                       11G  6.7G  3.5G  66% /
+tmpfs                 4.0G     0  4.0G   0% /dev/shm
+/dev/mapper/VolGroupKediri-LogVolApp
+                       96G  9.8G   82G  11% /app
+/dev/cciss/c0d0p1     488M  125M  328M  28% /boot
+/dev/mapper/VolGroupData-LogVolDb
+                      274G  135G  139G  50% /data
+/dev/mapper/VolGroupKediri-LogVolVar
+                       20G  628M   18G   4% /var
+2. List Block Devices:
+NAME                                 MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sr0                                   11:0    1  1024M  0 rom  
+cciss!c0d0                           104:0    0 136.7G  0 disk 
+├─cciss!c0d0p1                       104:1    0   512M  0 part 
+├─cciss!c0d0p2                       104:2    0     8G  0 part 
+└─cciss!c0d0p3                       104:3    0 128.2G  0 part 
+  ├─VolGroupKediri-LogVolRoot (dm-0) 253:0    0    11G  0 lvm  /
+  ├─VolGroupKediri-LogVolVar (dm-2)  253:2    0  19.5G  0 lvm  /var
+  └─VolGroupKediri-LogVolApp (dm-3)  253:3    0  97.7G  0 lvm  /app
+cciss!c0d1                           104:16   0 273.4G  0 disk 
+└─cciss!c0d1p1                       104:17   0 273.4G  0 part 
+  └─VolGroupData-LogVolDb (dm-1)     253:1    0 273.4G  0 lvm  /data
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+3    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+4    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+5    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW 
+6    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW 
+7    ACCEPT     tcp  --  10.32.16.181         0.0.0.0/0           tcp dpt:22 state NEW 
+8    ACCEPT     tcp  --  10.32.100.0/27       0.0.0.0/0           tcp dpt:22 state NEW 
+9    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW 
+10   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:3306 state NEW 
+11   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:2812 state NEW 
+12   ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:4949 state NEW 
+13   ACCEPT     udp  --  10.32.16.180         0.0.0.0/0           udp dpt:161 state NEW 
+14   ACCEPT     udp  --  10.32.16.181         0.0.0.0/0           udp dpt:161 state NEW 
+15   ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW 
+16   ACCEPT     tcp  --  10.32.10.8           10.32.10.200        state NEW 
+17   ACCEPT     tcp  --  10.32.10.9           10.32.10.200        state NEW 
+18   ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           state NEW 
+19   ACCEPT     tcp  --  10.32.16.28          0.0.0.0/0           tcp multiport dports 3306,2060:2063 state NEW 
+20   ACCEPT     tcp  --  10.32.100.8          0.0.0.0/0           
+21   ACCEPT     tcp  --  10.32.100.17         0.0.0.0/0           
+22   MYQUEUE_GRP  tcp  --  0.0.0.0/0            10.32.10.200        tcp multiport dports 3306,2034,2293,22021:22025 state NEW 
+23   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+2    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+3    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+4    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+5    ACCEPT     all  --  0.0.0.0/0            10.32.10.201        
+6    ACCEPT     all  --  0.0.0.0/0            10.32.10.200        
+7    ACCEPT     all  --  0.0.0.0/0            10.32.100.19        
+8    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           state NEW 
+9    ACCEPT     udp  --  0.0.0.0/0            10.32.10.52         udp dpt:53 state NEW 
+10   ACCEPT     udp  --  0.0.0.0/0            10.32.10.53         udp dpt:53 state NEW 
+11   ACCEPT     udp  --  0.0.0.0/0            10.32.10.53         udp dpt:123 state NEW 
+12   ACCEPT     tcp  --  0.0.0.0/0            10.32.15.190        tcp dpt:80 state NEW 
+13   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.25        tcp dpt:11 state NEW 
+14   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        tcp dpt:11 state NEW 
+15   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.8         multiport dports 3306,22 state NEW 
+16   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.7         multiport dports 3306,22 state NEW 
+17   ACCEPT     all  --  0.0.0.0/0            10.32.100.17        
+18   ACCEPT     all  --  0.0.0.0/0            10.32.100.8         
+
+Chain LOGGING (1 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 3 prefix `IPTables Packet Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain MYQUEUE_GRP (1 references)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  10.32.10.26          0.0.0.0/0           
+2    ACCEPT     all  --  10.32.10.28          0.0.0.0/0           
+3    ACCEPT     all  --  10.32.10.31          0.0.0.0/0           
+4    ACCEPT     all  --  10.32.10.32          0.0.0.0/0           
+5    ACCEPT     all  --  10.32.10.72          0.0.0.0/0           
+6    ACCEPT     all  --  10.32.10.78          0.0.0.0/0           
+7    ACCEPT     all  --  10.32.10.85          0.0.0.0/0           
+8    ACCEPT     all  --  10.32.10.87          0.0.0.0/0           
+9    ACCEPT     all  --  10.32.10.89          0.0.0.0/0           
+10   ACCEPT     all  --  10.32.10.104         0.0.0.0/0           
+11   ACCEPT     all  --  10.32.10.91          0.0.0.0/0           
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.7.2
+Installer-Version: 3.7.2
+Revision: 
+Compile-Date: Nov  5 2015 11:34:20
+Available-Modules: afstomp,csvparser,affile,afsql,confgen,cryptofuncs,linux-kmsg-format,graphite,system-source,afuser,pseudofile,dbparser,afprog,afamqp,syslogformat,afsocket,basicfuncs,kvformat,json-plugin
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+MAILTO=""
+*/5 * * * *	/usr/sbin/ntpdate 10.32.10.53 > /dev/null 2>&1
+0 23 * * *	/usr/local/script/client-arch/bin/client-arch > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat > /dev/null 2>&1
+2. Sudoers: 
+Defaults    !requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset,timestamp_timeout=7200
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+User_Alias APP_ADMINS = app
+Cmnd_Alias APP_FULL = /etc/init.d/q*, /etc/init.d/monit
+APP_ADMINS ALL = APP_FULL
+3. Extended sudoers:
+Defaults    !requiretty
+Defaults    env_reset,timestamp_timeout=7200
+Cmnd_Alias   MONIT = /etc/init.d/monit stop ,\
+                         /sbin/service monit stop
+%wheel  ALL=(ALL)       ALL, !MONIT
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias   RDIFF = /usr/bin/rdiff-backup
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC
+%wheel  ALL=(ALL)        NOPASSWD: RDIFF
+User_Alias ADMINS = ops
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/ls
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias KILL = /bin/kill
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+%wheel ALL = NOPASSWD:NOEXEC:BASIC
+ADMINS ALL = (apache) KILL
+ADMINS ALL = (app) KILL
+devteam ALL = NOPASSWD:NOEXEC:BASIC

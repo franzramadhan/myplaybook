@@ -1,0 +1,48 @@
+This is information for host: 10.32.6.2
+
+CPU Information: 
+1. Name :  Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+2. Cores: 2
+3. Architecture: x86_64
+
+Memory Information:
+1. Total Size: 7863 MB
+
+Hardisk:
+1. Size: 465.76 GB
+2. Model: ST500DM002-1ER14
+3. Partition:
+Filesystem                       Size  Used Avail Use% Mounted on
+udev                             3.9G  4.0K  3.9G   1% /dev
+tmpfs                            787M  1.1M  786M   1% /run
+/dev/sda8                         47G  7.4G   37G  17% /
+none                             4.0K     0  4.0K   0% /sys/fs/cgroup
+none                             5.0M     0  5.0M   0% /run/lock
+none                             3.9G  160K  3.9G   1% /run/shm
+none                             100M   40K  100M   1% /run/user
+/dev/sda5                        945M  265M  616M  31% /boot
+/dev/sda6                         19G   48M   18G   1% /tmp
+/dev/sda7                         28G  4.8G   22G  19% /usr
+/dev/sda9                        358G   95G  245G  28% /home
+//10.32.16.241/risky.rusfadilah  917G  712G  159G  82% /backup
+
+IP and Hostname:
+1. IP: 10.32.6.2
+2. Hostname: risky-Java
+
+NTP, Sudoers, and Active Users:
+1. NTP: server 10.32.16.238
+2. Sudoers: 
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+root	ALL=(ALL:ALL) ALL
+risky ALL= NOPASSWD:/etc/init.d/apache2 start,/etc/init.d/apache2 restart,/etc/init.d/apache2 stop,/etc/apache2 restart,/sbin/services apache2 restart,/etc/init.d/mysql start,/etc/init.d/mysql stop,/etc/init.d/mysql restart,/sbin/services mysql restart,/usr/local/bin/cleanRAM,/usr/sbin/tcpdump
+%admin ALL=(ALL) ALL
+%sudo	ALL=(ALL:ALL) ALL
+3. Active Users: 
+risky
+
+USB Access Restriction: 
+blacklist usb-storage
+blacklist uas

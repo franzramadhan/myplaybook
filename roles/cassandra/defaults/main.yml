@@ -1,0 +1,22 @@
+---
+cassandra:
+  version: '3.0.8'
+  dependencies:
+    - 'java-1.8.0-openjdk'
+    - 'jemalloc'
+  cluster:
+    name: Firstwap Cluster
+    vnodes: 256
+    seed: 10.32.6.106
+    endpoint_snitch: GossipingPropertyFileSnitch
+    auto_bootstrap: false
+    start_rpc: true
+    data_file_directories : /var/lib/cassandra/data/*
+    commitlog_directory: /var/lib/cassandra/commitlog/*
+  configs:
+    location: /etc/cassandra/conf
+
+proxy_env:
+  http_proxy: http://10.32.16.22:3128
+  https_proxy: http://10.32.16.22:3128
+  no_proxy: 127.0.0.1,10.32.15.190,.1rstwap.com,10.32.0.0/16

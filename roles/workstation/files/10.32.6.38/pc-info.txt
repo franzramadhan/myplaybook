@@ -1,0 +1,51 @@
+This is information for host: 10.32.6.38
+
+CPU Information: 
+1. Name :  Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+2. Cores: 2
+3. Architecture: x86_64
+
+Memory Information:
+1. Total Size: 7673 MB
+
+Hardisk:
+1. Size: 465.76 GB
+2. Model: ST500DM002-1BD14
+3. Partition:
+Filesystem                       Size  Used Avail Use% Mounted on
+udev                             3.8G  4.0K  3.8G   1% /dev
+tmpfs                            768M  1.1M  767M   1% /run
+/dev/sda8                         46G   12G   33G  26% /
+none                             4.0K     0  4.0K   0% /sys/fs/cgroup
+none                             5.0M     0  5.0M   0% /run/lock
+none                             3.8G   84K  3.8G   1% /run/shm
+none                             100M   20K  100M   1% /run/user
+/dev/sda2                        946M  224M  658M  26% /boot
+/dev/sda5                         19G   47M   18G   1% /tmp
+/dev/sda6                         28G  5.8G   21G  23% /usr
+/dev/sda7                         19G   11G  6.5G  63% /var
+/dev/sda9                        341G   67G  257G  21% /home
+//10.32.16.241/dwikky.maradhiza  917G  719G  152G  83% /backup
+
+IP and Hostname:
+1. IP: 10.32.6.38
+2. Hostname: dwikky-dev
+
+NTP, Sudoers, and Active Users:
+1. NTP: server 10.32.16.238
+2. Sudoers: 
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+root	ALL=(ALL:ALL) ALL
+%admin ALL=(ALL) ALL
+%sudo	ALL=(ALL:ALL) ALL
+3. Active Users: 
+dwikky
+4. Active Groups:
+dwikky
+dev
+
+USB Access Restriction: 
+blacklist usb-storage
+blacklist uas

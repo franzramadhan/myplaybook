@@ -1,0 +1,17 @@
+# sample configuration for iptables service
+# you can edit this manually or use system-config-firewall
+# please do not ask us to add additional ports/services to this default configuration
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -p tcp -m state --state NEW,ESTABLISHED -m tcp --dport 22 -j ACCEPT
+-A INPUT -p tcp -m state --state NEW --match multiport --dports {{ ports.cassandra.internode }},{{ ports.cassandra.client_port }},{{ ports.cassandra.thrift_port }},{{ ports.monit }},{{ ports.snmpd }},{{ ports.syslog.os }} -j ACCEPT
+-A INPUT -p udp -m state --state NEW --match multiport --dports {{ ports.cassandra.internode }},{{ ports.cassandra.client_port }},{{ ports.cassandra.thrift_port }},{{ ports.monit }},{{ ports.snmpd }},{{ ports.syslog.os }} -j ACCEPT
+-A INPUT -j DROP
+-A FORWARD -j DROP
+-A OUTPUT -j ACCEPT
+COMMIT

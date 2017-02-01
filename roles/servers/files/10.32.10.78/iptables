@@ -1,0 +1,113 @@
+# Firewall configuration written by system-config-firewall
+# Manual customization of this file is not recommended.
+*nat
+:PREROUTING ACCEPT [13:1116]
+:POSTROUTING ACCEPT [4:277]
+## Configuration for production
+-A PREROUTING -d 10.32.10.79 -p tcp -m tcp --dport 443 -j DNAT --to-destination 10.32.10.79:8443 
+-A PREROUTING -d 127.0.0.1 -p tcp -m tcp --dport 80 -j DNAT --to-destination 10.32.10.79:8443
+-A PREROUTING -d 10.32.10.79 -p tcp -m tcp --dport 80 -j DNAT --to-destination 10.32.10.79:8080 
+-A OUTPUT -d 10.32.10.79 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8443 
+-A OUTPUT -d 127.0.0.1 -p tcp -m tcp --dport 443 -j REDIRECT --to-ports 8443
+-A OUTPUT -d 10.32.10.79 -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080 
+COMMIT
+
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+:LOGGING - [0:0]
+
+###################################### INPUT RULES ############################################
+
+########################################## Mandatory ##########################################    
+## Allow from loopback
+-A INPUT -i lo -j ACCEPT
+
+## Allow input that the output has been established
+-A INPUT -i eth0 -m state --state ESTABLISHED -j ACCEPT
+
+## Allow ICMP packets
+-A INPUT -p icmp --icmp-type 11 -j ACCEPT
+###############################################################################################
+
+## Allow SSH Access from Admin VLAN and Monitoring Server
+-A INPUT -i eth0 -s 10.32.5.0/24 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -i eth0 -s 10.32.16.179 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -i eth0 -s 10.32.16.180 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -i eth0 -s 10.32.10.75 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -i eth0 -s 10.32.100.18 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -i eth0 -s 10.32.100.25 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow Access from Dev PCs (Ferri and Icha)
+#-A INPUT -i eth0 -s 10.32.6.5 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+#-A INPUT -i eth0 -s 10.32.6.39 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow SNMP from Monitoring Server
+-A INPUT -i eth0 -s 10.32.16.179 -p udp -m udp --dport 161 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow Monit Access from Admin VLAN
+-A INPUT -i eth0 -s 10.32.5.0/24 -p tcp -m tcp --dport 2812 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow Access to Web Service
+-A INPUT -p tcp -m tcp --dport 443 -j ACCEPT 
+-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT 
+-A INPUT -p tcp -m tcp --dport 8443 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT
+
+## Log the rest
+-A INPUT -j LOGGING
+-A LOGGING -m limit --limit 5/min -j LOG --log-prefix "Incoming Dropped: " --log-level 5
+-A LOGGING -j DROP
+
+###################################### OUTPUT RULES ############################################
+
+########################################## Mandatory ###########################################    
+## Allow output from loopback
+-A OUTPUT -o lo -j ACCEPT 
+
+## Allow output that the input has been established
+-A OUTPUT -o eth0 -p tcp -m state --state ESTABLISHED -j ACCEPT 
+-A OUTPUT -o eth0 -p udp -m state --state ESTABLISHED -j ACCEPT 
+
+## Allow ping outside
+-A OUTPUT -p icmp -j ACCEPT
+###############################################################################################
+
+## Allow output to service hosts for service domain(tcp/53), ntp(tcp/123), http(tcp/80), and https(tcp/443)
+-A OUTPUT -o eth0 -d 10.32.10.55 -p udp -m multiport --dports 53,123 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -o eth0 -d 10.32.15.190 -p tcp -m multiport --dports 80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -o eth0 -d 103.21.225.227 -p tcp -m multiport --dports 80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -o eth0 -d 10.32.16.22 -p tcp -m tcp --dport 3128 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow Output MySQL Database Connection
+-A OUTPUT -d 10.32.10.7 -p tcp -m tcp --dport 3306 -j ACCEPT
+
+## Allow Access to DNS Server
+-A OUTPUT -p udp -d 10.32.10.53 --dport 53 -m state --state NEW -j ACCEPT
+-A OUTPUT -p udp -d 10.32.10.52 --dport 53 -m state --state NEW -j ACCEPT
+#-A OUTPUT -p udp -d 10.32.15.250 --dport 53 -m state --state NEW -j ACCEPT
+#-A OUTPUT -p udp -d 10.32.16.238 --dport 53 -m state --state NEW -j ACCEPT
+
+## Allow Access to SMS_API_V2
+-A OUTPUT -d 10.32.10.89 -p tcp -m tcp --dport 8080 -j ACCEPT
+-A OUTPUT -d 10.32.10.89 -p tcp -m tcp --dport 8443 -j ACCEPT
+
+## Allow Access to MAIL
+-A OUTPUT -d 10.32.10.11 -p tcp -m tcp --dport 25 -j ACCEPT
+
+## Allow Access to ACA Test
+-A OUTPUT -d 117.102.85.67 -p tcp -m tcp --dport 80 -j ACCEPT
+
+## Allow Output to Syslog-NG Server
+-A OUTPUT -o eth0 -d syslog.1rstwap.com -p tcp -m tcp --dport 11 -j ACCEPT
+## Allow logging custom application logs
+-A OUTPUT -o eth0 -d syslog.1rstwap.com -p tcp -m multiport --dports 20401:20417 -j ACCEPT
+
+## Loggin the rest
+-A OUTPUT -j LOGGING
+-A LOGGING -m limit --limit 5/min -j LOG --log-prefix "Outgoing Dropped: " --log-level 5
+-A LOGGING -j DROP
+
+## Must commit
+COMMIT

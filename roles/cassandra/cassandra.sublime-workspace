@@ -1,0 +1,354 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"apt",
+				"apt_key	apt_key"
+			],
+			[
+				"installed",
+				"installed-packages.txt	(common.yml)"
+			],
+			[
+				"installe",
+				"installed-packages.txt"
+			],
+			[
+				"v",
+				"v"
+			],
+			[
+				"install",
+				"installed-packages.txt"
+			],
+			[
+				"grou",
+				"group=root"
+			],
+			[
+				"confi",
+				"config.snmpd.data"
+			],
+			[
+				"local",
+				"local-snmp-cronjob	(snmpd.yml)"
+			],
+			[
+				"aut",
+				"authorized_keys"
+			],
+			[
+				"auto",
+				"authorized_key	authorized_key"
+			],
+			[
+				"cass",
+				"cassandra.yaml"
+			],
+			[
+				"sysl",
+				"syslog-ng"
+			],
+			[
+				"por",
+				"ports	(iptables.j2)"
+			],
+			[
+				"iptables",
+				"iptables-services	(main.yml)"
+			],
+			[
+				"servi",
+				"service_cassandra_status.rc"
+			],
+			[
+				"changed",
+				"changed_when"
+			],
+			[
+				"cluseter",
+				"cluster.data_file_directories	(configure.yml)"
+			],
+			[
+				"datadir",
+				"data_file_directories	(cassandra.yaml.j2)"
+			],
+			[
+				"data",
+				"datastax"
+			],
+			[
+				"yum",
+				"yum.repos.d"
+			],
+			[
+				"dat",
+				"data_file_directory"
+			],
+			[
+				"cassan",
+				"cassandra"
+			],
+			[
+				"commi",
+				"commitlog_directory"
+			],
+			[
+				"cassand",
+				"cassandra"
+			],
+			[
+				"cassa",
+				"cassandra"
+			],
+			[
+				"update",
+				"update_cache=yes"
+			],
+			[
+				"resta",
+				"restarted"
+			],
+			[
+				"server",
+				"server.pem"
+			],
+			[
+				"net",
+				"net-snmp"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/frans/scripts/ansible/playbooks/roles/centos/tasks/snmpd.yml",
+			"settings":
+			{
+				"buffer_size": 2414,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 390.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/frans/scripts/ansible/playbooks/roles/centos",
+		"/home/frans/scripts/ansible/playbooks/roles/centos/defaults",
+		"/home/frans/scripts/ansible/playbooks/roles/centos/files",
+		"/home/frans/scripts/ansible/playbooks/roles/centos/tasks",
+		"/home/frans/scripts/ansible/playbooks/roles/centos/templates"
+	],
+	"file_history":
+	[
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"=",
+			"cassandra_seed_status",
+			"datadir",
+			"datafile",
+			"jinja",
+			"yaml",
+			"proxy"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"cassandra_seed_host"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/frans/scripts/ansible/playbooks/roles/centos/tasks/snmpd.yml",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2414,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1821,
+								1821
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 408.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "cassandra.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 325.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

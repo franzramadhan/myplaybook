@@ -1,0 +1,53 @@
+This is information for host: 10.32.6.31
+
+CPU Information: 
+1. Name :  Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz
+2. Cores: 2
+3. Architecture: x86_64
+
+Memory Information:
+1. Total Size: 7883 MB
+
+Hardisk:
+1. Size: 465.76 GB
+2. Model: ST500DM002-1BD14
+3. Partition:
+Filesystem                         Size  Used Avail Use% Mounted on
+udev                               3.9G  4.0K  3.9G   1% /dev
+tmpfs                              789M  1.2M  788M   1% /run
+/dev/sda8                           46G   14G   31G  31% /
+none                               4.0K     0  4.0K   0% /sys/fs/cgroup
+none                               5.0M     0  5.0M   0% /run/lock
+none                               3.9G  164K  3.9G   1% /run/shm
+none                               100M   48K  100M   1% /run/user
+/dev/sda7                           36G  4.1G   30G  12% /usr
+/dev/sda6                          1.9G  3.3M  1.8G   1% /tmp
+/dev/sda5                          945M   83M  798M  10% /boot
+/dev/sda9                          367G   15G  333G   5% /home
+//10.32.16.241/johanna.simatupang  917G  712G  159G  82% /backup
+/home/johana/.Private              367G   15G  333G   5% /home/johana
+
+IP and Hostname:
+1. IP: 10.32.6.31
+2. Hostname: johana-php
+
+NTP, Sudoers, and Active Users:
+1. NTP: server 10.32.16.238
+2. Sudoers: 
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+root	ALL=(ALL:ALL) ALL
+johana ALL= NOPASSWD:/etc/init.d/apache2 start,/etc/init.d/apache2 restart,/etc/init.d/apache2 stop,/etc/apache2 restart,/sbin/services apache2 restart,/etc/init.d/mysql start,/etc/init.d/mysql stop,/etc/init.d/mysql restart,/usr/sbin/services/mysql start,/usr/sbin/services mysql restart,/usr/sbin/services/mysql stop,/usr/sbin/a2enmod cgi,/usr/sbin/apachectl *,/usr/sbin/apachectl
+%admin ALL=(ALL) ALL
+%sudo	ALL=(ALL:ALL) ALL
+3. Active Users: 
+johana
+4. Active Groups:
+johana
+
+USB Access Restriction: 
+blacklist usb-storage
+blacklist uas
+blacklist usb-storage
+blacklist uas

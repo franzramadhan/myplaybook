@@ -1,0 +1,6 @@
+---
+- include: common.yml
+- include: monit.yml
+- include: snmpd.yml
+- include: syslog-ng.yml
+- include: iptables.yml

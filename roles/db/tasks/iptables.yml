@@ -1,0 +1,5 @@
+---
+- name: Put the iptables config to /etc/sysconfig/iptables
+  template: src=iptables.j2 dest=/etc/sysconfig/iptables owner=root group=root mode=0600
+  notify: 
+    - restart iptables-services

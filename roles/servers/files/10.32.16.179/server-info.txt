@@ -1,0 +1,268 @@
+This is information for host: 10.32.16.179
+
+Host information: 
+1. Hostname : tuyul.1rstwap.com
+2. Network Configuration:
+DEVICE=eth0
+#HWADDR=00:1f:e2:3c:5c:32
+TYPE=Ethernet
+#UUID=c5663ab1-9710-444a-a0ba-4cf9a5470f71
+ONBOOT=yes
+NM_CONTROLLED=yes
+BOOTPROTO=none
+IPV6INIT=no
+USERCTL=no
+IPADDR=10.32.16.179
+NETMASK=255.255.255.0
+GATEWAY=10.32.16.254
+DNS1=10.32.16.238
+3. DNS Information: 
+- nameservers: 10.32.16.238
+
+Users and Groups Information:
+1. Non system users:
+senops
+icinga
+ops
+sysmon
+report
+netbackup
+2. Non system groups:
+senops
+icinga
+icingacmd
+ops
+sysmon
+report
+netbackup
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:1610              0.0.0.0:*                   LISTEN      26916/ssh           
+tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      8681/mysqld         
+tcp        0      0 127.0.0.1:1611              0.0.0.0:*                   LISTEN      8183/ssh            
+tcp        0      0 127.0.0.1:110               0.0.0.0:*                   LISTEN      8902/stunnel        
+tcp        0      0 127.0.0.1:43855             0.0.0.0:*                   LISTEN      3990/Passenger Rack 
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      8452/sshd           
+tcp        0      0 10.32.16.179:28120          0.0.0.0:*                   LISTEN      26916/ssh           
+tcp        0      0 10.32.16.179:28121          0.0.0.0:*                   LISTEN      8183/ssh            
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      8902/stunnel        
+tcp        0      0 10.32.16.179:25             0.0.0.0:*                   LISTEN      8902/stunnel        
+tcp        0      0 0.0.0.0:2812                0.0.0.0:*                   LISTEN      8857/monit          
+tcp        0      0 :::80                       :::*                        LISTEN      512/httpd           
+tcp        0      0 :::22                       :::*                        LISTEN      8452/sshd           
+tcp        0      0 :::443                      :::*                        LISTEN      512/httpd           
+2. Runlevel 3:
+abrt-ccpp      	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+abrt-oops      	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+abrtd          	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+acpid          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+atd            	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+autofs         	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+autossh        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+certmonger     	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+cpuspeed       	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+haldaemon      	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+httpd          	0:off	1:off	2:off	3:on	4:off	5:off	6:off
+icinga         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ido2db         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ip6tables      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+irqbalance     	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+kdump          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+mcelogd        	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+mdmonitor      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+messagebus     	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+mysql          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+psacct         	0:off	1:off	2:off	3:on	4:off	5:off	6:off
+smartd         	0:off	1:off	2:off	3:on	4:off	5:off	6:off
+smokeping      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+syslog-ng      	0:off	1:off	2:off	3:on	4:off	5:off	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda11       82G  886M   77G   2% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+/dev/sda6        48G   52M   46G   1% /archive
+/dev/sda1       3.9G  154M  3.5G   5% /boot
+/dev/sda2        97G  994M   91G   2% /data
+/dev/sda7        48G  7.6G   38G  17% /home
+/dev/sda10       20G   47M   19G   1% /tmp
+/dev/sda8        48G   19G   28G  41% /usr
+/dev/sda9        29G  8.3G   20G  31% /var
+/dev/sda5        77G  4.8G   69G   7% /www
+2. List Block Devices:
+NAME    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda       8:0    0 465.8G  0 disk 
+├─sda1    8:1    0     4G  0 part /boot
+├─sda2    8:2    0  97.7G  0 part /data
+├─sda3    8:3    0   7.9G  0 part [SWAP]
+├─sda4    8:4    0     1K  0 part 
+├─sda5    8:5    0  78.2G  0 part /www
+├─sda6    8:6    0  48.9G  0 part /archive
+├─sda7    8:7    0  48.9G  0 part /home
+├─sda8    8:8    0  48.9G  0 part /usr
+├─sda9    8:9    0  29.4G  0 part /var
+├─sda10   8:10   0  19.6G  0 part /tmp
+└─sda11   8:11   0  82.5G  0 part /
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  192.168.3.1          0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+3    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+4    ACCEPT     tcp  --  10.32.16.186         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+5    ACCEPT     udp  --  10.32.16.180         0.0.0.0/0           udp dpt:161 state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  10.32.15.190         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+8    ACCEPT     tcp  --  10.32.16.238         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+10   ACCEPT     tcp  --  10.32.100.8          0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+11   ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  10.32.16.64/26       0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+13   ACCEPT     tcp  --  10.32.16.64/26       0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+14   ACCEPT     tcp  --  10.32.16.64/26       0.0.0.0/0           tcp dpt:3001 state NEW,ESTABLISHED 
+15   ACCEPT     tcp  --  10.32.16.64/26       0.0.0.0/0           tcp dpt:80 state NEW,ESTABLISHED 
+16   ACCEPT     tcp  --  10.32.16.64/26       0.0.0.0/0           tcp dpt:443 state NEW,ESTABLISHED 
+17   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+18   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+19   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           multiport dports 3000,3001 state NEW,ESTABLISHED 
+20   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           multiport dports 80,443 state NEW,ESTABLISHED 
+21   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           multiport dports 2812,28120,28121 state NEW,ESTABLISHED 
+22   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:80 state NEW,ESTABLISHED 
+23   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:443 state NEW,ESTABLISHED 
+24   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:443 state NEW,ESTABLISHED 
+25   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:443 state NEW,ESTABLISHED 
+26   ACCEPT     tcp  --  192.168.3.0/24       0.0.0.0/0           tcp dpt:80 state NEW,ESTABLISHED 
+27   ACCEPT     tcp  --  192.168.3.0/24       0.0.0.0/0           tcp dpt:443 state NEW,ESTABLISHED 
+28   ACCEPT     tcp  --  192.168.4.0/24       0.0.0.0/0           tcp dpt:80 state NEW,ESTABLISHED 
+29   ACCEPT     tcp  --  192.168.4.0/24       0.0.0.0/0           tcp dpt:443 state NEW,ESTABLISHED 
+30   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+31   ACCEPT     tcp  --  10.32.6.84           0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+32   ACCEPT     tcp  --  10.32.6.60           0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+33   ACCEPT     tcp  --  10.32.16.181         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+34   ACCEPT     tcp  --  10.32.15.88          0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+35   ACCEPT     tcp  --  10.32.15.190         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+36   ACCEPT     tcp  --  10.32.16.24          0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+37   ACCEPT     tcp  --  10.32.16.245         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+38   ACCEPT     tcp  --  10.32.16.232         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+39   ACCEPT     tcp  --  10.32.100.17         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+40   ACCEPT     tcp  --  10.32.100.5          0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+41   ACCEPT     tcp  --  10.32.15.112         0.0.0.0/0           tcp dpt:25 state NEW,ESTABLISHED 
+42   ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+43   ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           icmp type 11 
+44   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+2    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+3    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+4    ACCEPT     all  --  0.0.0.0/0            172.30.203.17       
+5    ACCEPT     all  --  0.0.0.0/0            10.174.15.34        
+6    ACCEPT     udp  --  0.0.0.0/0            10.32.16.238        udp dpt:123 state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.241        tcp dpt:389 state NEW,ESTABLISHED 
+8    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.241        tcp dpt:636 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.241        tcp dpt:80 state NEW,ESTABLISHED 
+10   ACCEPT     tcp  --  0.0.0.0/0            10.32.16.241        tcp dpt:443 state NEW,ESTABLISHED 
+11   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.89         tcp dpt:8080 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.7         tcp dpt:3306 state NEW,ESTABLISHED 
+13   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.8         tcp dpt:3306 state NEW,ESTABLISHED 
+14   ACCEPT     tcp  --  0.0.0.0/0            10.32.15.8          tcp dpt:3306 state NEW,ESTABLISHED 
+15   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.19        tcp dpt:3306 state NEW,ESTABLISHED 
+16   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.202        tcp dpt:3306 state NEW,ESTABLISHED 
+17   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.104        tcp dpt:3306 state NEW,ESTABLISHED 
+18   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:3306 state NEW,ESTABLISHED 
+19   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.85         tcp dpt:3306 state NEW,ESTABLISHED 
+20   ACCEPT     tcp  --  0.0.0.0/0            10.32.16.232        tcp dpt:3306 state NEW,ESTABLISHED 
+21   ACCEPT     tcp  --  0.0.0.0/0            10.32.16.245        tcp dpt:3306 state NEW,ESTABLISHED 
+22   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.39         tcp dpt:3306 state NEW,ESTABLISHED 
+23   ACCEPT     tcp  --  0.0.0.0/0            10.32.6.242         tcp dpt:3306 state NEW,ESTABLISHED 
+24   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        tcp dpt:11 
+25   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        tcp dpt:22 
+26   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        multiport dports 21431:21450 
+27   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.200        tcp dpt:22024 state NEW,ESTABLISHED 
+28   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:610 state NEW,ESTABLISHED 
+29   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:995 state NEW,ESTABLISHED 
+30   ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           udp dpt:53 state NEW,ESTABLISHED 
+31   ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           udp dpt:161 state NEW,ESTABLISHED 
+32   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:123 state NEW,ESTABLISHED 
+33   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+34   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:23 state NEW,ESTABLISHED 
+35   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:80 state NEW,ESTABLISHED 
+36   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:443 state NEW,ESTABLISHED 
+37   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:3128 state NEW,ESTABLISHED 
+38   ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+39   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain LOGGING (2 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Incoming Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+3    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Outgoing Dropped: ' 
+4    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.7.2
+Installer-Version: 3.7.2
+Revision: 
+Compile-Date: Nov  5 2015 11:34:20
+Available-Modules: afsocket,afuser,json-plugin,syslogformat,afsql,basicfuncs,pseudofile,csvparser,dbparser,kvformat,system-source,afamqp,confgen,graphite,cryptofuncs,afstomp,afprog,linux-kmsg-format,affile
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+MAILTO=""
+*/5 * * * *	/usr/bin/php -q /www/html/os/upload/api/cron.php > /dev/null 2>&1
+*/2 * * * *	/usr/sbin/ntpdate 10.32.16.238 > /dev/null 2>&1
+0 2 * * 1-5	/usr/local/script/redmineReminder > /dev/null 2>&1
+*/30 * * * *	/usr/local/script/redmineEmailRetriever > /dev/null 2>&1
+2. Sudoers: 
+Defaults    requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+3. Extended sudoers:

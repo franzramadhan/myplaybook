@@ -1,0 +1,28 @@
+---
+standard:
+    install_packages:
+        - httpd
+        - mod_ssl
+        - php
+        - php-cli
+        - php-mcrypt
+        - php-pecl-jsonc-devel
+        - php-intl
+        - php-common
+        - php-xmlrpc
+        - php-mysqlnd
+        - php-mbstring
+        - php-bcmath
+        - php-pecl-jsonc
+        - php-pear
+        - php-pdo
+        - php-devel
+        - php-soap
+        - php-opcache
+        - php-pecl-zip
+        - php-process
+        - php-xml
+        - php-gd
+
+ports:
+    httpd: 80

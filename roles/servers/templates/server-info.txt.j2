@@ -1,0 +1,52 @@
+This is information for host: {{ ansible_default_ipv4.address }}
+
+Host information: 
+1. Hostname : {{ ansible_nodename }}
+2. Network Configuration:
+{{ network_configs.stdout }}
+3. DNS Information: 
+- nameservers: {{ ansible_dns.nameservers[0] }}
+
+Users and Groups Information:
+1. Non system users:
+{{ non_system_users.stdout }}
+2. Non system groups:
+{{ non_system_groups.stdout }}
+
+Service Information:
+1. Running Services:
+{{ running_services.stdout }}
+2. Runlevel 3:
+{{ runlevel_3.stdout }}
+
+Partition:
+1. Partition Table:
+{{ partition_table.stdout }}
+2. List Block Devices:
+{{ block_devices.stdout }}
+
+IPTables configuration:
+{{ iptables_status.stdout }}
+
+Syslog-ng:
+1. Information:
+{{ syslogng_information.stdout }}
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+{{ crontab_list.stdout }}
+2. Sudoers: 
+{{ sudoers_config.stdout }}
+3. Extended sudoers:
+{{ sudoers_extended_config.stdout }}

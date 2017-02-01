@@ -1,0 +1,17 @@
+---
+- name: Configure PAM Authentication for monit
+  copy: src=monit/monit.pam dest=/etc/pam.d/monit owner=root group=root mode=0644
+
+- name: Ensures {{ config.monit.certificate }} dir exists
+  file: path={{ config.monit.certificate }} state=directory
+
+- name: Copy the server.pem certificate to /var/cacert
+  copy: src=server.pem dest=/var/cacert/server.pem owner=root group=root mode=0600
+
+- name: Configure Logrotate configuration for monit
+  copy: src=monit/monit.rotate dest=/etc/logrotate.d/monit owner=root group=root mode=0644
+
+- name: Put the monitrc configuration to /etc/monitrc
+  template: src=monitrc.j2 dest=/etc/monitrc owner=root group=root mode=0600
+  notify: 
+    - restart monit

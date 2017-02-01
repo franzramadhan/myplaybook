@@ -1,0 +1,328 @@
+This is information for host: 10.32.10.104
+
+Host information: 
+1. Hostname : democ.1rstwap.com
+2. Network Configuration:
+DEVICE="eth0"
+BOOTPROTO="static"
+BROADCAST="10.32.10.255"
+DNS1="10.32.10.52"
+DNS2="10.32.10.54"
+DOMAIN='1rstwap.com'
+GATEWAY="10.32.10.5"
+DEFROUTE=yes
+IPADDR="10.32.10.104"
+IPV6INIT="yes"
+IPV6_AUTOCONF="yes"
+NETMASK="255.255.255.0"
+NM_CONTROLLED="no"
+ONBOOT="yes"
+TYPE="Ethernet"
+DEVICE="eth0:1"
+BOOTPROTO="static"
+BROADCAST="10.32.10.255"
+IPADDR="10.32.10.105"
+IPV6INIT="yes"
+IPV6_AUTOCONF="yes"
+NETMASK="255.255.255.0"
+NM_CONTROLLED="yes"
+ONBOOT="yes"
+TYPE="Ethernet"
+3. DNS Information: 
+- nameservers: 10.32.10.52
+
+Users and Groups Information:
+1. Non system users:
+ops
+senops
+app
+devteam
+sysmon
+adi.satria
+2. Non system groups:
+ops
+senops
+app
+devteam
+sysmon
+adi.satria
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:5445                0.0.0.0:*                   LISTEN      4238/java           
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1720/snmpd          
+tcp        0      0 0.0.0.0:6379                0.0.0.0:*                   LISTEN      3411/redis-server 0 
+tcp        0      0 127.0.0.1:61613             0.0.0.0:*                   LISTEN      4238/java           
+tcp        0      0 0.0.0.0:5455                0.0.0.0:*                   LISTEN      4238/java           
+tcp        0      0 0.0.0.0:111                 0.0.0.0:*                   LISTEN      1380/rpcbind        
+tcp        0      0 0.0.0.0:8080                0.0.0.0:*                   LISTEN      4238/java           
+tcp        0      0 127.0.0.1:80                0.0.0.0:*                   LISTEN      2918/httpd          
+tcp        0      0 10.32.10.104:80             0.0.0.0:*                   LISTEN      2918/httpd          
+tcp        0      0 10.32.10.105:9876           0.0.0.0:*                   LISTEN      4238/java           
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1741/sshd           
+tcp        0      0 127.0.0.1:631               0.0.0.0:*                   LISTEN      1457/cupsd          
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      2872/master         
+tcp        0      0 0.0.0.0:8443                0.0.0.0:*                   LISTEN      4238/java           
+tcp        0      0 10.32.10.104:2812           0.0.0.0:*                   LISTEN      2966/monit          
+tcp        0      0 0.0.0.0:39132               0.0.0.0:*                   LISTEN      1402/rpc.statd      
+tcp        0      0 ::ffff:127.0.0.1:8005       :::*                        LISTEN      4524/java           
+tcp        0      0 :::8009                     :::*                        LISTEN      4524/java           
+tcp        0      0 :::111                      :::*                        LISTEN      1380/rpcbind        
+tcp        0      0 :::22                       :::*                        LISTEN      1741/sshd           
+tcp        0      0 ::1:631                     :::*                        LISTEN      1457/cupsd          
+tcp        0      0 ::1:25                      :::*                        LISTEN      2872/master         
+tcp        0      0 :::53785                    :::*                        LISTEN      1402/rpc.statd      
+tcp        0      0 :::5050                     :::*                        LISTEN      4524/java           
+tcp        0      0 :::443                      :::*                        LISTEN      2918/httpd          
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1720/snmpd          
+udp        0      0 0.0.0.0:707                 0.0.0.0:*                               1380/rpcbind        
+udp        0      0 127.0.0.1:732               0.0.0.0:*                               1402/rpc.statd      
+udp        0      0 0.0.0.0:51043               0.0.0.0:*                               1402/rpc.statd      
+udp        0      0 0.0.0.0:111                 0.0.0.0:*                               1380/rpcbind        
+udp        0      0 0.0.0.0:631                 0.0.0.0:*                               1457/cupsd          
+udp        0      0 :::707                      :::*                                    1380/rpcbind        
+udp        0      0 :::39399                    :::*                                    1402/rpc.statd      
+udp        0      0 :::111                      :::*                                    1380/rpcbind        
+2. Runlevel 3:
+abrt-ccpp      	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+abrtd          	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+acpid          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+atd            	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+autofs         	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+certmonger     	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+cpuspeed       	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+cups           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+haldaemon      	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+httpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ip6tables      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+irqbalance     	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+kdump          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+mcelogd        	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+mdmonitor      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+messagebus     	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+mysql          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+nfslock        	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+portreserve    	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+postfix        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+rpcbind        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+rpcgssd        	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+rsyslog        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/vg_vm-lv_root
+                      8.3G  6.9G 1015M  88% /
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+/dev/vda1             477M  129M  323M  29% /boot
+/dev/mapper/vg_db-lv_db
+                       30G   12G   16G  44% /db
+/dev/mapper/vg_app-lv_app
+                      9.8G  879M  8.4G  10% /app
+/dev/mapper/vg_app-lv_www
+                      9.8G  1.4G  7.9G  16% /www
+2. List Block Devices:
+NAME                     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+vda                      252:0    0   10G  0 disk 
+├─vda1                   252:1    0  500M  0 part /boot
+└─vda2                   252:2    0  9.5G  0 part 
+  ├─vg_vm-lv_root (dm-0) 253:0    0  8.5G  0 lvm  /
+  └─vg_vm-lv_swap (dm-1) 253:1    0    1G  0 lvm  [SWAP]
+vdb                      252:16   0   20G  0 disk 
+└─vdb1                   252:17   0   20G  0 part 
+  ├─vg_app-lv_app (dm-3) 253:3    0   10G  0 lvm  /app
+  └─vg_app-lv_www (dm-4) 253:4    0   10G  0 lvm  /www
+vdc                      252:32   0   30G  0 disk 
+└─vdc1                   252:33   0   30G  0 part 
+  └─vg_db-lv_db (dm-2)   253:2    0   30G  0 lvm  /db
+sr0                       11:0    1 1024M  0 rom  
+
+IPTables configuration:
+Table: nat
+Chain PREROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+1    DNAT       tcp  --  0.0.0.0/0            10.32.10.105        tcp dpt:443 to:10.32.10.104:8443 
+2    DNAT       tcp  --  0.0.0.0/0            10.32.10.105        tcp dpt:80 to:10.32.10.104:8080 
+
+Chain POSTROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    REDIRECT   tcp  --  0.0.0.0/0            10.32.10.105        tcp dpt:443 redir ports 8443 
+2    REDIRECT   tcp  --  0.0.0.0/0            10.32.10.105        tcp dpt:80 redir ports 8080 
+
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+3    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+4    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+5    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  10.32.14.50          0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+8    ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  10.32.6.242          0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+10   ACCEPT     tcp  --  10.32.6.58           0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+11   ACCEPT     tcp  --  10.32.10.8           0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+13   ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+14   ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW,ESTABLISHED 
+15   ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+16   ACCEPT     tcp  --  10.32.14.82          0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+17   ACCEPT     tcp  --  10.32.14.83          0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+18   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:2812 state NEW,ESTABLISHED 
+19   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:5050 state NEW,ESTABLISHED 
+20   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           multiport dports 80,443,8080,8443 state NEW,ESTABLISHED 
+21   ACCEPT     tcp  --  192.168.250.2        0.0.0.0/0           tcp dpt:9876 state NEW,ESTABLISHED 
+22   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:5050 state NEW,ESTABLISHED 
+23   ACCEPT     tcp  --  10.32.6.0/24         0.0.0.0/0           tcp dpt:5050 state NEW,ESTABLISHED 
+24   ACCEPT     tcp  --  10.32.14.0/24        0.0.0.0/0           tcp dpt:5050 state NEW,ESTABLISHED 
+25   ACCEPT     tcp  --  192.168.4.1          0.0.0.0/0           tcp dpt:5050 state NEW,ESTABLISHED 
+26   ACCEPT     tcp  --  10.32.10.85          0.0.0.0/0           tcp 
+27   ACCEPT     tcp  --  10.32.10.80          0.0.0.0/0           tcp 
+28   ACCEPT     tcp  --  10.32.10.104         0.0.0.0/0           tcp 
+29   ACCEPT     tcp  --  10.32.10.106         0.0.0.0/0           tcp 
+30   ACCEPT     tcp  --  10.32.10.17          0.0.0.0/0           tcp 
+31   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+3    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+4    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+5    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:25 state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  0.0.0.0/0            176.34.127.85       multiport dports 80,443 state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  0.0.0.0/0            79.125.122.207      multiport dports 80,443 state NEW,ESTABLISHED 
+8    ACCEPT     tcp  --  0.0.0.0/0            74.125.68.103       multiport dports 80,443 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  0.0.0.0/0            74.125.68.104       multiport dports 80,443 state NEW,ESTABLISHED 
+10   ACCEPT     tcp  --  0.0.0.0/0            74.125.68.105       multiport dports 80,443 state NEW,ESTABLISHED 
+11   ACCEPT     tcp  --  0.0.0.0/0            74.125.68.99        multiport dports 80,443 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  0.0.0.0/0            74.125.68.106       multiport dports 80,443 state NEW,ESTABLISHED 
+13   ACCEPT     tcp  --  0.0.0.0/0            74.125.68.147       multiport dports 80,443 state NEW,ESTABLISHED 
+14   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           multiport dports 80,443 state NEW,ESTABLISHED 
+15   ACCEPT     tcp  --  0.0.0.0/0            80.66.224.224/29    multiport dports 80,443 state NEW,ESTABLISHED 
+16   ACCEPT     udp  --  0.0.0.0/0            10.32.10.52         multiport dports 53,123 state NEW,ESTABLISHED 
+17   ACCEPT     udp  --  0.0.0.0/0            10.32.10.53         multiport dports 53,123 state NEW,ESTABLISHED 
+18   ACCEPT     tcp  --  0.0.0.0/0            10.32.15.190        multiport dports 80,443 state NEW,ESTABLISHED 
+19   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.200        multiport dports 22021,22022 state NEW,ESTABLISHED 
+20   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.85         tcp 
+21   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.80         tcp 
+22   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.106        tcp 
+23   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.17         tcp 
+24   ACCEPT     tcp  --  0.0.0.0/0            10.32.6.58          tcp dpt:3306 
+25   ACCEPT     tcp  --  0.0.0.0/0            10.32.6.51          tcp dpt:5672 
+26   ACCEPT     tcp  --  0.0.0.0/0            10.32.6.51          tcp dpt:6379 
+27   ACCEPT     tcp  --  0.0.0.0/0            80.66.224.235       tcp dpt:22 state NEW,ESTABLISHED 
+28   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        tcp dpt:11 state NEW,ESTABLISHED 
+29   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        multiport dports 20526:20543 state NEW,ESTABLISHED 
+30   ACCEPT     all  --  0.0.0.0/0            192.168.250.2       
+31   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain LOGGING (2 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Incoming Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+3    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Outgoing Dropped: ' 
+4    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.7.2
+Installer-Version: 3.7.2
+Revision: 
+Compile-Date: Nov  5 2015 11:34:20
+Available-Modules: basicfuncs,pseudofile,afstomp,cryptofuncs,afsocket,graphite,linux-kmsg-format,kvformat,afamqp,syslogformat,json-plugin,dbparser,afprog,confgen,afsql,system-source,affile,afuser,csvparser
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+*/5 * * * *     /usr/sbin/ntpdate 10.32.10.53 > /dev/null 2>&1
+0  * * * *	/usr/bin/perl /usr/share/awstats/wwwroot/cgi-bin/awstats.pl -config=demox.1rstwap.com -update
+*/5 * * * *	/etc/snmp/local-snmp-cronjob > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat &
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat &
+0 0 * * *	/usr/local/script/housekeeping/housekeeping > /dev/null 2>&1
+0 0 * * *	/usr/local/script/appconf/appconf > /dev/null 2>&1
+2. Sudoers: 
+Defaults    requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+3. Extended sudoers:
+Defaults    !requiretty
+Defaults    env_reset,timestamp_timeout=7200
+Cmnd_Alias   MONIT = /etc/init.d/monit stop ,\
+                         /sbin/service monit stop
+%wheel  ALL=(ALL)       ALL, !MONIT
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias   RDIFF = /usr/bin/rdiff-backup
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC
+%wheel  ALL=(ALL)        NOPASSWD: RDIFF
+User_Alias ADMINS = ops
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/ls
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias KILL = /bin/kill
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+%wheel ALL = NOPASSWD:NOEXEC:BASIC
+ADMINS ALL = (apache) KILL
+ADMINS ALL = (app) KILL
+devteam ALL = NOPASSWD:NOEXEC:BASIC

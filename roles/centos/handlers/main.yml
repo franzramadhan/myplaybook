@@ -1,0 +1,12 @@
+---
+- name: restart monit
+  service: name=monit state=restarted enabled=yes
+
+- name: restart syslog-ng
+  service: name=syslog-ng state=restarted enabled=yes
+
+- name: restart iptables-services
+  service: name=iptables state=restarted enabled=yes
+
+- name: restart snmpd
+  service: name=snmpd state=restarted enabled=yes

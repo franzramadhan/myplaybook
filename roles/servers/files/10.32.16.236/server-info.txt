@@ -1,0 +1,264 @@
+This is information for host: 10.32.16.236
+
+Host information: 
+1. Hostname : insana-old
+2. Network Configuration:
+# Broadcom Corporation NetXtreme BCM5721 Gigabit Ethernet PCI Express
+DEVICE=eth0
+BROADCAST=10.32.16.255
+#HWADDR=00:1c:c4:e3:59:de
+IPADDR=10.32.16.236
+NETMASK=255.255.255.0
+NETWORK=10.32.16.0
+ONBOOT=yes
+GATEWAY=10.32.16.254
+TYPE=Ethernet
+# Broadcom Corporation NetXtreme BCM5721 Gigabit Ethernet PCI Express
+DEVICE=eth0:0
+BROADCAST=10.32.16.255
+IPADDR=10.32.16.239
+NETMASK=255.255.255.0
+NETWORK=10.32.16.0
+TYPE=Ethernet
+GATEWAY=10.32.16.254
+ONBOOT=no
+# Broadcom Corporation NetXtreme BCM5721 Gigabit Ethernet PCI Express
+DEVICE=eth0:1
+BROADCAST=10.32.16.255
+IPADDR=10.32.16.22
+NETMASK=255.255.255.0
+NETWORK=10.32.16.0
+TYPE=Ethernet
+GATEWAY=10.32.16.254
+# Broadcom Corporation NetXtreme BCM5721 Gigabit Ethernet PCI Express
+DEVICE=eth1:0
+BROADCAST=10.32.16.255
+IPADDR=10.32.16.239
+NETMASK=255.255.255.0
+NETWORK=10.32.16.0
+TYPE=Ethernet
+GATEWAY=10.32.16.254
+# Broadcom Corporation NetXtreme BCM5721 Gigabit Ethernet PCI Express
+DEVICE=eth1:1
+BROADCAST=10.32.16.255
+IPADDR=10.32.16.22
+NETMASK=255.255.255.0
+NETWORK=10.32.16.0
+TYPE=Ethernet
+GATEWAY=10.32.16.254
+3. DNS Information: 
+- nameservers: 10.32.16.237
+
+Users and Groups Information:
+1. Non system users:
+tinydns
+dnslog
+dnscache
+mysql
+syncdns
+proxy
+2. Non system groups:
+tinydns
+dnslog
+dnscache
+mysql
+syncdns
+proxy
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:225               0.0.0.0:*                   LISTEN      2487/stunnel        
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      2268/snmpd          
+tcp        0      0 10.32.16.236:53             0.0.0.0:*                   LISTEN      28692/dnscache      
+tcp        0      0 10.32.16.22:3128            0.0.0.0:*                   LISTEN      3196/squid          
+tcp        0      0 127.0.0.1:125               0.0.0.0:*                   LISTEN      2487/stunnel        
+tcp        0      0 :::22                       :::*                        LISTEN      2286/sshd           
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               2268/snmpd          
+udp        0      0 10.32.16.236:53             0.0.0.0:*                               28692/dnscache      
+udp        0      0 10.32.16.239:53             0.0.0.0:*                               28690/tinydns       
+udp        0      0 10.32.16.22:123             0.0.0.0:*                               2349/ntpd           
+udp        0      0 10.32.16.239:123            0.0.0.0:*                               2349/ntpd           
+udp        0      0 10.32.16.236:123            0.0.0.0:*                               2349/ntpd           
+udp        0      0 127.0.0.1:123               0.0.0.0:*                               2349/ntpd           
+udp        0      0 0.0.0.0:123                 0.0.0.0:*                               2349/ntpd           
+udp        0      0 ::1:123                     :::*                                    2349/ntpd           
+udp        0      0 :::123                      :::*                                    2349/ntpd           
+2. Runlevel 3:
+
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda7             4.8G  1.4G  3.2G  30% /
+/dev/sda1             145M   15M  123M  11% /boot
+/dev/sda5              15G  417M   14G   4% /data
+tmpfs                 252M     0  252M   0% /dev/shm
+/dev/sda10             80G   70G  6.6G  92% /home
+/dev/sda8             1.9G   36M  1.8G   2% /tmp
+/dev/sda3              15G  4.5G  9.0G  34% /usr
+/dev/sda2              15G   11G  3.4G  75% /var
+/dev/sda6              15G   12G  2.1G  85% /www
+2. List Block Devices:
+
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           ctstate RELATED,ESTABLISHED 
+2    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+3    ACCEPT     tcp  --  192.168.3.1          0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+4    ACCEPT     tcp  -- !10.32.0.0/16         0.0.0.0/0           tcp spt:21 ctstate NEW,RELATED,ESTABLISHED 
+5    ACCEPT     tcp  -- !10.32.0.0/16         0.0.0.0/0           tcp spt:20 ctstate NEW,RELATED,ESTABLISHED 
+6    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+8    ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp state NEW,ESTABLISHED 
+10   ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+11   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:80 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:443 state NEW,ESTABLISHED 
+13   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:3128 state NEW,ESTABLISHED 
+14   ACCEPT     tcp  --  192.168.3.0/24       0.0.0.0/0           tcp dpt:3128 state NEW,ESTABLISHED 
+15   ACCEPT     udp  --  10.32.0.0/16         0.0.0.0/0           udp dpt:123 state NEW,ESTABLISHED 
+16   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:123 state NEW,ESTABLISHED 
+17   ACCEPT     udp  --  192.168.3.0/24       0.0.0.0/0           udp dpt:53 state NEW,ESTABLISHED 
+18   ACCEPT     udp  --  10.32.0.0/16         0.0.0.0/0           udp dpt:53 state NEW,ESTABLISHED 
+19   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:53 state NEW,ESTABLISHED 
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           ctstate RELATED,ESTABLISHED 
+2    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           ctstate RELATED,ESTABLISHED 
+3    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+4    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.241        tcp dpt:389 state NEW,ESTABLISHED 
+5    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.241        tcp dpt:636 state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.241        tcp dpt:80 state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.241        tcp dpt:443 state NEW,ESTABLISHED 
+8    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           udp dpt:53 state NEW,ESTABLISHED 
+9    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           udp dpt:161 state NEW,ESTABLISHED 
+10   ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           udp dpt:123 
+11   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:23 state NEW,ESTABLISHED 
+13   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:80 state NEW,ESTABLISHED 
+14   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:443 state NEW,ESTABLISHED 
+15   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:21 state NEW,ESTABLISHED 
+16   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:20 state NEW,ESTABLISHED 
+17   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:5050 state NEW,ESTABLISHED 
+18   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp spts:1024:65535 dpts:1024:65535 state RELATED,ESTABLISHED 
+19   ACCEPT     tcp  --  10.32.0.0/16         10.32.10.0/24       tcp dpt:8080 state NEW,ESTABLISHED 
+20   ACCEPT     tcp  --  10.32.0.0/16         10.32.10.0/24       tcp dpt:8443 state NEW,ESTABLISHED 
+21   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.89         tcp dpt:8080 state NEW,ESTABLISHED 
+22   ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+
+Chain LOGGING (0 references)
+num  target     prot opt source               destination         
+
+Syslog-ng:
+1. Information:
+
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+10 0 * * *	/usr/sbin/ntpdate -s -b -p 8 -v `cat /etc/ntp/step-tickers`
+*/5 * * * *	/usr/local/bin/svc -t /service/tinydns /service/dnscache 1> /dev/null 2> /dev/null
+40 * * * *	/var/www/html/fetchnews/slashdot-grab 1>/dev/null 2>/dev/null
+*/3 * * * *	cd /var/www/html/plot/ && sh progress.sh 2> /dev/null 1> /dev/null
+0 0 * * *	rm -rf /var/www/html/plot/gab-progress2
+10 0 * * *	cd /var/www/html/; wget -nH -r -N http://10.32.100.11/Email/index.html 1> /dev/null 2> /dev/null
+0 0 * * *       rsync -ur -e ssh -v /var/www/html/dicky backupscp@10.32.100.25:/backup/internal/
+0 0 * * *       rsync -ur -e ssh -v /var/lib/mysql backupscp@10.32.100.25:/backup/internal/
+0 0 * * *       /usr/bin/yum -y update
+0 0 * * *       rsync -ulr -e ssh /etc -ulr -e ssh /home/ftp/pub root@10.32.100.25:/backup/internal/
+0 0 * * *       rsync -ulr -e ssh /var/lib/mysql root@10.32.100.25:/backup/internal/
+0 0 * * *       rsync -ulr -e ssh /var/www/html/dicky root@10.32.100.25:/backup/internal/
+0 0 * * *       rsync -ulr -e ssh /var/www/html/logbook root@10.32.100.25:/backup/internal/
+0 0 * * *       rsync -ulr -e ssh /var/www/html/plot root@10.32.100.25:/backup/internal/
+0 0 * * *       rsync -ulr -e ssh /var/www/html/sms root@10.32.100.25:/backup/internal/
+0 0 * * *       rsync -ulr -e ssh /var/www/html/dicky/irma/ebooks root@10.32.100.25:/backup/internal/
+0 0 * * *       rsync -ulr -e ssh /var/www/html/fetchnews root@10.32.100.25:/backup/internal/
+0 0 * * *       rsync -ulr -e ssh /home/ftp/pub root@10.32.100.25:/backup/internal/
+0 0 * * *       rsync -ulr -e ssh /var/lib/mysql root@10.32.100.25:/backup/internal/
+0 8 * * *       /root/script/api/daily_api_status.sh
+0 1 * * *       /usr/local/script/stat_brastel/bin/stat_brastel.sh daily
+10 0 1 * *      /usr/local/script/stat_ahooly/bin/stat_ahooly.sh monthly
+0 11 * * *	/usr/local/bin/squid -k reconfigure
+0 9 * * *	/usr/local/bin/squid -k reconfigure
+0 16 * * *	/backupserver/backupmkt/backup.sh
+0 0 * * * 	/usr/local/script/repo-update/bin/update-centos.sh >> /usr/local/script/repo-update/var/log/centos-repo.log 2>&1
+0 3 * * * 5 /usr/bin/rsync --update --progress --bwlimit=30 -ravt rsync://ftp.swin.edu.au/centos/5.8/updates/x86_64/ /home/yum/Centos/5.8/updates
+*/5 * * * *	/etc/snmp/local-snmp-cronjob > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat > /dev/null 2>&1
+2. Sudoers: 
+Cmnd_Alias NETWORKING = /sbin/route, /sbin/ifconfig, /bin/ping, /sbin/dhclient, /usr/bin/net, /sbin/iptables, /usr/bin/rfcomm, /usr/bin/wvdial, /sbin/iwconfig, /sbin/mii-tool
+Cmnd_Alias SOFTWARE = /bin/rpm, /usr/bin/up2date, /usr/bin/yum
+Cmnd_Alias SERVICES = /sbin/service, /sbin/chkconfig
+Cmnd_Alias LOCATE = /usr/sbin/updatedb
+Cmnd_Alias STORAGE = /sbin/fdisk, /sbin/sfdisk, /sbin/parted, /sbin/partprobe, /bin/mount, /bin/umount
+Cmnd_Alias DELEGATING = /usr/sbin/visudo, /bin/chown, /bin/chmod, /bin/chgrp 
+Cmnd_Alias PROCESSES = /bin/nice, /bin/kill, /usr/bin/kill, /usr/bin/killall
+Cmnd_Alias DRIVERS = /sbin/modprobe
+Cmnd_Alias COMMAND_OPS = /usr/bin/pktstat, /bin/cat, /usr/bin/less, /usr/bin/tail
+Defaults    !requiretty
+Defaults    env_reset
+Defaults    env_keep = "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR \
+                        LS_COLORS MAIL PS1 PS2 QTDIR USERNAME \
+                        LANG LC_ADDRESS LC_CTYPE LC_COLLATE LC_IDENTIFICATION \
+                        LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC \
+                        LC_PAPER LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS \
+                        _XKB_CHARSET XAUTHORITY"
+root	ALL=(ALL) 	ALL
+ops	ALL=COMMAND_OPS
+%wheel	ALL=(ALL)	ALL
+User_Alias ADMINS = ops,senops,app
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias   RDIFF = /usr/bin/rdiff
+Cmnd_Alias   RDIFF_BACKUP = /usr/bin/rdiff-backup
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/du ,\
+                        /usr/bin/monit status ,\
+                        /bin/ls
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /usr/bin/monit ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias MONIT = /etc/init.d/monit stop ,\
+                   /sbin/service monit stop ,\
+                   /etc/init.d/monit restart
+Cmnd_Alias KILL = /bin/kill
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:RSYNC
+ADMINS ALL = NOPASSWD:RDIFF
+ADMINS ALL = NOPASSWD:RDIFF_BACKUP
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+ADMINS ALL = (app) KILL
+ADMINS ALL = (apache) KILL
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC, !MONIT
+3. Extended sudoers:

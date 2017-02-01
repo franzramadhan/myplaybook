@@ -1,0 +1,13 @@
+---
+required_package:
+  - "apt-transport-https"
+  - "ca-certificates"
+  - "python-pip"
+
+remove_package:
+  - "lxc-docker"
+  - "docker.io"
+
+dockers:
+  - "docker"
+  - "docker-engine"

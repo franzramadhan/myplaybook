@@ -1,0 +1,15 @@
+---
+- name: Add datastax repository
+  template: src=datastax.repo.j2 dest=/etc/yum.repos.d/cassandra.repo owner=root group=root mode=0644
+
+- name: Install cassandra dependencies.
+  yum: name={{ item }}  state=installed
+  with_items:  "{{ cassandra.dependencies }}"
+
+- name: Install cassandra
+  yum: name={{ item }} state=installed update_cache=yes
+  environment: "{{ proxy_env }}"
+  with_items: 
+    - cassandra30
+    - cassandra30-tools
+  ignore_errors: yes

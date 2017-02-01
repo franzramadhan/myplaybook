@@ -1,0 +1,57 @@
+This is information for host: 10.32.9.13
+
+CPU Information: 
+1. Name :  Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+2. Cores: 2
+3. Architecture: x86_64
+
+Memory Information:
+1. Total Size: 7676 MB
+
+Hardisk:
+1. Size: 465.76 GB
+2. Model: ST500DM002-1BD14
+3. Partition:
+Filesystem                  Size  Used Avail Use% Mounted on
+udev                        3.8G  4.0K  3.8G   1% /dev
+tmpfs                       768M  1.3M  767M   1% /run
+/dev/sda8                    46G  7.0G   37G  16% /
+none                        4.0K     0  4.0K   0% /sys/fs/cgroup
+none                        5.0M     0  5.0M   0% /run/lock
+none                        3.8G  372K  3.8G   1% /run/shm
+none                        100M   40K  100M   1% /run/user
+/dev/sda5                   945M  208M  673M  24% /boot
+/dev/sda6                    19G   45M   18G   1% /tmp
+/dev/sda10                  176G   80G   87G  49% /vm
+/dev/sda7                    28G  7.6G   19G  29% /usr
+/dev/sda9                   184G  173G  996M 100% /home
+//10.32.16.241/ade.ignatio  917G  712G  159G  82% /backup
+
+IP and Hostname:
+1. IP: 10.32.9.13
+2. Hostname: ade-telco
+
+NTP, Sudoers, and Active Users:
+1. NTP: server 10.32.16.238
+2. Sudoers: 
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+root	ALL=(ALL:ALL) ALL
+%admin ALL=(ALL) ALL
+%sudo	ALL=(ALL:ALL) ALL
+taufiq taufiq-telco-java=/usr/bin/npm i -g nodemon ,/bin/su - postgres ,/usr/bin/psql i -u postgres
+3. Active Users: 
+taufiq
+mydb_admin
+mydb_admin2
+ade
+4. Active Groups:
+taufiq
+mydb_admin
+mydb_admin2
+ade
+
+USB Access Restriction: 
+blacklist usb-storage
+blacklist uas

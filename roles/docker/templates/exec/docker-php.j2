@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo docker run -i --rm --name php -p 8001:80 -p 8443:443 -v /var/www:/www/web {{ docker_registry }}:{{ registry_port }}/centos

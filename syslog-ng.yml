@@ -1,0 +1,6 @@
+---
+- hosts: inside,intranet,dmz
+  remote_user: senops
+  become: true
+  roles:
+    - syslog-ng

@@ -1,0 +1,46 @@
+---
+standard:
+    install_packages:
+        - "net-tools"
+        - "vim"
+        - "rsync"
+        - "telnet"
+        - "iptables"
+        - "iptables-services"
+        - "net-snmp"
+        - "net-snmp-perl"
+        - "syslog-ng"
+        - "monit"
+        - "sysstat"
+        - "rdiff-backup"
+        - "libselinux-python"
+        - "syslog-ng-libdbi"
+    disable_packages:
+        - "firewalld"
+        - "rsyslog"
+    services:
+        - "iptables"
+        - "snmpd"
+        - "monit"
+
+ports:
+    cassandra:
+        internode: 7000
+        client_port: 9042
+        thrift_port: 9160
+    monit: 2812
+    snmpd: 161
+    syslog:
+        os: 11
+    ssh: 22
+
+ip:
+    syslog-ng: syslog.1rstwap.com
+
+config:
+    monit:
+        certificate: /var/cacert
+        mail_server: 10.32.10.25
+    snmpd:
+        sysmon_home: /home/sysmon
+        data: /var/local/snmp

@@ -1,0 +1,61 @@
+---
+- name: Create sysmon group
+  group: name=sysmon state=present
+
+- name: Create sysmon user
+  user: 
+    name: sysmon
+    groups: sysmon
+    system: yes
+
+- name: Change ownership of sysmon home directory to group sysmon
+  file: path={{ config.snmpd.sysmon_home }} state=directory owner=sysmon group=sysmon recurse=yes
+
+- name: Create .ssh directory for sysmon user
+  file: path={{ config.snmpd.sysmon_home }}/.ssh state=directory owner=sysmon group=sysmon mode=0700
+
+- name: Copy the sysmon authorized key to home directory
+  copy: src=id_dsa.pub dest={{ config.snmpd.sysmon_home }}/.ssh/authorized_keys owner=sysmon group=sysmon mode=0600
+
+- name: Create /var/local/snmp to store smartd,iostat,vmstat, and procstat data
+  file: path={{ config.snmpd.data }} state=directory
+
+- name: Enable smartd monitoring for non-vm and non hw-raid
+  replace: dest=/etc/snmp/snmpd.conf regexp="#extend smart" replace="extend smart"
+  when:
+    ansible_virtualization_role == "NA" and ansible_virtualization_type == "NA"
+
+- name: Add the snmpd cronjob
+  cron: name={{ item.name }} minute={{ item.minutes }} job={{ item.command }}
+  with_items: 
+    - { name: 'vmstat', minutes: '*/10', command: '/etc/snmp/vmstat-cron /var/local/snmp/vmstat' }
+    - { name: 'iostat', minutes: '*/10', command: '/etc/snmp/iostat-cron /var/local/snmp/iostat' }
+
+- name: Add the snmpd for smartd cronjob
+  cron: name={{ item.name }} minute={{ item.minutes }} job={{ item.command }}
+  with_items: 
+    - { name: 'local-snmp-cronjob', minutes: '*/5', command: '/etc/snmp/local-snmp-cronjob > /dev/null 2>&1' }
+  when:
+    ansible_virtualization_role == "NA" and ansible_virtualization_type == "NA" 
+
+- name: Put the net-snmp plugins to /etc/snmp
+  copy: src={{ item }} dest=/etc/snmp/ owner=root group=root mode=0775
+  with_fileglob:
+    - ../files/snmp/*.pl
+    - ../files/snmp/*-cron
+    - ../files/snmp/*-stats
+    - ../files/snmp/*-cronjob
+    - ../files/snmp/*.sh
+    - ../files/snmp/*-generic
+
+- name: Tune snmpd config to reduce logging level
+  lineinfile: dest=/usr/lib/systemd/system/snmpd.service regexp="^Environment=OPTIONS=" line="Environment=OPTIONS="-LS0-4d""
+  when:
+    ansible_distribution == "CentOS" and ansible_distribution_major_version == "7"
+
+- name: Put the net-snmp configs to /etc/snmp
+  copy: src={{ item }} dest=/etc/snmp/ owner=root group=root
+  with_fileglob:
+    - ../files/snmp/*.conf
+  notify:
+    - restart snmpd

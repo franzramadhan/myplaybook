@@ -1,0 +1,5 @@
+0 23 * * *	/bin/bash /usr/local/script/client-arch/bin/client-arch
+#*/5 * * * *	/etc/snmp/local-snmp-cronjob > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat &
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat &
+

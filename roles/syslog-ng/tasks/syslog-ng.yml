@@ -1,0 +1,22 @@
+---
+
+- name: make sure additional repository is already in place
+  copy:
+    src: additional.repo
+    dest: /etc/yum.repos.d/additional.repo
+    mode: 0644
+    owner: root
+    group: root
+
+- name: update syslog-ng to the latest
+  yum: name=syslog-ng state=latest
+
+- name: copy the additional syslog-ng configuration
+  template:
+    src: syslog-ng.conf.j2
+    dest: /etc/syslog-ng/syslog-ng.conf
+    mode: 0644
+    owner: root
+    group: root
+  notify:
+    - reload syslog-ng

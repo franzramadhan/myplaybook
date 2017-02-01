@@ -1,0 +1,298 @@
+This is information for host: 10.32.10.78
+
+Host information: 
+1. Hostname : mbng.1rstwap.com
+2. Network Configuration:
+DEVICE=eth0
+BOOTPROTO=none
+GATEWAY=10.32.10.5
+IPADDR=10.32.10.78
+IPV6INIT=yes
+IPV6_AUTOCONF="yes"
+NETMASK=255.255.255.0
+NM_CONTROLLED=no
+ONBOOT=yes
+TYPE=Ethernet
+USERCTL=no
+DEVICE=eth0:1
+BOOTPROTO=none
+IPADDR=10.32.10.79
+ONBOOT=yes
+NETMASK=255.255.255.0
+NM_CONTROLLED=no
+TYPE=Ethernet
+IPV6INIT=no
+USERCTL=no
+3. DNS Information: 
+- nameservers: 10.32.10.52
+
+Users and Groups Information:
+1. Non system users:
+senops
+ops
+paid
+app
+sysmon
+archive
+2. Non system groups:
+ops
+paid
+firstops
+app
+sysmon
+senops
+archive
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:4447                0.0.0.0:*                   LISTEN      3177/java           
+tcp        0      0 0.0.0.0:5445                0.0.0.0:*                   LISTEN      3177/java           
+tcp        0      0 0.0.0.0:9990                0.0.0.0:*                   LISTEN      3177/java           
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1505/snmpd          
+tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      1627/mysqld         
+tcp        0      0 127.0.0.1:61613             0.0.0.0:*                   LISTEN      3177/java           
+tcp        0      0 0.0.0.0:5455                0.0.0.0:*                   LISTEN      3177/java           
+tcp        0      0 0.0.0.0:9999                0.0.0.0:*                   LISTEN      3177/java           
+tcp        0      0 0.0.0.0:8080                0.0.0.0:*                   LISTEN      3177/java           
+tcp        0      0 127.0.0.1:80                0.0.0.0:*                   LISTEN      3084/httpd          
+tcp        0      0 10.32.10.78:80              0.0.0.0:*                   LISTEN      3084/httpd          
+tcp        0      0 10.32.10.78:22              0.0.0.0:*                   LISTEN      1523/sshd           
+tcp        0      0 0.0.0.0:8443                0.0.0.0:*                   LISTEN      3177/java           
+tcp        0      0 10.32.10.78:443             0.0.0.0:*                   LISTEN      3084/httpd          
+tcp        0      0 10.32.10.78:2812            0.0.0.0:*                   LISTEN      7090/monit          
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1505/snmpd          
+2. Runlevel 3:
+abrt-ccpp      	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+abrtd          	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+acpid          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+atd            	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+autofs         	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+certmonger     	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+cpuspeed       	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+haldaemon      	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+httpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ip6tables      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+irqbalance     	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+jboss          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+jexec          	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+kdump          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+mcelogd        	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+mdmonitor      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+messagebus     	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+mysql          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/vg_vm-lv_root
+                      8.3G  3.1G  4.8G  40% /
+tmpfs                 1.9G     0  1.9G   0% /dev/shm
+/dev/vda1             477M  129M  323M  29% /boot
+/dev/mapper/vg_vm-lv_var
+                      9.3G  977M  7.9G  11% /var
+/dev/mapper/vg_data-lv_app
+                      9.8G  2.0G  7.3G  21% /app
+/dev/mapper/vg_data-lv_www
+                      2.9G  134M  2.7G   5% /www
+/dev/mapper/vg_data-lv_arch
+                      4.8G  3.4G  1.3G  74% /archive
+2. List Block Devices:
+NAME                       MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sr0                         11:0    1 1024M  0 rom  
+vda                        252:0    0   20G  0 disk 
+├─vda1                     252:1    0  500M  0 part /boot
+├─vda2                     252:2    0  9.5G  0 part 
+│ ├─vg_vm-lv_root (dm-0)   253:0    0  8.5G  0 lvm  /
+│ └─vg_vm-lv_swap (dm-1)   253:1    0    1G  0 lvm  [SWAP]
+└─vda3                     252:3    0   10G  0 part 
+  └─vg_vm-lv_var (dm-5)    253:5    0  9.5G  0 lvm  /var
+vdb                        252:16   0   20G  0 disk 
+└─vdb1                     252:17   0   20G  0 part 
+  ├─vg_data-lv_app (dm-2)  253:2    0   10G  0 lvm  /app
+  ├─vg_data-lv_www (dm-3)  253:3    0    3G  0 lvm  /www
+  └─vg_data-lv_arch (dm-4) 253:4    0    5G  0 lvm  /archive
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+3    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           icmp type 11 
+4    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+5    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  10.32.10.75          0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+8    ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+10   ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW,ESTABLISHED 
+11   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:2812 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:443 
+13   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:80 
+14   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:8443 
+15   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:8080 
+16   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+3    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+4    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+5    ACCEPT     udp  --  0.0.0.0/0            10.32.10.55         multiport dports 53,123 state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  0.0.0.0/0            10.32.15.190        multiport dports 80,443 state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  0.0.0.0/0            103.21.225.227      multiport dports 80,443 state NEW,ESTABLISHED 
+8    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.22         tcp dpt:3128 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.7          tcp dpt:3306 
+10   ACCEPT     udp  --  0.0.0.0/0            10.32.10.53         udp dpt:53 state NEW 
+11   ACCEPT     udp  --  0.0.0.0/0            10.32.10.52         udp dpt:53 state NEW 
+12   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.89         tcp dpt:8080 
+13   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.89         tcp dpt:8443 
+14   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:25 
+15   ACCEPT     tcp  --  0.0.0.0/0            117.102.85.67       tcp dpt:80 
+16   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        tcp dpt:11 
+17   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        multiport dports 20401:20417 
+18   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain LOGGING (2 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Incoming Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+3    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Outgoing Dropped: ' 
+4    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Table: nat
+Chain PREROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+1    DNAT       tcp  --  0.0.0.0/0            10.32.10.79         tcp dpt:443 to:10.32.10.79:8443 
+2    DNAT       tcp  --  0.0.0.0/0            127.0.0.1           tcp dpt:80 to:10.32.10.79:8443 
+3    DNAT       tcp  --  0.0.0.0/0            10.32.10.79         tcp dpt:80 to:10.32.10.79:8080 
+
+Chain POSTROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    REDIRECT   tcp  --  0.0.0.0/0            10.32.10.79         tcp dpt:443 redir ports 8443 
+2    REDIRECT   tcp  --  0.0.0.0/0            127.0.0.1           tcp dpt:443 redir ports 8443 
+3    REDIRECT   tcp  --  0.0.0.0/0            10.32.10.79         tcp dpt:80 redir ports 8080 
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.7.2
+Installer-Version: 3.7.2
+Revision: 
+Compile-Date: Nov  5 2015 11:34:20
+Available-Modules: basicfuncs,pseudofile,afstomp,cryptofuncs,afsocket,graphite,linux-kmsg-format,kvformat,afamqp,syslogformat,json-plugin,dbparser,afprog,confgen,afsql,system-source,affile,afuser,csvparser
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+MAILTO=''
+*/3 * * * *	/usr/bin/perl /usr/local/awstats/wwwroot/cgi-bin/awstats.pl -update -config=mbng.1rstwap.com
+*/2 * * * *	/usr/bin/php -q /www/web/mbng/modules/broadcast/backgroundSendMessage.php
+*/15 * * * *	/usr/bin/php -q /www/web/mbng/modules/broadcast/getStatusMessage.php
+*/15 * * * *	/usr/bin/php -q /www/web/mbng/modules/hotline/getStatusMessage.php
+*/2 * * * *	/usr/bin/php -q /www/web/mbng/ConcateMessage.php 2>&1 >> /www/web/mbng/logs/ConcateMessage.log
+*/5 * * * *	/usr/bin/php -q /www/web/mbng/modules/broadcast/generateBirthdayMessage.php
+*/5 * * * *	/usr/bin/php -q /www/web/mbng/modules/broadcast/getStatusMessageOld.php
+*/2 * * * *	/usr/sbin/ntpdate -b 10.32.10.53
+0 23 * * *	/usr/local/script/client-arch/bin/client-arch
+0 23 * * *	/usr/local/script/client-arch-incremental/bin/client-arch-incremental
+*/2 * * * *	/usr/local/script/mbnglockcleaner/bin/backgroundSendMessageCleaner > /dev/null 2>&1
+*/15 * * * *	/usr/local/script/mbnglockcleaner/bin/getStatusMessageCleaner > /dev/null 2>&1
+*5 * * * *	/usr/local/script/mbnglockcleaner/bin/getStatusMessageOldCleaner > /dev/null 2>&1
+00 0 * * *	/usr/sbin/logrotate -v /etc/logrotate.conf
+*/5 * * * *	/etc/snmp/local-snmp-cronjob > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat
+*/5 * * * *     /usr/local/script/svcmon-agent/bin/genstat-bulk > /dev/null 2>&1
+*/10 * * * *	/usr/local/script/aca/reset-invalid-counter.sh
+0 */1 * * *	/usr/bin/truncate -s 0 /www/web/logs/status_message_old.log
+0 0 * * *	/usr/local/script/appconf/appconf > /dev/null 2>&1
+0 0 * * * 	/usr/local/script/applogscleaner/applogscleaner > /dev/null 2>&1
+0 1 * * *    /usr/local/awstats/wwwroot/cgi-bin/awstats.pl -update -config=www.mbng.1rstwap.com
+0 1 * * *    /usr/local/awstatsjboss/wwwroot/cgi-bin/awstats.pl -update -config=jboss.mbng.1rstwap.com
+2. Sudoers: 
+Defaults    requiretty
+Defaults   !visiblepw
+Defaults    env_reset,timestamp_timeout=7200
+Defaults    env_keep = "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR \
+                        LS_COLORS MAIL PS1 PS2 QTDIR USERNAME \
+                        LANG LC_ADDRESS LC_CTYPE LC_COLLATE LC_IDENTIFICATION \
+                        LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC \
+                        LC_PAPER LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS \
+                        _XKB_CHARSET XAUTHORITY"
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+3. Extended sudoers:
+Defaults    !requiretty
+Defaults    env_reset,timestamp_timeout=7200
+User_Alias ADMINS = ops,senops,app
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias   RDIFF = /usr/bin/rdiff
+Cmnd_Alias   RDIFF_BACKUP = /usr/bin/rdiff-backup
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/du ,\
+                        /usr/bin/monit status ,\
+                        /bin/ls
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /usr/bin/monit ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias MONIT = /etc/init.d/monit stop ,\
+                   /sbin/service monit stop ,\
+                   /etc/init.d/monit restart
+Cmnd_Alias KILL = /bin/kill
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:RSYNC
+ADMINS ALL = NOPASSWD:RDIFF
+ADMINS ALL = NOPASSWD:RDIFF_BACKUP
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+ADMINS ALL = (app) KILL
+ADMINS ALL = (apache) KILL
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC, !MONIT

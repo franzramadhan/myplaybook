@@ -1,0 +1,2 @@
+█ [ /home/frans/scripts/ansible/playbooks/roles/workstation ] echo $PATH
+/home/frans/.rvm/gems/ruby-2.3.1/bin:/home/frans/.rvm/gems/ruby-2.3.1@global/bin:/home/frans/.rvm/rubies/ruby-2.3.1/bin:/home/frans/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/java//bin:/home/frans/.rvm/bin

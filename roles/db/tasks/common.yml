@@ -1,0 +1,38 @@
+---
+- name: Put additional repo to the server
+  copy: src=additional.repo dest=/etc/yum.repos.d/additional.repo owner=root group=root mode=0644
+
+- name: Disable the unnecessary packages
+  yum: name={{ item }}  state=removed 
+  with_items:  "{{ standard.disable_packages }}"
+
+- name: Disable SELinux
+  selinux: state=disabled
+
+- name: Update all packages on Centos
+  yum: name=* state=latest update_cache=yes
+
+- name: Install the default packages for Centos 7
+  yum: name={{ item }}  state=latest update_cache=yes
+  with_items:  "{{ standard.install_packages }}"
+
+- name: Create default app group
+  group: name=app state=present
+
+- name: Create default app user
+  user: 
+    name: app 
+    shell: /bin/bash 
+    groups: app,wheel
+    home: /app
+    system: yes
+    password: $6$rounds=656000$5ullYEBLupG6OSq2$YHtADDWhzlxubaIXZDpq4IO2qMi4kp01JF3VbizrezYg0vzy8luRf.OI5dDiGUK8arWBWOVzREIjk7wkVEKTx.
+
+- name: Change ownership of app home directory to group app
+  file: path=/app state=directory owner=app group=app recurse=yes
+
+- name: Configure sudoers
+  copy: src=1rstwap dest=/etc/sudoers.d/1rstwap owner=root group=root mode=0440
+
+- name: Disable MAIL from cron
+  cron: name=MAILTO env=yes value=""

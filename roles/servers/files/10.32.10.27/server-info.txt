@@ -1,0 +1,198 @@
+This is information for host: 10.32.10.26
+
+Host information: 
+1. Hostname : tarumanegara.1rstwap.com
+2. Network Configuration:
+# Broadcom Corporation NetXtreme BCM5722 Gigabit Ethernet PCI Express
+DEVICE=eth0
+BOOTPROTO=static
+HWADDR=00:21:5A:DD:BA:45
+IPADDR=10.32.10.26
+NETMASK=255.255.255.0
+GATEWAY=10.32.10.5
+ONBOOT=yes
+# Broadcom Corporation NetXtreme BCM5722 Gigabit Ethernet PCI Express
+DEVICE=eth0:0
+BOOTPROTO=static
+IPADDR=10.32.10.27
+NETMASK=255.255.255.0
+ONBOOT=yes
+3. DNS Information: 
+- nameservers: 10.32.10.54
+
+Users and Groups Information:
+1. Non system users:
+ops
+senops
+archive
+sysmon
+2. Non system groups:
+firstops
+archive
+sysmon
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      2487/snmpd          
+tcp        0      0 10.32.10.26:43              0.0.0.0:*                   LISTEN      2689/stunnel        
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      2504/sshd           
+tcp        0      0 0.0.0.0:2812                0.0.0.0:*                   LISTEN      29626/monit         
+tcp        0      0 :::80                       :::*                        LISTEN      2344/httpd          
+tcp        0      0 :::22                       :::*                        LISTEN      2504/sshd           
+tcp        0      0 :::443                      :::*                        LISTEN      2344/httpd          
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               2487/snmpd          
+2. Runlevel 3:
+
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda10            6.6G  667M  5.6G  11% /
+/dev/sda9             1.9G  257M  1.6G  14% /home
+/dev/sda8             4.8G  139M  4.4G   4% /tmp
+/dev/sda7             9.5G  2.1G  7.0G  23% /usr
+/dev/sda6              19G  4.9G   14G  28% /var
+/dev/sda5              19G  6.3G   12G  35% /archive
+/dev/sda2              76G  4.0G   68G   6% /www
+/dev/sda1             494M   29M  440M   7% /boot
+tmpfs                 1.9G     0  1.9G   0% /dev/shm
+2. List Block Devices:
+
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+3    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+4    ACCEPT     tcp  --  10.32.16.64/26       0.0.0.0/0           tcp dpt:22 state NEW 
+5    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW 
+6    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW 
+7    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW 
+8    ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           tcp dpt:22 state NEW 
+9    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW 
+10   ACCEPT     tcp  --  10.32.10.32          0.0.0.0/0           tcp dpt:22 state NEW 
+11   ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           limit: avg 2/min burst 5 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:2812 state NEW 
+13   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:80 state NEW 
+14   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:443 state NEW 
+15   ACCEPT     udp  --  10.32.16.180         0.0.0.0/0           udp dpt:161 state NEW 
+16   ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW 
+17   ACCEPT     tcp  --  10.32.10.32          0.0.0.0/0           tcp dpt:43 state NEW 
+18   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:22 state NEW 
+2    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           state NEW,ESTABLISHED 
+3    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:8080 state NEW 
+4    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:8443 state NEW 
+5    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:80 state NEW 
+6    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:3306 state NEW 
+7    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.7          state NEW 
+8    ACCEPT     tcp  --  0.0.0.0/0            10.32.100.7         state NEW 
+9    ACCEPT     tcp  --  0.0.0.0/0            10.32.100.8         state NEW 
+10   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.200        state NEW 
+11   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.8          state NEW 
+12   ACCEPT     tcp  --  0.0.0.0/0            10.32.15.190        tcp dpt:80 state NEW 
+13   ACCEPT     udp  --  0.0.0.0/0            10.32.10.53         udp dpt:53 state NEW 
+14   ACCEPT     udp  --  0.0.0.0/0            10.32.10.52         udp dpt:53 state NEW 
+15   ACCEPT     udp  --  0.0.0.0/0            10.32.10.53         udp dpt:123 state NEW 
+16   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        tcp dpt:11 state NEW 
+17   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.25        tcp dpt:49777 state NEW 
+18   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:25 state NEW 
+19   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:995 state NEW 
+20   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.10         tcp dpt:110 state NEW 
+21   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.26         tcp dpt:110 state NEW 
+22   ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+23   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+24   ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+
+Chain LOGGING (1 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           LOG flags 0 level 7 prefix `IPTables Packet Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Syslog-ng:
+1. Information:
+
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+*/5 * * * *	/usr/sbin/ntpdate 10.32.10.53
+*/5 * * * *	/etc/snmp/local-snmp-cronjob > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat > /dev/null 2>&1
+*/5 * * * *     /usr/local/script/svcmon-agent/bin/genstat-bulk > /dev/null 2>&1
+*/2 * * * *     /usr/local/script/ccbilocker/bin/ccbilocker 1> /dev/null 2> /dev/null
+*/2 * * * *	/usr/local/script/idnhelpdesklocker/bin/idnhelpdesklocker 1> /dev/null 2> /dev/null
+*/2 * * * *     /usr/local/script/EmailSMSForwarder/bin/EmailSMSForwarder 1> /dev/null 2> /dev/null
+*/5 * * * *	/usr/local/script/thariq/lockcheck/lockcheck.sh
+0 10 * * *	/usr/local/script/ccbi_smsinbound/bin/ccbi_idn_smsinbound_report.sh > /dev/null
+0 23 * * *	/usr/local/script/client-arch/bin/client-arch
+15,30,45,59 * * * *     /usr/bin/lynx --dump "http://10.32.10.26/ccbi/sms2emailConcatMessage.php" 1> /dev/null 2> /dev/null
+15,30,45,59 * * * *     /usr/bin/lynx --dump "http://10.32.10.27/idnhelpdesk/sms2emailConcatMessage.php" 1> /dev/null 2> /dev/null
+15,30,45,59 * * * *	/usr/local/script/thariq/ccbilockdel/bin/run.sh 
+0 * * * *	/usr/bin/perl /var/www/awstats/awstats.pl -config=tarumanegara.1rstwap.com -update
+2. Sudoers: 
+Defaults    !requiretty
+Defaults   !visiblepw
+Defaults    env_reset,timestamp_timeout=7200
+Defaults    env_keep = "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR \
+                        LS_COLORS MAIL PS1 PS2 QTDIR USERNAME \
+                        LANG LC_ADDRESS LC_CTYPE LC_COLLATE LC_IDENTIFICATION \
+                        LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC \
+                        LC_PAPER LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS \
+                        _XKB_CHARSET XAUTHORITY"
+root	ALL=(ALL) 	ALL
+%wheel  ALL=(ALL)       ALL
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC
+User_Alias ADMINS = ops,senops
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/du ,\
+                        /usr/bin/monit status ,\
+                        /bin/ls,\
+			/bin/cp 
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /usr/bin/monit ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias CCBI = /bin/rm /www/logs/idnhelpdesk/ccbi-fetchmail ,\
+                  /bin/rm /www/logs/idnhelpdesk2/ccbi-fetchmail ,\
+                  /bin/rm /www/logs/ccbi/ccbi-fetchmail ,\
+                  /bin/rm /www/logs/ccbi_oos/ccbi-fetchmail ,\
+                  /bin/rm ccbi-fetchmail
+Cmnd_Alias KILL = /bin/kill
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC, CCBI
+ADMINS ALL = (apache) KILL
+3. Extended sudoers:

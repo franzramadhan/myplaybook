@@ -1,0 +1,50 @@
+Defaults    !requiretty
+
+Defaults    env_reset,timestamp_timeout=7200
+
+######### sudoers 1rstwap ##############
+
+User_Alias ADMINS = ops,senops,app
+
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias   RDIFF = /usr/bin/rdiff
+Cmnd_Alias   RDIFF_BACKUP = /usr/bin/rdiff-backup
+
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/du ,\
+                        /usr/bin/monit status ,\
+                        /bin/ls
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /usr/bin/monit ,\
+                        /etc/init.d/syslog-ng
+
+Cmnd_Alias MONIT = /etc/init.d/monit stop ,\
+                   /sbin/service monit stop ,\
+                   /etc/init.d/monit restart
+
+Cmnd_Alias KILL = /bin/kill
+
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:RSYNC
+ADMINS ALL = NOPASSWD:RDIFF
+ADMINS ALL = NOPASSWD:RDIFF_BACKUP
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+
+#Optional for jboss
+ADMINS ALL = (app) KILL
+ADMINS ALL = (apache) KILL
+
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC, !MONIT

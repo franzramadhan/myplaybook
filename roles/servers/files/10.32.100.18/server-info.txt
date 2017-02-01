@@ -1,0 +1,495 @@
+This is information for host: 10.32.100.18
+
+Host information: 
+1. Hostname : arun.1rstwap.com
+2. Network Configuration:
+DEVICE=eth0
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=yes
+BOOTPROTO=static
+IPADDR=10.32.100.18
+NETMASK=255.255.255.0
+DNS1=10.32.16.238
+GATEWAY=10.32.100.1
+ARPCHECK=NO
+3. DNS Information: 
+- nameservers: 10.32.16.238
+
+Users and Groups Information:
+1. Non system users:
+senops
+ops
+samhain
+app
+sysmon
+pollux
+kibana
+git
+2. Non system groups:
+firstops
+samhain
+app
+ops
+sysmon
+pollux
+kibana
+git
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 10.32.100.18:21597          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21565          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21309          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21117          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20413          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21021          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20509          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20317          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20541          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20701          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21598          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21566          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21310          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21118          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20414          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21022          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20510          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20318          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20542          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20702          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21599          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21567          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21311          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21119          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20415          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20511          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20543          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21600          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21568          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21312          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21120          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20416          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20512          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21601          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21569          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21313          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20417          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21602          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21570          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21314          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21603          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21571          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21315          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21604          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21572          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21605          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21573          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21606          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21574          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1522/snmpd          
+tcp        0      0 10.32.100.18:21671          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21607          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21575          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21351          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21608          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21576          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21352          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 0.0.0.0:27017               0.0.0.0:*                   LISTEN      1580/mongod         
+tcp        0      0 10.32.100.18:21609          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21577          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21353          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21610          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21578          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21354          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21611          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21579          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21355          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:11             0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21612          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21580          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21356          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21613          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21581          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21357          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21101          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20301          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21614          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21582          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21358          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21102          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20302          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20526          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21615          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21583          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21551          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21359          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21103          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20303          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20527          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21616          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21584          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21552          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21360          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21104          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20304          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20528          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 0.0.0.0:49777               0.0.0.0:*                   LISTEN      1857/yule           
+tcp        0      0 10.32.100.18:21617          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21585          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21553          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21361          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21105          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20401          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20305          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20529          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21618          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21586          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21554          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21362          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21106          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20402          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20306          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20530          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21619          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21587          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21555          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21107          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20403          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21011          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20307          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20531          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21620          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21588          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21556          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21108          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20404          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21012          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20308          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20532          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21621          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21589          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21557          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21301          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21109          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20405          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21013          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20501          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20309          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20533          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1543/sshd           
+tcp        0      0 10.32.100.18:21590          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21558          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21622          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21302          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21110          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20406          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21014          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20502          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20310          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20534          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21591          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21559          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21623          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21303          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21111          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20407          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21015          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20503          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20151          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20311          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20535          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21592          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21560          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21624          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21304          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21112          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20408          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21016          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20504          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20152          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20312          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20536          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21625          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21593          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21561          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21305          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21113          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20409          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21017          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20505          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20153          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20313          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20537          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21594          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21562          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21306          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21114          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20410          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21018          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20506          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20314          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20538          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:443            0.0.0.0:*                   LISTEN      1554/httpd          
+tcp        0      0 10.32.100.18:21595          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21563          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21307          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21115          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20411          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21019          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20507          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20315          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20539          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:2812           0.0.0.0:*                   LISTEN      1711/monit          
+tcp        0      0 10.32.100.18:21596          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21564          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21308          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21116          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20412          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:21020          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20508          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20316          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 10.32.100.18:20540          0.0.0.0:*                   LISTEN      1446/syslog-ng      
+tcp        0      0 :::80                       :::*                        LISTEN      1554/httpd          
+tcp        0      0 :::22                       :::*                        LISTEN      1543/sshd           
+udp        0      0 10.32.100.18:514            0.0.0.0:*                               1446/syslog-ng      
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1522/snmpd          
+udp        0      0 10.32.100.18:1111           0.0.0.0:*                               1446/syslog-ng      
+2. Runlevel 3:
+atd            	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+atop           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+atopacct       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+httpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ip6tables      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+mdmonitor      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+mongod         	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+supervisord    	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+syslog-ng      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+yule           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/vg_hdd_arun-LogVol_partroot
+                      551G  2.2G  521G   1% /
+tmpfs                 2.9G     0  2.9G   0% /dev/shm
+/dev/sdc1             1.1G  146M  858M  15% /boot
+/dev/mapper/vg_hdd_arun-LogVol_home
+                       52G  2.6G   47G   6% /home
+/dev/mapper/vg_hdd_arun-LogVol_log
+                      2.0T  128G  1.8T   7% /log
+/dev/mapper/vg_hdd_arun-LogVol_app
+                      1.5T  316G  1.1T  23% /app
+/dev/mapper/vg_hdd_arun-LogVol_db
+                      207G   47G  150G  24% /DB_ARCHIVE
+/dev/mapper/vg_hdd_arun-LogVol_tmp
+                       21G  183M   20G   1% /tmp
+/dev/mapper/vg_hdd_arun-LogVol_usr
+                       42G  2.5G   37G   7% /usr
+/dev/mapper/vg_hdd_arun-LogVol_var
+                       42G  4.6G   35G  12% /var
+/dev/mapper/vg_hdd_arun-LogVol_yule
+                      140G   77M  133G   1% /yule
+2. List Block Devices:
+NAME                                   MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+sdb                                      8:16   0   3.7T  0 disk  
+└─sdb1                                   8:17   0   3.7T  0 part  
+  └─md0                                  9:0    0   3.7T  0 raid1 
+    ├─vg_hdd_arun-LogVol_log (dm-6)    253:6    0     2T  0 lvm   /log
+    ├─vg_hdd_arun-LogVol_app (dm-7)    253:7    0   1.5T  0 lvm   /app
+    └─vg_hdd_arun-LogVol_yule (dm-8)   253:8    0 141.9G  0 lvm   /yule
+sda                                      8:0    0   3.7T  0 disk  
+└─sda1                                   8:1    0   3.7T  0 part  
+  └─md0                                  9:0    0   3.7T  0 raid1 
+    ├─vg_hdd_arun-LogVol_log (dm-6)    253:6    0     2T  0 lvm   /log
+    ├─vg_hdd_arun-LogVol_app (dm-7)    253:7    0   1.5T  0 lvm   /app
+    └─vg_hdd_arun-LogVol_yule (dm-8)   253:8    0 141.9G  0 lvm   /yule
+sdc                                      8:32   0 931.5G  0 disk  
+├─sdc1                                   8:33   0   1.1G  0 part  /boot
+├─sdc2                                   8:34   0   4.2G  0 part  [SWAP]
+├─sdc3                                   8:35   0 195.3G  0 part  
+│ ├─vg_hdd_arun-LogVol_var (dm-1)      253:1    0    42G  0 lvm   /var
+│ ├─vg_hdd_arun-LogVol_home (dm-2)     253:2    0  52.4G  0 lvm   /home
+│ ├─vg_hdd_arun-LogVol_usr (dm-3)      253:3    0    42G  0 lvm   /usr
+│ ├─vg_hdd_arun-LogVol_tmp (dm-4)      253:4    0    21G  0 lvm   /tmp
+│ └─vg_hdd_arun-LogVol_db (dm-5)       253:5    0 209.7G  0 lvm   /DB_ARCHIVE
+├─sdc4                                   8:36   0     1K  0 part  
+├─sdc5                                   8:37   0 195.3G  0 part  
+│ └─vg_hdd_arun-LogVol_partroot (dm-0) 253:0    0 559.2G  0 lvm   /
+├─sdc6                                   8:38   0 195.3G  0 part  
+│ └─vg_hdd_arun-LogVol_partroot (dm-0) 253:0    0 559.2G  0 lvm   /
+├─sdc7                                   8:39   0 195.3G  0 part  
+│ ├─vg_hdd_arun-LogVol_partroot (dm-0) 253:0    0 559.2G  0 lvm   /
+│ └─vg_hdd_arun-LogVol_db (dm-5)       253:5    0 209.7G  0 lvm   /DB_ARCHIVE
+└─sdc8                                   8:40   0   145G  0 part  
+  └─vg_hdd_arun-LogVol_db (dm-5)       253:5    0 209.7G  0 lvm   /DB_ARCHIVE
+sr0                                     11:0    1  1024M  0 rom   
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+2    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+3    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+4    ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           state NEW tcp dpt:22 
+5    ACCEPT     tcp  --  10.32.6.84           0.0.0.0/0           state NEW tcp dpt:22 
+6    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           state NEW tcp dpt:8080 
+7    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           state NEW tcp dpt:49777 
+8    ACCEPT     tcp  --  10.32.10.0/24        0.0.0.0/0           state NEW tcp dpt:49777 
+9    ACCEPT     tcp  --  10.32.16.0/24        0.0.0.0/0           state NEW tcp dpt:49777 
+10   ACCEPT     tcp  --  10.32.100.0/24       0.0.0.0/0           state NEW tcp dpt:49777 
+11   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           state NEW tcp dpt:5601 
+12   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           state NEW,ESTABLISHED tcp dpt:9000 
+13   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           state NEW,ESTABLISHED tcp dpt:5050 
+14   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           state NEW tcp dpt:8443 
+15   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           state NEW tcp dpt:80 
+16   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           state NEW tcp dpt:443 
+17   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:11 
+18   ACCEPT     udp  --  10.32.0.0/16         0.0.0.0/0           udp dpt:1111 
+19   ACCEPT     udp  --  10.32.5.0/24         0.0.0.0/0           udp dpt:11111 
+20   ACCEPT     udp  --  10.32.0.0/16         0.0.0.0/0           udp dpt:514 
+21   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           multiport dports 20000:30000 
+22   ACCEPT     udp  --  10.32.0.0/16         0.0.0.0/0           state NEW,ESTABLISHED udp dpt:161 
+23   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           state NEW tcp dpt:2812 
+24   ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state NEW,ESTABLISHED udp dpt:53 
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+3    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+4    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+5    ACCEPT     udp  --  0.0.0.0/0            10.32.16.238        multiport dports 53,123 state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  0.0.0.0/0            10.32.15.190        multiport dports 80,443 state NEW,ESTABLISHED 
+7    ACCEPT     udp  --  0.0.0.0/0            10.32.15.250        multiport dports 53,123 state NEW,ESTABLISHED 
+8    ACCEPT     udp  --  0.0.0.0/0            10.32.10.53         multiport dports 53,123 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  0.0.0.0/0            10.32.0.0/16        tcp dpt:22 state NEW,ESTABLISHED 
+10   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.104        tcp dpt:3306 state NEW,ESTABLISHED 
+11   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.85         tcp dpt:3306 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  0.0.0.0/0            10.32.16.245        tcp dpt:3306 state NEW,ESTABLISHED 
+13   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.19        tcp dpt:3306 state NEW,ESTABLISHED 
+14   ACCEPT     tcp  --  0.0.0.0/0            10.32.16.179        tcp dpt:3306 state NEW,ESTABLISHED 
+15   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:3306 state NEW,ESTABLISHED 
+16   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:25 state NEW,ESTABLISHED 
+17   ACCEPT     tcp  --  0.0.0.0/0            10.32.16.179        tcp dpt:25 state NEW,ESTABLISHED 
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.7.3
+Installer-Version: 3.7.3
+Revision: 
+Compile-Date: Mar 23 2016 13:44:31
+Available-Modules: json-plugin,afmongodb,afstomp,geoip-plugin,kvformat,system-source,confgen,graphite,afsmtp,basicfuncs,afamqp,dbparser,csvparser,mod-java,afsocket,afprog,linux-kmsg-format,cryptofuncs,syslogformat,affile,pseudofile,afsql,afuser
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+MAILTO=""
+*/2 * * * * 	/usr/sbin/ntpdate -b 10.32.10.53
+0 0 * * *	/usr/local/script/binpuller/binpuller > /dev/null 2>&1
+3 0 * * *	/usr/local/script/rdiffalert/rdiffalert > /dev/null 2>&1
+0 0 * * * 	/usr/local/script/housekeeper/housekeeper > /dev/null 2>&1
+15 0 * * * 	root run-parts /etc/cron.daily
+0 16 * * *      /usr/local/script/DB_project/bin/run.sh
+0 16 * * *	/usr/local/script/DB_hrm/bin/run.sh
+0 16 * * *      /usr/local/script/DB_demo/bin/run.sh
+0 16 * * *      /usr/local/script/DB_kediri/bin/run.sh
+0 * * * *      /usr/local/script/log-analyzer/do-it-all.sh
+0 0 * * *	/usr/local/script/logwatchdog/start_watchdog > /dev/null 2>&1
+*/5 * * * *     /etc/snmp/local-snmp-cronjob > /dev/null 2>&1
+*/10 * * * *    /etc/snmp/vmstat-cron /var/local/snmp/vmstat
+*/10 * * * *    /etc/snmp/iostat-cron /var/local/snmp/iostat
+2. Sudoers: 
+Defaults    requiretty
+Defaults   !visiblepw
+Defaults    env_reset,timestamp_timeout=7200
+Defaults    env_keep = "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR \
+                        LS_COLORS MAIL PS1 PS2 QTDIR USERNAME \
+                        LANG LC_ADDRESS LC_CTYPE LC_COLLATE LC_IDENTIFICATION \
+                        LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC \
+                        LC_PAPER LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS \
+                        _XKB_CHARSET XAUTHORITY"
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+3. Extended sudoers:
+Defaults    !requiretty
+Defaults    env_reset,timestamp_timeout=7200
+Defaults    env_keep = "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR \
+                        LS_COLORS MAIL PS1 PS2 QTDIR USERNAME \
+                        LANG LC_ADDRESS LC_CTYPE LC_COLLATE LC_IDENTIFICATION \
+                        LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC \
+                        LC_PAPER LC_TELEPHONE LC_TIME LC_ALL LANGUAGE LINGUAS \
+                        _XKB_CHARSET XAUTHORITY"
+Cmnd_Alias   MONIT = /etc/init.d/monit stop ,\
+                     /sbin/service monit stop
+Cmnd_Alias GIT = /usr/bin/git
+Cmnd_Alias RSYNC = /usr/bin/rsync
+Cmnd_Alias RDIFF_BACKUP = /usr/bin/rdiff-backup
+Cmnd_Alias RDIFF = /usr/bin/rdiff
+User_Alias ADMINS = ops,senops
+User_Alias BACKUP = pollux
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/ls
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias KILL = /bin/kill
+BACKUP ALL = NOPASSWD:GIT
+BACKUP ALL = NOPASSWD:RSYNC
+BACKUP ALL = NOPASSWD:RDIFF
+BACKUP ALL = NOPASSWD:RDIFF_BACKUP
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:RSYNC
+ADMINS ALL = NOPASSWD:RDIFF
+ADMINS ALL = NOPASSWD:RDIFF_BACKUP
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+ADMINS ALL = (apache) KILL
+ADMINS ALL = (app) KILL
+devteam ALL = NOPASSWD:NOEXEC:BASIC
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC, !MONIT

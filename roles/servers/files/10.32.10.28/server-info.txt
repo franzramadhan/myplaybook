@@ -1,0 +1,258 @@
+This is information for host: 10.32.10.32
+
+Host information: 
+1. Hostname : kartanegara.1rstwap.com
+2. Network Configuration:
+DEVICE=eth0
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=none
+#HWADDR=8E:D2:4F:F4:67:2B
+IPADDR=10.32.10.32
+PREFIX=24
+GATEWAY=10.32.10.5
+DNS1=10.32.10.54
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=yes
+IPV6INIT=no
+NAME="System eth0"
+DEVICE=eth0:1
+BOOTPROTO=static
+#HWADDR=00:21:5A:DD:BA:7D
+ONBOOT=yes
+IPADDR=10.32.10.28
+NETMASK=255.255.255.0
+GATEWAY=10.32.10.5
+3. DNS Information: 
+- nameservers: 10.32.10.54
+
+Users and Groups Information:
+1. Non system users:
+archive
+ops
+senops
+tunnel
+mvageriya
+delima
+josefhpr
+sysmon
+thomas.schatz
+jonny.goebel
+2. Non system groups:
+archive
+ops
+senops
+tunnel
+sftpusers
+delima
+josefhpr
+sysmon
+thomas.schatz
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:22987               0.0.0.0:*                   LISTEN      1021/sshd           
+tcp        0      0 0.0.0.0:4948                0.0.0.0:*                   LISTEN      1607/stunnel        
+tcp        0      0 0.0.0.0:4949                0.0.0.0:*                   LISTEN      1117/perl           
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1021/sshd           
+tcp        0      0 10.32.10.32:2812            0.0.0.0:*                   LISTEN      1086/monit          
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1006/snmpd          
+tcp        0      0 :::22987                    :::*                        LISTEN      1021/sshd           
+tcp        0      0 :::80                       :::*                        LISTEN      9405/httpd          
+tcp        0      0 :::22                       :::*                        LISTEN      1021/sshd           
+tcp        0      0 :::443                      :::*                        LISTEN      9405/httpd          
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1006/snmpd          
+2. Runlevel 3:
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+httpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ip6tables      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+samhain        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+stunnel        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+syslog-ng      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/vda3             2.0G  764M  1.1G  41% /
+tmpfs                 939M     0  939M   0% /dev/shm
+/dev/mapper/vg_kartanegara-lv_archive
+                      2.0G  110M  1.8G   6% /archive
+/dev/vda1             504M  102M  378M  22% /boot
+/dev/mapper/vg_kartanegara-lv_tmp
+                      985M  392M  543M  42% /tmp
+/dev/mapper/vg_kartanegara-lv_usr
+                      985M  841M   95M  90% /usr
+/dev/mapper/vg_kartanegara-lv_var
+                      2.9G  758M  2.0G  28% /var
+/dev/mapper/vg_kartanegara-lv_www
+                      4.9G  2.3G  2.4G  49% /www
+/dev/vdb1              12G  1.3G   11G  11% /oss
+2. List Block Devices:
+NAME                                 MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sr0                                   11:0    1  4.3G  0 rom  
+vda                                  252:0    0   20G  0 disk 
+├─vda1                               252:1    0  512M  0 part /boot
+├─vda2                               252:2    0    4G  0 part [SWAP]
+├─vda3                               252:3    0    2G  0 part /
+├─vda4                               252:4    0    1K  0 part 
+└─vda5                               252:5    0 13.6G  0 part 
+  ├─vg_kartanegara-lv_var (dm-0)     253:0    0    3G  0 lvm  /var
+  ├─vg_kartanegara-lv_www (dm-1)     253:1    0  4.9G  0 lvm  /www
+  ├─vg_kartanegara-lv_tmp (dm-2)     253:2    0 1000M  0 lvm  /tmp
+  ├─vg_kartanegara-lv_archive (dm-3) 253:3    0    2G  0 lvm  /archive
+  └─vg_kartanegara-lv_usr (dm-4)     253:4    0 1000M  0 lvm  /usr
+vdb                                  252:16   0   12G  0 disk 
+└─vdb1                               252:17   0   12G  0 part /oss
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     all  --  10.32.10.95          0.0.0.0/0           
+3    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+4    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+5    ACCEPT     tcp  --  10.32.16.64/26       0.0.0.0/0           tcp dpt:22 state NEW 
+6    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW 
+7    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW 
+8    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW 
+9    ACCEPT     tcp  --  10.32.10.26          0.0.0.0/0           tcp dpt:22 state NEW 
+10   ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           tcp dpt:22 state NEW 
+11   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:22987 state NEW 
+12   ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           limit: avg 2/min burst 5 
+13   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:80 
+14   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:443 
+15   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:544 
+16   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:990 ctstate NEW,ESTABLISHED 
+17   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:20 ctstate NEW,ESTABLISHED 
+18   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:21 ctstate NEW,ESTABLISHED 
+19   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp spts:1024:65535 dpts:20:65535 ctstate NEW,ESTABLISHED 
+20   ACCEPT     tcp  --  10.32.16.64/26       0.0.0.0/0           tcp dpt:2812 state NEW 
+21   ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:4949 state NEW 
+22   ACCEPT     udp  --  10.32.16.180         0.0.0.0/0           udp dpt:161 state NEW 
+23   ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW 
+24   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+2    ACCEPT     tcp  --  10.32.5.0/24         10.32.10.95         tcp dpt:554 
+3    ACCEPT     tcp  --  10.32.14.0/24        10.32.10.95         tcp dpt:554 
+4    ACCEPT     tcp  --  10.32.8.0/24         10.32.10.95         tcp dpt:554 
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:22 state NEW 
+2    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           state NEW,ESTABLISHED 
+3    ACCEPT     tcp  --  0.0.0.0/0            10.32.15.190        tcp dpt:80 state NEW 
+4    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.8          tcp state NEW,ESTABLISHED 
+5    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.26         tcp state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.27         tcp state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.89         tcp dpt:8080 state NEW,ESTABLISHED 
+8    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.89         tcp dpt:3306 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.10         tcp dpt:995 state NEW,ESTABLISHED 
+10   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.10         tcp dpt:110 state NEW,ESTABLISHED 
+11   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.72         tcp dpt:80 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state NEW,ESTABLISHED 
+13   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.7          state NEW,ESTABLISHED 
+14   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.9          state NEW,ESTABLISHED 
+15   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.8         state NEW,ESTABLISHED 
+16   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.19        state NEW,ESTABLISHED 
+17   ACCEPT     udp  --  0.0.0.0/0            10.32.10.54         udp dpt:53 state NEW 
+18   ACCEPT     udp  --  0.0.0.0/0            10.32.10.53         udp dpt:123 state NEW 
+19   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.25        tcp dpt:11 state NEW 
+20   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.25        tcp dpt:49777 state NEW 
+21   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:25 state NEW 
+22   ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+23   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state NEW,ESTABLISHED 
+24   ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state NEW,ESTABLISHED 
+
+Chain LOGGING (1 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `IPTables Packet Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Table: nat
+Chain PREROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+1    DNAT       tcp  --  0.0.0.0/0            10.32.10.32         tcp dpt:554 to:10.32.10.95:554 
+
+Chain POSTROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+1    SNAT       tcp  --  0.0.0.0/0            10.32.10.95         tcp dpt:554 to:10.32.10.32 
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.6.4
+Installer-Version: 3.6.4
+Revision: 
+Compile-Date: Jun 23 2015 12:42:43
+Available-Modules: afuser,afsocket-notls,confgen,cryptofuncs,pseudofile,afamqp,afsocket-tls,graphite,dbparser,affile,syslogformat,basicfuncs,afsocket,afstomp,afsql,csvparser,system-source,afprog,linux-kmsg-format
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+0 * * * * /usr/sbin/ntpdate 10.32.10.53
+0 23 * * * /usr/local/script/client-arch/bin/client-arch
+0 * * * * /usr/bin/awstats_updateall.pl now -confdir="/etc" -awstatsprog="/var/www/awstats/awstats.pl"
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat
+2. Sudoers: 
+User_Alias JUNIOR = ops
+User_Alias EVERYONE = ops, senops
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias FIRSTWAP =  /etc/init.d/httpd, /etc/init.d/monit, /etc/init.d/munin-node
+Cmnd_Alias FIRSTWAP2 = /usr/bin/tail, /bin/cat, /usr/bin/tail -f, /usr/bin/head \ 
+		       , /bin/grep [[\:alnum\:]]*  \
+		       , /bin/grep -i [[\:alnum\:]]* 
+Cmnd_Alias FIRSTWAP3 = /bin/more, /usr/bin/less 
+Defaults    !requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset,timestamp_timeout=7200
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+%wheel  ALL=(ALL)       NOPASSWD: RSYNC
+JUNIOR  ALL=FIRSTWAP
+EVERYONE        ALL=(ALL)   NOPASSWD:FIRSTWAP2 
+EVERYONE        ALL=(ALL)   NOPASSWD:NOEXEC:FIRSTWAP3 
+3. Extended sudoers:

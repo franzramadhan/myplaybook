@@ -1,0 +1,44 @@
+---
+- name: Check if config is still for standalone
+  command: bash -c "cat '{{ cassandra.configs.location }}/cassandra.yaml'|grep -v ^#|grep 'seeds:'|awk '{print $3}'| head -n 1| sed -e 's/\"//g'"
+  register: cassandra_seed_host
+  changed_when: false
+  ignore_errors: yes
+
+- name: Stop the Cassandra daemon
+  command: "/usr/bin/nodetool stopdaemon"
+  ignore_errors: yes
+  when: cassandra_seed_host.stdout != "{{ cassandra.cluster.seed }}"
+
+- name: Check if systemctl still using the buggy part of stop script
+  command: bash -c "cat /etc/init.d/cassandra|grep -wc kill"
+  ignore_errors: yes
+  changed_when: false
+  register: cassandra_stop_script
+
+- name: Replace the buggy systemctl script of cassandra
+  lineinfile: dest=/etc/init.d/cassandra regexp="^(.*)kill(.*)$" line="\t/usr/bin/nodetool stopdaemon"
+  when: cassandra_stop_script.stdout == "1"
+
+- name: Clear the default Cassandra data_file_directories
+  file: state=absent dest={{ cassandra.cluster.data_file_directories }}
+  when: cassandra_seed_host.stdout != "{{ cassandra.cluster.seed }}"
+
+- name: Clear the default Cassandra commitlog_directory
+  file: state=absent dest={{ cassandra.cluster.commitlog_directory }}
+  when: cassandra_seed_host.stdout != "{{ cassandra.cluster.seed }}"
+
+- name: Copy the cassandra.yaml configuration
+  template: src=cassandra1.yaml.j2 dest=/etc/cassandra/conf/cassandra.yaml owner=cassandra group=cassandra mode=0755
+  notify: 
+    - restart cassandra
+
+- name: Check if Cassandra is running
+  command: bash -c "ps ax|grep cassandra|grep -v grep|wc -l"
+  ignore_errors: yes
+  changed_when: false
+  register: service_cassandra_status
+
+- name: Start cassandra
+  service: name=cassandra state=restarted
+  when: service_cassandra_status.stdout != "1"

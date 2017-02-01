@@ -1,0 +1,242 @@
+This is information for host: 10.32.10.8
+
+Host information: 
+1. Hostname : waigama.1rstwap.com
+2. Network Configuration:
+DEVICE=eth0
+TYPE=Ethernet
+UUID=f1c088da-aca1-41c0-ad28-9dfe56784447
+ONBOOT=yes
+NM_CONTROLLED=yes
+BOOTPROTO=none
+IPADDR=10.32.10.8
+PREFIX=24
+GATEWAY=10.32.10.5
+DNS1=10.32.10.52
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=yes
+IPV6INIT=no
+NAME="System eth0"
+HWADDR=DA:17:2D:6D:D4:DD
+DOMAIN=1rstwap.com
+DEVICE=eth0:1
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=static
+IPADDR=10.32.10.69
+NETMASK=255.255.255.0
+3. DNS Information: 
+- nameservers: 10.32.10.52
+
+Users and Groups Information:
+1. Non system users:
+senops
+paid
+sysmon
+archive
+ops
+2. Non system groups:
+firstops
+paid
+sysmon
+archive
+ops
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1046/sshd           
+tcp        0      0 0.0.0.0:2812                0.0.0.0:*                   LISTEN      1068/monit          
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1027/snmpd          
+tcp        0      0 ::ffff:10.32.10.8:3665      :::*                        LISTEN      31724/java          
+tcp        0      0 ::ffff:10.32.10.8:4529      :::*                        LISTEN      28472/java          
+tcp        0      0 ::ffff:10.32.10.8:3506      :::*                        LISTEN      28414/java          
+tcp        0      0 ::ffff:10.32.10.8:3541      :::*                        LISTEN      10361/java          
+tcp        0      0 ::ffff:10.32.10.8:23510     :::*                        LISTEN      10549/java          
+tcp        0      0 ::ffff:10.32.10.8:3542      :::*                        LISTEN      3494/java           
+tcp        0      0 ::ffff:10.32.10.8:3510      :::*                        LISTEN      810/java            
+tcp        0      0 :::22                       :::*                        LISTEN      1046/sshd           
+tcp        0      0 ::ffff:10.32.10.8:4504      :::*                        LISTEN      10244/java          
+tcp        0      0 :::12345                    :::*                        LISTEN      10549/java          
+tcp        0      0 ::ffff:10.32.10.8:4506      :::*                        LISTEN      28414/java          
+tcp        0      0 ::ffff:10.32.10.8:3515      :::*                        LISTEN      10303/java          
+tcp        0      0 :::41564                    :::*                        LISTEN      10549/java          
+tcp        0      0 ::ffff:10.32.10.8:4541      :::*                        LISTEN      10361/java          
+tcp        0      0 ::ffff:10.32.10.8:3550      :::*                        LISTEN      10426/java          
+tcp        0      0 ::ffff:10.32.10.8:4542      :::*                        LISTEN      3494/java           
+tcp        0      0 ::ffff:10.32.10.8:3518      :::*                        LISTEN      2015/java           
+tcp        0      0 ::ffff:10.32.10.8:4510      :::*                        LISTEN      810/java            
+tcp        0      0 ::ffff:10.32.10.8:3519      :::*                        LISTEN      30183/java          
+tcp        0      0 ::ffff:10.32.10.8:3680      :::*                        LISTEN      4852/java           
+tcp        0      0 ::ffff:10.32.10.8:4545      :::*                        LISTEN      28530/java          
+tcp        0      0 ::ffff:10.32.10.8:3650      :::*                        LISTEN      3364/java           
+tcp        0      0 ::ffff:10.32.10.8:3522      :::*                        LISTEN      10489/java          
+tcp        0      0 ::ffff:10.32.10.8:4515      :::*                        LISTEN      10303/java          
+tcp        0      0 ::ffff:10.32.10.8:3523      :::*                        LISTEN      897/java            
+tcp        0      0 ::ffff:10.32.10.8:4550      :::*                        LISTEN      10426/java          
+tcp        0      0 ::ffff:10.32.10.8:4518      :::*                        LISTEN      2015/java           
+tcp        0      0 ::ffff:10.32.10.8:4519      :::*                        LISTEN      30183/java          
+tcp        0      0 ::ffff:10.32.10.8:3560      :::*                        LISTEN      31670/java          
+tcp        0      0 :::41865                    :::*                        LISTEN      10549/java          
+tcp        0      0 ::ffff:10.32.10.8:3529      :::*                        LISTEN      28472/java          
+tcp        0      0 ::ffff:10.32.10.8:3690      :::*                        LISTEN      20748/java          
+tcp        0      0 ::ffff:10.32.10.8:4522      :::*                        LISTEN      10489/java          
+tcp        0      0 ::ffff:10.32.10.8:4523      :::*                        LISTEN      897/java            
+tcp        0      0 ::ffff:10.32.10.8:23150     :::*                        LISTEN      11420/java          
+tcp        0      0 ::ffff:10.32.10.8:3535      :::*                        LISTEN      28530/java          
+tcp        0      0 ::ffff:10.32.10.8:3504      :::*                        LISTEN      10244/java          
+tcp        0      0 ::ffff:10.32.10.8:4560      :::*                        LISTEN      31670/java          
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1027/snmpd          
+2. Runlevel 3:
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+syslog-ng      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda6        12G  3.8G  7.3G  34% /
+tmpfs           3.8G     0  3.8G   0% /dev/shm
+/dev/sdb1        55G   29G   23G  57% /app
+/dev/sda1       488M  104M  359M  23% /boot
+/dev/sda5       4.8G  623M  3.9G  14% /tmp
+/dev/sda2       9.5G  898M  8.2G  10% /var
+2. List Block Devices:
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0   35G  0 disk 
+├─sda1   8:1    0  512M  0 part /boot
+├─sda2   8:2    0  9.8G  0 part /var
+├─sda3   8:3    0  7.9G  0 part [SWAP]
+├─sda4   8:4    0    1K  0 part 
+├─sda5   8:5    0    5G  0 part /tmp
+└─sda6   8:6    0   12G  0 part /
+sdb      8:16   0   55G  0 disk 
+└─sdb1   8:17   0   55G  0 part /app
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+3    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+4    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+5    ACCEPT     tcp  --  10.32.16.64/26       0.0.0.0/0           tcp dpt:22 state NEW 
+6    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW 
+7    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW 
+8    ACCEPT     tcp  --  10.32.16.181         0.0.0.0/0           tcp dpt:22 state NEW 
+9    ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:22 state NEW 
+10   ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           tcp dpt:22 state NEW 
+11   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW 
+12   ACCEPT     tcp  --  10.32.16.64/26       0.0.0.0/0           tcp dpt:2812 state NEW 
+13   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:2812 state NEW 
+14   ACCEPT     tcp  --  192.168.3.0/24       0.0.0.0/0           tcp dpt:2812 state NEW 
+15   ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:4949 state NEW 
+16   ACCEPT     udp  --  10.32.16.180         0.0.0.0/0           udp dpt:161 state NEW 
+17   ACCEPT     udp  --  10.32.16.181         0.0.0.0/0           udp dpt:161 state NEW 
+18   ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW 
+19   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain LOGGING (1 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `IPTables Packet Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.6.4
+Installer-Version: 3.6.4
+Revision: 
+Compile-Date: Jun 23 2015 12:42:43
+Available-Modules: confgen,basicfuncs,cryptofuncs,csvparser,afsocket,afamqp,pseudofile,afstomp,syslogformat,afuser,afprog,dbparser,affile,system-source,graphite,linux-kmsg-format,afsql,afsocket-notls,afsocket-tls
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+*/5 * * * *	/usr/sbin/ntpdate 10.32.10.53
+0 23 * * *	/usr/local/script/client-arch/bin/client-arch
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat &
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat &
+*/5 * * * *     /usr/local/script/svcmon-agent/bin/genstat-bulk > /dev/null 2>&1
+2. Sudoers: 
+Defaults    !requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset, timestamp_timeout=7200
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias   RDIFF = /usr/bin/rdiff
+Cmnd_Alias   RDIFF_BACKUP = /usr/bin/rdiff-backup
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+User_Alias ADMINS = paid,senops
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/du ,\
+                        /usr/bin/monit status ,\
+                        /bin/ls 
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /usr/bin/monit ,\
+                        /etc/init.d/syslog-ng ,\
+                        /etc/init.d/smsnode* ,\
+                        /etc/init.d/smppagent* ,\ 
+                        /etc/init.d/smppagentli * ,\ 
+                        /etc/init.d/agent*
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:RSYNC
+ADMINS ALL = NOPASSWD:RDIFF
+ADMINS ALL = NOPASSWD:RDIFF_BACKUP
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+root  ALL=(ALL)       NOPASSWD:RSYNC
+root  ALL=(ALL)       NOPASSWD:RDIFF
+root  ALL=(ALL)       NOPASSWD:RDIFF_BACKUP
+3. Extended sudoers:

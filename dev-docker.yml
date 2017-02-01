@@ -1,0 +1,13 @@
+---
+- hosts: dev-ws
+  remote_user: root
+  vars_files:
+    - roles/docker/var/prequisites.yml
+  roles:
+    - docker
+  vars:
+    proxy_env:    
+      http_proxy: http://10.32.16.22:3128
+      https_proxy: http://10.32.16.22:3128
+      no_proxy: 127.0.0.1,localhost,.1rstwap.com,10.32.15.190
+

@@ -1,0 +1,225 @@
+This is information for host: 10.32.16.245
+
+Host information: 
+1. Hostname : hrm.1rstwap.com
+2. Network Configuration:
+DEVICE=eth0
+#HWADDR=8E:7D:B1:CB:54:48
+TYPE=Ethernet
+#UUID=21b59c44-ddee-4edd-876b-c971aeaf9879
+ONBOOT=no
+NM_CONTROLLED=no
+BOOTPROTO=none
+IPADDR=10.32.16.245
+NETMASK=255.255.255.0
+DEVICE=eth1
+#HWADDR=8E:7D:B1:CB:54:48
+TYPE=Ethernet
+#UUID=21b59c44-ddee-4edd-876b-c971aeaf9879
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=none
+IPADDR=10.32.16.245
+NETMASK=255.255.255.0
+3. DNS Information: 
+- nameservers: 10.32.16.238
+
+Users and Groups Information:
+1. Non system users:
+app
+admin
+senops
+sysmon
+2. Non system groups:
+app
+admin
+senops
+sysmon
+ops
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1204/snmpd          
+tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      1778/mysqld         
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1221/sshd           
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      1847/sendmail       
+tcp        0      0 :::80                       :::*                        LISTEN      1868/httpd          
+tcp        0      0 :::22                       :::*                        LISTEN      1221/sshd           
+tcp        0      0 :::443                      :::*                        LISTEN      1868/httpd          
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1204/snmpd          
+2. Runlevel 3:
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+httpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ip6tables      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+mysql          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+rsyslog        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sendmail       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroupThinprov-LogVolRoot
+                      3.4G  1.5G  1.8G  45% /
+tmpfs                 1.9G     0  1.9G   0% /dev/shm
+/dev/sda1             488M  110M  353M  24% /boot
+/dev/mapper/VolGroupThinprov-LogVolVar
+                      3.9G  437M  3.3G  12% /var
+/dev/mapper/VolGroupThinprov-LogVolDB
+                      9.8G  498M  8.8G   6% /data
+/dev/mapper/VolGroupData-WWW
+                      9.8G  241M  9.0G   3% /www
+/dev/mapper/VolGroupData-BACKUPS
+                      9.8G   68M  9.2G   1% /archive
+2. List Block Devices:
+NAME                                   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                                      8:0    0   10G  0 disk 
+├─sda1                                   8:1    0  512M  0 part /boot
+├─sda2                                   8:2    0    2G  0 part [SWAP]
+└─sda3                                   8:3    0  7.5G  0 part 
+  ├─VolGroupThinprov-LogVolRoot (dm-0) 253:0    0  3.4G  0 lvm  /
+  └─VolGroupThinprov-LogVolVar (dm-3)  253:3    0  4.1G  0 lvm  /var
+sr0                                     11:0    1 1024M  0 rom  
+vda                                    252:0    0   50G  0 disk 
+├─vda1                                 252:1    0   10G  0 part 
+│ └─VolGroupThinprov-LogVolDB (dm-4)   253:4    0   10G  0 lvm  /data
+└─vda2                                 252:2    0   40G  0 part 
+  ├─VolGroupData-WWW (dm-1)            253:1    0   10G  0 lvm  /www
+  └─VolGroupData-BACKUPS (dm-2)        253:2    0   10G  0 lvm  /archive
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+3    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+4    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW 
+5    ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:22 state NEW 
+6    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW 
+7    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW 
+8    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           limit: avg 2/min burst 5 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:80 state NEW 
+10   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:443 state NEW 
+11   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:2812 state NEW,ESTABLISHED 
+12   ACCEPT     udp  --  10.32.16.180         0.0.0.0/0           udp dpt:161 state NEW 
+13   ACCEPT     udp  --  10.32.16.181         0.0.0.0/0           udp dpt:161 state NEW 
+14   ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW 
+15   ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           tcp dpt:3306 state NEW 
+16   ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:3306 state NEW 
+17   ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:3306 state NEW 
+18   ACCEPT     tcp  --  10.32.14.0/24        0.0.0.0/0           tcp dpt:3306 state NEW 
+19   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:22 state NEW 
+2    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           state NEW,ESTABLISHED 
+3    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:80 state NEW 
+4    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:443 state NEW 
+5    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.22         tcp dpt:3128 state NEW 
+6    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.241        tcp dpt:389 state NEW 
+7    ACCEPT     udp  --  0.0.0.0/0            10.32.16.238        udp dpt:53 state NEW 
+8    ACCEPT     udp  --  0.0.0.0/0            10.32.16.238        udp dpt:123 state NEW 
+9    ACCEPT     tcp  --  0.0.0.0/0            10.32.100.25        tcp dpt:11 state NEW 
+10   ACCEPT     tcp  --  0.0.0.0/0            10.32.16.179        tcp dpt:25 state NEW 
+11   ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+12   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+13   ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+
+Chain LOGGING (1 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           LOG flags 0 level 7 prefix `IPTables Packet Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Syslog-ng:
+1. Information:
+
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+*/5 * * * *	/usr/sbin/ntpdate 10.32.16.238 > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat > /dev/null 2>&1
+00 09 * * 02	/usr/bin/php /www/static/vdir/hrm-new/solution_x601/retrieveUsers.php  > /dev/null 2>&1
+* * * * *	/usr/bin/php /www/static/vdir/hrm-new/solution_x601/retrieveAttendance.php  > /dev/null 2>&1
+* * * * *	/usr/bin/php /www/static/vdir/hrm-new/solution_x601/processAttendance.php  > /dev/null 2>&1
+2. Sudoers: 
+Defaults    !requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset, timestamp_timeout=7200
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+Cmnd_Alias DB=/etc/init.d/mysql ,/sbin/service mysql stop ,/sbin/service mysql start ,/sbin/service mysql restart ,/sbin/service mysql status ,/bin/vi /etc/my.cnf
+app	ALL=(ALL)	NOPASSWD: DB
+admin   ALL=(ALL)       NOPASSWD:ALL
+3. Extended sudoers:
+Defaults    !requiretty
+Defaults    env_reset,timestamp_timeout=7200
+User_Alias ADMINS = ops,senops,app
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias   RDIFF = /usr/bin/rdiff
+Cmnd_Alias   RDIFF_BACKUP = /usr/bin/rdiff-backup
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/du ,\
+                        /usr/bin/monit status ,\
+                        /bin/ls
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /usr/bin/monit ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias MONIT = /etc/init.d/monit stop ,\
+                   /sbin/service monit stop ,\
+                   /etc/init.d/monit restart
+Cmnd_Alias KILL = /bin/kill
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:RSYNC
+ADMINS ALL = NOPASSWD:RDIFF
+ADMINS ALL = NOPASSWD:RDIFF_BACKUP
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+ADMINS ALL = (app) KILL
+ADMINS ALL = (apache) KILL
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC, !MONIT

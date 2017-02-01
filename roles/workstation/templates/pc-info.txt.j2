@@ -1,0 +1,31 @@
+This is information for host: {{ ansible_default_ipv4.address }}
+
+CPU Information: 
+1. Name : {{ cpu_name.stdout }}
+2. Cores: {{ ansible_processor_cores }}
+3. Architecture: {{ ansible_architecture }}
+
+Memory Information:
+1. Total Size: {{ ansible_memtotal_mb }} MB
+
+Hardisk:
+1. Size: {{ ansible_devices.sda.size }}
+2. Model: {{ ansible_devices.sda.model }}
+3. Partition:
+{{ partition_table.stdout }}
+
+IP and Hostname:
+1. IP: {{ ansible_default_ipv4.address }}
+2. Hostname: {{ ansible_hostname }}
+
+NTP, Sudoers, and Active Users:
+1. NTP: {{ ntp_conf.stdout }}
+2. Sudoers: 
+{{ sudoers_config.stdout }}
+3. Active Users: 
+{{ active_users.stdout }}
+4. Active Groups:
+{{ active_groups.stdout }}
+
+USB Access Restriction: 
+{{ usb_restriction.stdout }}

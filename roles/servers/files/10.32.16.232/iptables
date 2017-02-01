@@ -1,0 +1,99 @@
+# Firewall configuration written by system-config-firewall
+# Manual customization of this file is not recommended.
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+:LOGGING - [0:0]
+###################################### INPUT RULES ############################################
+
+########################################## Mandatory ##########################################    
+## Allow from loopback
+-A INPUT -i lo -j ACCEPT
+
+## Allow input that the output has been established
+-A INPUT -m state --state ESTABLISHED -j ACCEPT
+
+## Allow ICMP packets
+#-A INPUT -p icmp --icmp-type 11 -j ACCEPT
+-A INPUT -p icmp --icmp-type any -j ACCEPT
+###############################################################################################
+
+## Drop
+#-A INPUT -s 10.32.6.170 -j DROP
+-A INPUT -s 10.32.6.57 -j DROP
+
+## Allow SSH Access from Admin VLAN and Monitoring Server
+-A INPUT -s 10.32.5.0/255.255.255.0 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -s 10.32.16.179 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -s 10.32.16.180 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -s 10.32.100.18 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow SNMP from Monitoring Server
+-A INPUT -s 10.32.16.179 -p udp -m udp --dport 161 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow HTTP/S from all vlan
+-A INPUT -s 10.32.0.0/16 -p tcp -m multiport --dport 80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -s 192.168.0.0/16 -p tcp -m multiport --dport 80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow Monit Access from Admin VLAN
+-A INPUT -s 10.32.5.0/255.255.255.0 -p tcp -m tcp --dport 2812 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow MySQL DB Access
+# Erik Stolman
+#-A INPUT -s 10.32.14.50 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+# Cirebon backup
+-A INPUT -s 10.32.100.25 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+# Arun backup
+-A INPUT -s 10.32.100.18 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+# SYSMON Cacti
+-A INPUT -s 10.32.16.179 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+
+## Log the rest
+-A INPUT -j LOGGING
+-A LOGGING -m limit --limit 5/min -j LOG --log-prefix "Incoming Dropped: " --log-level 5
+-A LOGGING -j DROP
+
+###################################### OUTPUT RULES ############################################
+
+########################################## Mandatory ###########################################    
+## Allow output from loopback
+-A OUTPUT -o lo -j ACCEPT 
+
+## Allow output to service hosts for service domain(tcp/53), ntp(tcp/123), http(tcp/80), and https(tcp/443)
+-A OUTPUT -d 10.32.16.237 -p udp -m multiport --dports 53,123 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.15.190 -p tcp -m multiport --dports 80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow output that the input has been established
+-A OUTPUT -o eth0 -p tcp -m state --state ESTABLISHED -j ACCEPT 
+-A OUTPUT -o eth0 -p udp -m state --state ESTABLISHED -j ACCEPT 
+
+## Allow ping outside
+-A OUTPUT -p icmp -j ACCEPT
+###############################################################################################
+
+## Allow for update only
+-A OUTPUT -p tcp -m multiport --dports 80,443,3128 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow output to service hosts for service pops(995), ldap/s(389/636), smtp(25), domain(tcp/53), ntp(tcp/123), http(tcp/80), and https(tcp/443)
+-A OUTPUT -d 10.32.10.11 -p tcp -m tcp --dport 995 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.16.179 -p tcp -m tcp --dport 25 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.16.241 -p tcp -m multiport --dports 389,636 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.16.237 -p udp -m multiport --dports 53,123 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.15.190 -p tcp -m multiport --dports 80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow from NFS gitlab
+-A INPUT -s 10.32.6.84 -p tcp -m tcp -m state --state NEW,ESTABLISHED -j ACCEPT
+-A INPUT -s 10.32.6.84 -p udp -m udp -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow syslog-ng to arun
+-A OUTPUT -d 10.32.100.18 -p tcp -m tcp --dport 11 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Loggin the rest
+-A OUTPUT -j LOGGING
+-A LOGGING -m limit --limit 5/min -j LOG --log-prefix "Outgoing Dropped: " --log-level 5
+-A LOGGING -j DROP
+
+## Must commit
+COMMIT

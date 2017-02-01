@@ -1,0 +1,196 @@
+This is information for host: 10.32.16.232
+
+Host information: 
+1. Hostname : project.1rstwap.com
+2. Network Configuration:
+DEVICE=eth0
+#HWADDR=8E:7D:B1:CB:54:48
+TYPE=Ethernet
+#UUID=21b59c44-ddee-4edd-876b-c971aeaf9879
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=none
+IPADDR=10.32.16.232
+NETMASK=255.255.255.0
+3. DNS Information: 
+- nameservers: 10.32.16.237
+
+Users and Groups Information:
+1. Non system users:
+app
+redmine
+senops
+ops
+sysmon
+2. Non system groups:
+app
+redmine
+senops
+ops
+sysmon
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:47090             0.0.0.0:*                   LISTEN      30711/Passenger Rac 
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1178/sshd           
+tcp        0      0 10.32.16.232:2812           0.0.0.0:*                   LISTEN      1808/monit          
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1163/snmpd          
+tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      1723/mysqld         
+tcp        0      0 127.0.0.1:110               0.0.0.0:*                   LISTEN      1090/stunnel        
+tcp        0      0 :::22                       :::*                        LISTEN      1178/sshd           
+tcp        0      0 :::443                      :::*                        LISTEN      1953/httpd          
+tcp        0      0 :::80                       :::*                        LISTEN      1953/httpd          
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1163/snmpd          
+2. Runlevel 3:
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+httpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ip6tables      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+messagebus     	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+mysql          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+nfslock        	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+stunnel        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroupThinprov-LogVolRoot
+                      3.4G  2.3G  896M  73% /
+tmpfs                 1.9G     0  1.9G   0% /dev/shm
+/dev/sda1             488M  105M  359M  23% /boot
+/dev/mapper/VolGroupThinprov-LogVolVar
+                      3.9G  2.4G  1.4G  64% /var
+/dev/mapper/VolGroupThinprov-LogVolDB
+                       20G  606M   18G   4% /db
+/dev/mapper/VolGroupThinprov-LogVolWWW
+                      9.8G  5.2G  4.1G  57% /www
+2. List Block Devices:
+NAME                                   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                                      8:0    0   10G  0 disk 
+├─sda1                                   8:1    0  512M  0 part /boot
+├─sda2                                   8:2    0    2G  0 part [SWAP]
+└─sda3                                   8:3    0  7.5G  0 part 
+  ├─VolGroupThinprov-LogVolRoot (dm-0) 253:0    0  3.4G  0 lvm  /
+  └─VolGroupThinprov-LogVolVar (dm-1)  253:1    0  4.1G  0 lvm  /var
+sr0                                     11:0    1 1024M  0 rom  
+vda                                    252:0    0   30G  0 disk 
+├─vda1                                 252:1    0   10G  0 part 
+│ └─VolGroupThinprov-LogVolDB (dm-2)   253:2    0   20G  0 lvm  /db
+└─vda2                                 252:2    0   20G  0 part 
+  ├─VolGroupThinprov-LogVolDB (dm-2)   253:2    0   20G  0 lvm  /db
+  └─VolGroupThinprov-LogVolWWW (dm-3)  253:3    0   10G  0 lvm  /www
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+3    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           icmp type 255 
+4    DROP       all  --  10.32.6.57           0.0.0.0/0           
+5    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+6    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+7    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+8    ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:22 state NEW,ESTABLISHED 
+9    ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW,ESTABLISHED 
+10   ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           multiport dports 80,443 state NEW,ESTABLISHED 
+11   ACCEPT     tcp  --  192.168.0.0/16       0.0.0.0/0           multiport dports 80,443 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:2812 state NEW,ESTABLISHED 
+13   ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+14   ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+15   ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+16   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+17   ACCEPT     tcp  --  10.32.6.84           0.0.0.0/0           tcp state NEW,ESTABLISHED 
+18   ACCEPT     udp  --  10.32.6.84           0.0.0.0/0           udp state NEW,ESTABLISHED 
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     udp  --  0.0.0.0/0            10.32.16.237        multiport dports 53,123 state NEW,ESTABLISHED 
+3    ACCEPT     tcp  --  0.0.0.0/0            10.32.15.190        multiport dports 80,443 state NEW,ESTABLISHED 
+4    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+5    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state ESTABLISHED 
+6    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+7    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           multiport dports 80,443,3128 state NEW,ESTABLISHED 
+8    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:995 state NEW,ESTABLISHED 
+9    ACCEPT     tcp  --  0.0.0.0/0            10.32.16.179        tcp dpt:25 state NEW,ESTABLISHED 
+10   ACCEPT     tcp  --  0.0.0.0/0            10.32.16.241        multiport dports 389,636 state NEW,ESTABLISHED 
+11   ACCEPT     udp  --  0.0.0.0/0            10.32.16.237        multiport dports 53,123 state NEW,ESTABLISHED 
+12   ACCEPT     tcp  --  0.0.0.0/0            10.32.15.190        multiport dports 80,443 state NEW,ESTABLISHED 
+13   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        tcp dpt:11 state NEW,ESTABLISHED 
+14   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain LOGGING (2 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Incoming Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+3    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Outgoing Dropped: ' 
+4    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.6.4
+Installer-Version: 3.6.4
+Revision: 
+Compile-Date: Jun 23 2015 12:42:43
+Available-Modules: system-source,csvparser,afstomp,linux-kmsg-format,graphite,cryptofuncs,basicfuncs,affile,afsocket-tls,afprog,afsocket-notls,afamqp,syslogformat,pseudofile,confgen,afsocket,afuser,dbparser
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+*/5 * * * *	/usr/sbin/ntpdate 10.32.16.237 > /dev/null 2>&1
+0 2 * * 1-5	/usr/local/script/redmineReminder > /dev/null 2>&1
+*/5 * * * *	/usr/local/script/redmineEmailRetriever > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat &
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat &
+2. Sudoers: 
+Cmnd_Alias RSYNC = /usr/bin/rsync
+Cmnd_Alias RDIFF_BACKUP = /usr/bin/rdiff-backup
+Defaults    !requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset,timestamp_timeout=7200
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+%wheel	ALL=(ALL)	NOPASSWD: RSYNC
+%wheel  ALL=(ALL)       NOPASSWD: RDIFF_BACKUP
+Cmnd_Alias DB=/etc/init.d/mysql ,/sbin/service mysql stop ,/sbin/service mysql start ,/sbin/service mysql restart ,/sbin/service mysql status ,/bin/vi /etc/my.cnf ,/etc/init.d/httpd
+ops	ALL=(ALL)	NOPASSWD: DB
+3. Extended sudoers:

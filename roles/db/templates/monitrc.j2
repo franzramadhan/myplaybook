@@ -1,0 +1,41 @@
+##############################################################################
+## Monit control file
+###############################################################################
+## Global section
+###############################################################################
+#set idfile /var/monit/id
+#set statefile /var/monit/state
+set logfile /var/log/monit
+set mailserver {{ config.monit.mail_server }} PORT 25
+set alert alert@1rstwap.com
+set mail-format { from: monit.{{ ansible_hostname}}@1rstwap.com
+   subject: MailFromMonit
+   message: Monit $ACTION $SERVICE at $DATE on $HOST: $DESCRIPTION.
+
+   Yours sincerely,
+   1RSTWAP TechSupport
+}
+set eventqueue
+    basedir /var/monit
+    slots 1000
+set httpd port 2812
+    SSL ENABLE
+    PEMFILE /var/cacert/server.pem
+    ALLOWSELFCERTIFICATION
+# Listening address, change accordingly
+use address {{ ansible_default_ipv4.address }}
+allow 10.32.5.0/255.255.255.0
+# Allow access from monit own IP, for CLI
+allow {{ ansible_default_ipv4.address }}
+allow @ops
+allow @Administrators
+allow senops
+# Cryptic and hard to remember password for CLI access (requirement)
+allow cliuser:"1KxmEXszVb12t1GA6odcmv6PitdGS1v5"
+###############################################################################
+## Includes
+###############################################################################
+# set daemon mode timeout to 1 minute
+set daemon 180
+# Include all files from /etc/monit.d/
+include /etc/monit.d/*.conf

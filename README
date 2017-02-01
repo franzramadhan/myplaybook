@@ -1,0 +1,12 @@
+1. add following line to ~/.ssh/config
+
+Host 10.32.*.*
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null
+
+2. Edit this file roles/workstation/defaults/main.yml. Change working_dir with the desired location
+
+3. run the playbook with following command and input the password of workstation PC
+
+ansible-playbook -i hosts -k site.yml
+

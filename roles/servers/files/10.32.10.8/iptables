@@ -1,0 +1,47 @@
+# Firewall configuration written by system-config-firewall
+# Manual customization of this file is not recommended.
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [0:0]
+:LOGGING - [0:0]
+
+#default policy for input
+-A INPUT -i lo -j ACCEPT
+-A INPUT -p tcp -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A INPUT -p udp -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A INPUT -p icmp -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Allow incoming and outgoing ssh
+-A INPUT -p tcp -s 10.32.16.64/26 --dport 22 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp -s 10.32.16.179 --dport 22 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp -s 10.32.16.180 --dport 22 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp -s 10.32.16.181 --dport 22 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp -s 10.32.100.18 --dport 22 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp -s 10.32.100.25 --dport 22 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp -s 10.32.5.0/24 --dport 22 -m state --state NEW -j ACCEPT
+
+
+#Allow incoming/outgoing ICMP
+#-A INPUT -p icmp -m limit --limit 2/min --limit-burst 5 -j ACCEPT
+#-A INPUT -i eth0 -p icmp -j ACCEPT
+
+#Allow incoming monit monitoring access
+-A INPUT -p tcp -s 10.32.16.64/26 --dport 2812 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp -s 10.32.5.0/24 --dport 2812 -m state --state NEW -j ACCEPT
+-A INPUT -p tcp -s 192.168.3.0/24 --dport 2812 -m state --state NEW -j ACCEPT
+
+#Allow incoming/outgoing munin-node monitoring using stunnel access
+-A INPUT -p tcp -s 10.32.16.179 --dport 4949 -m state --state NEW -j ACCEPT
+
+#Allow incoming SNMP request
+-A INPUT -p udp -s 10.32.16.180 --dport 161 -m state --state NEW -j ACCEPT
+-A INPUT -p udp -s 10.32.16.181 --dport 161 -m state --state NEW -j ACCEPT
+-A INPUT -p udp -s 10.32.16.179 --dport 161 -m state --state NEW -j ACCEPT
+
+#default policy for LOGGING
+-A INPUT -j LOGGING
+-A LOGGING -m limit --limit 5/min -j LOG --log-prefix "IPTables Packet Dropped: " --log-level 5
+-A LOGGING -j DROP
+
+COMMIT

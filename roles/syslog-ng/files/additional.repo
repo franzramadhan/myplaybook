@@ -1,0 +1,73 @@
+[Admin]
+name=Admin Packages for CentOS Linux 6 - $basearch
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=admin
+enabled=1
+gpgcheck=0
+
+[MariaDB]
+name = MariaDB
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=mariadb
+enabled = 1
+gpgcheck = 0
+
+
+#[remi-php71]
+#name=Les RPM de remi de PHP 7.1 pour Enterprise Linux 6 - $basearch
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=remi-php71
+#enabled=1
+#gpgcheck=0
+
+[remi-php70]
+name=Les RPM de remi de PHP 7.0 pour Enterprise Linux 6 - $basearch
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=remi-php70
+enabled=1
+gpgcheck=0
+
+[remi-php56]
+name=Les RPM de remi de PHP 5.6 pour Enterprise Linux 6 - $basearch
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=remi-php56
+enabled=1
+gpgcheck=0
+
+[remi-php55]
+name=Les RPM de remi de PHP 5.5 pour Enterprise Linux 6 - $basearch
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=remi-php55
+enabled=1
+gpgcheck=0
+
+[remi-os]
+name=Les RPM de remi de PHP 5.5 pour Enterprise Linux 6 - $basearch
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=remi-os
+enabled=1
+gpgcheck=0
+
+[insaneworks]
+name=INSANEWORKS,LLC Packages for Enterprise Linux 6 - $basearch
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=insaneworks
+enabled=1
+gpgcheck=0
+exclude=exclude=httpd*,apr-*,mod_*
+
+[Percona]
+name=Percona Xtrabackup for Enterprise Linux 6 - $basearch
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=Percona
+enabled=1
+gpgcheck=0
+
+#[MaxScale]
+#name=MariaDB - $basearch
+#mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=maxscale
+#enabled=1
+#gpgcheck=0
+
+[osm]
+name=OpenStreetMaps Enterprise Linux 6 - $basearch
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=osm
+enabled=1
+gpgcheck=0
+
+[epel]
+name=Extra Packages for Enterprise Linux 6 - $basearch
+mirrorlist=http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=epel
+enabled=1
+

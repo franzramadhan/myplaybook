@@ -1,0 +1,246 @@
+This is information for host: 10.32.10.56
+
+Host information: 
+1. Hostname : mataram.1rstwap.com
+2. Network Configuration:
+DEVICE=eth0
+#HWADDR=46:ED:B8:3E:F6:74
+TYPE=Ethernet
+#UUID=276b69cc-e029-4232-abbf-a0aade3d4961
+ONBOOT=no
+NM_CONTROLLED=no
+BOOTPROTO=static
+IPADDR=10.32.5.236
+NETMASK=255.255.255.0
+DEVICE=eth1
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=static
+#IPADDR=10.32.10.53
+IPADDR=10.32.10.56
+NETMASK=255.255.255.0
+GATEWAY=10.32.10.5
+DEVICE=eth1:1
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=static
+#IPADDR=10.32.10.53
+IPADDR=10.32.10.57
+NETMASK=255.255.255.0
+GATEWAY=10.32.10.5
+DEVICE=eth1:2
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=static
+#IPADDR=10.32.10.54
+IPADDR=10.32.10.54
+NETMASK=255.255.255.0
+GATEWAY=10.32.10.5
+DEVICE=eth1:3
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=static
+#IPADDR=10.32.10.54
+IPADDR=10.32.10.55
+NETMASK=255.255.255.0
+GATEWAY=10.32.10.5
+DEVICE=eth1:4
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=static
+#IPADDR=10.32.10.54
+IPADDR=10.32.10.53
+NETMASK=255.255.255.0
+GATEWAY=10.32.10.5
+DEVICE=eth2
+TYPE=Ethernet
+ONBOOT=no
+NM_CONTROLLED=no
+BOOTPROTO=static
+IPADDR=10.32.10.54
+NETMASK=255.255.255.0
+GATEWAY=10.32.10.5
+3. DNS Information: 
+- nameservers: 10.32.10.52
+
+Users and Groups Information:
+1. Non system users:
+senops
+ops
+archive
+sysmon
+2. Non system groups:
+senops
+ops
+firstops
+archive
+sysmon
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 10.32.10.53:2812            0.0.0.0:*                   LISTEN      1201/monit          
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1145/snmpd          
+tcp        0      0 0.0.0.0:10000               0.0.0.0:*                   LISTEN      1258/perl           
+tcp        0      0 0.0.0.0:4949                0.0.0.0:*                   LISTEN      1307/perl           
+tcp        0      0 10.32.10.53:53              0.0.0.0:*                   LISTEN      1251/named          
+tcp        0      0 10.32.10.55:53              0.0.0.0:*                   LISTEN      1251/named          
+tcp        0      0 10.32.10.54:53              0.0.0.0:*                   LISTEN      1251/named          
+tcp        0      0 10.32.10.57:53              0.0.0.0:*                   LISTEN      1251/named          
+tcp        0      0 10.32.10.56:53              0.0.0.0:*                   LISTEN      1251/named          
+tcp        0      0 127.0.0.1:53                0.0.0.0:*                   LISTEN      1251/named          
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1164/sshd           
+tcp        0      0 127.0.0.1:953               0.0.0.0:*                   LISTEN      1251/named          
+tcp        0      0 0.0.0.0:8891                0.0.0.0:*                   LISTEN      1111/opendkim       
+tcp        0      0 :::22                       :::*                        LISTEN      1164/sshd           
+udp        0      0 10.32.10.53:123             0.0.0.0:*                               1175/ntpd           
+udp        0      0 10.32.10.55:123             0.0.0.0:*                               1175/ntpd           
+udp        0      0 10.32.10.54:123             0.0.0.0:*                               1175/ntpd           
+udp        0      0 10.32.10.57:123             0.0.0.0:*                               1175/ntpd           
+udp        0      0 10.32.10.56:123             0.0.0.0:*                               1175/ntpd           
+udp        0      0 127.0.0.1:123               0.0.0.0:*                               1175/ntpd           
+udp        0      0 0.0.0.0:123                 0.0.0.0:*                               1175/ntpd           
+udp        0      0 0.0.0.0:10000               0.0.0.0:*                               1258/perl           
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1145/snmpd          
+udp        0      0 10.32.10.53:53              0.0.0.0:*                               1251/named          
+udp        0      0 10.32.10.55:53              0.0.0.0:*                               1251/named          
+udp        0      0 10.32.10.54:53              0.0.0.0:*                               1251/named          
+udp        0      0 10.32.10.57:53              0.0.0.0:*                               1251/named          
+udp        0      0 10.32.10.56:53              0.0.0.0:*                               1251/named          
+udp        0      0 127.0.0.1:53                0.0.0.0:*                               1251/named          
+udp        0      0 fe80::21a:4aff:fe76:a30d:123 :::*                                    1175/ntpd           
+udp        0      0 ::1:123                     :::*                                    1175/ntpd           
+udp        0      0 :::123                      :::*                                    1175/ntpd           
+2. Runlevel 3:
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ntpd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+opendkim       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+portreserve    	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+syslog-ng      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+webmin         	0:off	1:off	2:on	3:on	4:off	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda3        14G  3.0G  9.5G  24% /
+tmpfs           939M     0  939M   0% /dev/shm
+/dev/vda1       488M  123M  340M  27% /boot
+2. List Block Devices:
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sr0     11:0    1 1024M  0 rom  
+vda    253:0    0   15G  0 disk 
+├─vda1 253:1    0  512M  0 part /boot
+├─vda2 253:2    0    1G  0 part [SWAP]
+└─vda3 253:3    0 13.5G  0 part /
+
+IPTables configuration:
+Table: nat
+Chain PREROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain POSTROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    DNAT       udp  --  0.0.0.0/0            202.155.20.134      udp dpt:53 to:10.32.10.52:53 
+2    DNAT       tcp  --  0.0.0.0/0            202.155.20.134      tcp dpt:53 to:10.32.10.52:53 
+3    DNAT       udp  --  0.0.0.0/0            202.155.20.139      udp dpt:53 to:10.32.10.52:53 
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.7.3
+Installer-Version: 3.7.3
+Revision: 
+Compile-Date: Mar 23 2016 13:44:31
+Available-Modules: afuser,linux-kmsg-format,kvformat,confgen,json-plugin,csvparser,afprog,dbparser,afsocket,pseudofile,syslogformat,system-source,basicfuncs,afstomp,affile,afamqp,graphite,cryptofuncs
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+0 23 * * *	/bin/bash /usr/local/script/client-arch/bin/client-arch
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat &
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat &
+2. Sudoers: 
+Defaults    requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+3. Extended sudoers:
+Defaults    !requiretty
+Defaults    env_reset,timestamp_timeout=7200
+User_Alias ADMINS = ops,senops,app
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias   RDIFF = /usr/bin/rdiff
+Cmnd_Alias   RDIFF_BACKUP = /usr/bin/rdiff-backup
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/du ,\
+                        /usr/bin/monit status ,\
+                        /bin/ls
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /usr/bin/monit ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias MONIT = /etc/init.d/monit stop ,\
+                   /sbin/service monit stop ,\
+                   /etc/init.d/monit restart
+Cmnd_Alias KILL = /bin/kill
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:RSYNC
+ADMINS ALL = NOPASSWD:RDIFF
+ADMINS ALL = NOPASSWD:RDIFF_BACKUP
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+ADMINS ALL = (app) KILL
+ADMINS ALL = (apache) KILL
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC, !MONIT

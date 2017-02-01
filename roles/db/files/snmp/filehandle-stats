@@ -1,0 +1,12 @@
+#!/bin/bash
+
+NR_HANDLES=0
+
+for PIDS in $(ls /proc/ | sed "s/[^0-9]//g");
+do
+        if [ -d /proc/$PIDS ]; then
+                NR_HANDLES=$[NR_HANDLES+$(sudo ls /proc/$PIDS/fd/ | wc -w)]
+        fi
+done
+
+echo -n $NR_HANDLES

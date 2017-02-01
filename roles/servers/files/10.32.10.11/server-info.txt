@@ -1,0 +1,331 @@
+This is information for host: 10.32.10.11
+
+Host information: 
+1. Hostname : singasari.1rstwap.com
+2. Network Configuration:
+DEVICE=eth0
+TYPE=Ethernet
+UUID=2fa92a28-42da-40ba-9ed3-305f1a622629
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=none
+HWADDR=E8:39:35:E9:B6:98
+IPADDR=10.32.10.11
+PREFIX=24
+GATEWAY=10.32.10.5
+DNS1=10.32.10.55
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=yes
+IPV6INIT=no
+NAME="System eth0"
+DEVICE=eth0:1
+TYPE=Ethernet
+#UUID=2fa92a28-42da-40ba-9ed3-305f1a622629
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=none
+#HWADDR=E8:39:35:E9:B6:98
+IPADDR=10.32.10.13
+PREFIX=24
+GATEWAY=10.32.10.5
+DNS1=10.32.10.55
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=yes
+IPV6INIT=no
+#NAME="System eth0"
+DEVICE=eth1
+HWADDR=E8:39:35:E9:B6:99
+TYPE=Ethernet
+UUID=a8d36f1a-0b1c-4f94-952a-8e8c9d766e30
+ONBOOT=no
+NM_CONTROLLED=yes
+BOOTPROTO=dhcp
+3. DNS Information: 
+- nameservers: 10.32.10.55
+
+Users and Groups Information:
+1. Non system users:
+
+2. Non system groups:
+
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:2812                0.0.0.0:*                   LISTEN      8252/monit          
+tcp        0      0 0.0.0.0:4190                0.0.0.0:*                   LISTEN      6870/dovecot        
+tcp        0      0 127.0.0.1:7777              0.0.0.0:*                   LISTEN      28227/python        
+tcp        0      0 0.0.0.0:993                 0.0.0.0:*                   LISTEN      6870/dovecot        
+tcp        0      0 0.0.0.0:995                 0.0.0.0:*                   LISTEN      833/dovecot/pop3-lo 
+tcp        0      0 0.0.0.0:389                 0.0.0.0:*                   LISTEN      1810/slapd          
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      6605/snmpd          
+tcp        0      0 127.0.0.1:10024             0.0.0.0:*                   LISTEN      53803/amavisd (mast 
+tcp        0      0 127.0.0.1:10025             0.0.0.0:*                   LISTEN      637/smtpd           
+tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      6818/mysqld         
+tcp        0      0 0.0.0.0:587                 0.0.0.0:*                   LISTEN      415/smtpd           
+tcp        0      0 127.0.0.1:9998              0.0.0.0:*                   LISTEN      53803/amavisd (mast 
+tcp        0      0 0.0.0.0:110                 0.0.0.0:*                   LISTEN      833/dovecot/pop3-lo 
+tcp        0      0 127.0.0.1:10031             0.0.0.0:*                   LISTEN      8327/policyd        
+tcp        0      0 0.0.0.0:143                 0.0.0.0:*                   LISTEN      6870/dovecot        
+tcp        0      0 127.0.0.1:10032             0.0.0.0:*                   LISTEN      8351/policyd        
+tcp        0      0 10.32.10.13:53              0.0.0.0:*                   LISTEN      1622/named          
+tcp        0      0 10.32.10.11:53              0.0.0.0:*                   LISTEN      1622/named          
+tcp        0      0 127.0.0.1:53                0.0.0.0:*                   LISTEN      1622/named          
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      6622/sshd           
+tcp        0      0 0.0.0.0:25                  0.0.0.0:*                   LISTEN      6976/master         
+tcp        0      0 127.0.0.1:953               0.0.0.0:*                   LISTEN      1622/named          
+tcp        0      0 :::389                      :::*                        LISTEN      1810/slapd          
+tcp        0      0 ::1:10024                   :::*                        LISTEN      53803/amavisd (mast 
+tcp        0      0 ::1:9998                    :::*                        LISTEN      53803/amavisd (mast 
+tcp        0      0 :::80                       :::*                        LISTEN      7036/httpd          
+tcp        0      0 ::1:53                      :::*                        LISTEN      1622/named          
+tcp        0      0 :::22                       :::*                        LISTEN      6622/sshd           
+tcp        0      0 ::1:953                     :::*                        LISTEN      1622/named          
+tcp        0      0 :::443                      :::*                        LISTEN      7036/httpd          
+udp        0      0 10.32.10.13:123             0.0.0.0:*                               6633/ntpd           
+udp        0      0 10.32.10.11:123             0.0.0.0:*                               6633/ntpd           
+udp        0      0 127.0.0.1:123               0.0.0.0:*                               6633/ntpd           
+udp        0      0 0.0.0.0:123                 0.0.0.0:*                               6633/ntpd           
+udp        0      0 0.0.0.0:783                 0.0.0.0:*                               1511/portreserve    
+udp        0      0 127.0.0.1:25376             0.0.0.0:*                               7416/cmapeerd       
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               6605/snmpd          
+udp        0      0 127.0.0.1:25393             0.0.0.0:*                               7680/cmanicd        
+udp        0      0 10.32.10.13:53              0.0.0.0:*                               1622/named          
+udp        0      0 10.32.10.11:53              0.0.0.0:*                               1622/named          
+udp        0      0 127.0.0.1:53                0.0.0.0:*                               1622/named          
+udp        0      0 fe80::ea39:35ff:fee9:b69:123 :::*                                    6633/ntpd           
+udp        0      0 ::1:123                     :::*                                    6633/ntpd           
+udp        0      0 :::123                      :::*                                    6633/ntpd           
+udp        0      0 ::1:53                      :::*                                    1622/named          
+2. Runlevel 3:
+abrt-ccpp      	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+abrtd          	0:off	1:off	2:off	3:on	4:off	5:on	6:off
+acpid          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+amavisd        	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+atd            	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+clamd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+cpuspeed       	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+dovecot        	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+fail2ban       	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+haldaemon      	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+hp-asrd        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+hp-health      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+hp-snmp-agents 	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+httpd          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+ipset          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iredapd        	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+irqbalance     	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+kdump          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+mdmonitor      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+messagebus     	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+mysqld         	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+named          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ntpd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+policyd        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+portreserve    	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+postfix        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+rsyslog        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+samhain        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+slapd          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+syslog-ng      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/md0         39G   29G  8.0G  78% /
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+/dev/sda1       2.0G  163M  1.8G   9% /boot
+/dev/md1         20G   45M   19G   1% /tmp
+/dev/md2        391G  292G   80G  79% /var
+2. List Block Devices:
+NAME    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+sdb       8:16   0 465.8G  0 disk  
+├─sdb1    8:17   0   7.9G  0 part  
+│ └─md3   9:3    0   7.9G  0 raid1 [SWAP]
+├─sdb2    8:18   0  39.1G  0 part  
+│ └─md0   9:0    0    39G  0 raid1 /
+├─sdb3    8:19   0     2G  0 part  [SWAP]
+├─sdb4    8:20   0     1K  0 part  
+├─sdb5    8:21   0  19.5G  0 part  
+│ └─md1   9:1    0  19.5G  0 raid1 /tmp
+└─sdb6    8:22   0 397.3G  0 part  
+  └─md2   9:2    0 397.1G  0 raid1 /var
+sda       8:0    0 465.8G  0 disk  
+├─sda1    8:1    0     2G  0 part  /boot
+├─sda2    8:2    0  39.1G  0 part  
+│ └─md0   9:0    0    39G  0 raid1 /
+├─sda3    8:3    0   7.9G  0 part  
+│ └─md3   9:3    0   7.9G  0 raid1 [SWAP]
+├─sda4    8:4    0     1K  0 part  
+├─sda5    8:5    0  19.5G  0 part  
+│ └─md1   9:1    0  19.5G  0 raid1 /tmp
+└─sda6    8:6    0 397.3G  0 part  
+  └─md2   9:2    0 397.1G  0 raid1 /var
+sr0      11:0    1  1024M  0 rom   
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    f2b-postfix  tcp  --  0.0.0.0/0            0.0.0.0/0           multiport dports 80,443,25,587,110,995,143,993,4190 
+2    f2b-dovecot  tcp  --  0.0.0.0/0            0.0.0.0/0           multiport dports 80,443,25,587,110,995,143,993,4190 
+3    f2b-roundcube  tcp  --  0.0.0.0/0            0.0.0.0/0           multiport dports 80,443,25,587,110,995,143,993,4190 
+4    f2b-ssh    tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:22 
+5    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+6    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+7    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:80 
+8    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:443 
+9    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:4949 
+10   ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:3306 
+11   ACCEPT     tcp  --  10.32.16.241         0.0.0.0/0           tcp dpt:80 
+12   ACCEPT     tcp  --  10.32.100.18         0.0.0.0/0           tcp dpt:3306 
+13   ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           tcp dpt:3306 
+14   ACCEPT     tcp  --  10.32.6.80           0.0.0.0/0           tcp dpt:610 state NEW limit: avg 10/sec burst 10 
+15   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:25 
+16   ACCEPT     tcp  --  10.32.10.10          0.0.0.0/0           tcp dpt:389 
+17   ACCEPT     tcp  --  10.32.5.5            0.0.0.0/0           tcp dpt:389 
+18   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:587 
+19   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:610 
+20   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:110 
+21   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:995 
+22   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:143 
+23   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:993 
+24   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:22 
+25   ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:2812 
+26   ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           udp dpt:161 
+27   DROP       all  --  62.210.167.135       0.0.0.0/0           
+28   ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           icmp type 8 
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain LOGGING (0 references)
+num  target     prot opt source               destination         
+
+Chain f2b-dovecot (1 references)
+num  target     prot opt source               destination         
+1    RETURN     all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain f2b-postfix (1 references)
+num  target     prot opt source               destination         
+1    REJECT     all  --  50.21.176.107        0.0.0.0/0           reject-with icmp-port-unreachable 
+2    REJECT     all  --  96.254.184.10        0.0.0.0/0           reject-with icmp-port-unreachable 
+3    RETURN     all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain f2b-roundcube (1 references)
+num  target     prot opt source               destination         
+1    RETURN     all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain f2b-ssh (1 references)
+num  target     prot opt source               destination         
+1    RETURN     all  --  0.0.0.0/0            0.0.0.0/0           
+
+Table: nat
+Chain PREROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+1    REDIRECT   tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:610 redir ports 587 
+
+Chain POSTROUTING (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.6.4
+Installer-Version: 3.6.4
+Revision: 
+Compile-Date: Jun 23 2015 12:42:43
+Available-Modules: cryptofuncs,confgen,dbparser,afuser,system-source,afamqp,csvparser,afsocket-tls,syslogformat,pseudofile,afsocket-notls,afsocket,graphite,afprog,afstomp,basicfuncs,affile,linux-kmsg-format
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+1 */1 * * *	perl /var/www/html/awstats/wwwroot/cgi-bin/awstats.pl -update -config=singasari.1rstwap.com -update >/dev/null
+0 23 * * *	/bin/bash /var/vmail/backup/backup_openldap.sh
+30 18 * * *	/bin/bash /var/vmail/backup/backup_mysql.sh && /bin/bash /var/vmail/backup/delete_amavisd.sh
+0 23 * * *	/bin/bash /usr/local/script/client-arch/bin/client-arch
+*/5 * * * *	/bin/bash /usr/local/script/asgard-agent/bin/run.sh
+00,10,20,30,40,50 * * * *	/var/www/html/sargraph/scripts/getsar.sh > /dev/null 2>&1
+*/5 * * * *	/etc/snmp/local-snmp-cronjob > /dev/null 2>&1
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat &
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat &
+*/5 * * * *     /usr/local/script/svcmon-agent/bin/genstat-bulk > /dev/null 2>&1
+2. Sudoers: 
+Defaults    !requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+%wheel  ALL=(ALL)       ALL
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias BBCP = /usr/bin/bbcp
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC
+%wheel  ALL=(ALL)        NOPASSWD: BBCP
+User_Alias ADMINS = ops,senops
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/zless ,\
+                        /usr/bin/bzless ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /usr/bin/zcat ,\
+                        /usr/bin/bzcat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/du ,\
+                        /bin/ls
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias KILL = /bin/kill
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+ADMINS ALL = (apache) KILL
+3. Extended sudoers:

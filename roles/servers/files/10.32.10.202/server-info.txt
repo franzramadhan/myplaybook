@@ -1,0 +1,293 @@
+This is information for host: 10.32.10.202
+
+Host information: 
+1. Hostname : qserver-1.1rstwap.com
+2. Network Configuration:
+DEVICE=eth1
+#HWADDR=7E:A9:9F:BE:BE:6C
+TYPE=Ethernet
+#UUID=8c37c42f-c205-4d60-ab37-3d00f4a841ad
+ONBOOT=yes
+NM_CONTROLLED=yes
+BOOTPROTO=static
+IPADDR=10.32.10.202
+NETMASK=255.255.255.0
+GATEWAY=10.32.10.5
+DEVICE=eth1:0
+TYPE=Ethernet
+ONBOOT=yes
+NM_CONTROLLED=yes
+BOOTPROTO=static
+IPADDR=10.32.10.200
+NETMASK=255.255.255.0
+3. DNS Information: 
+- nameservers: 10.32.10.52
+
+Users and Groups Information:
+1. Non system users:
+paid
+senops
+archive
+sysmon
+ops
+2. Non system groups:
+paid
+firstops
+archive
+sysmon
+ops
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1022/sshd           
+tcp        0      0 0.0.0.0:2812                0.0.0.0:*                   LISTEN      1612/monit          
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1003/snmpd          
+tcp        0      0 0.0.0.0:3306                0.0.0.0:*                   LISTEN      1555/mysqld         
+tcp        0      0 ::ffff:10.32.10.200:23025   :::*                        LISTEN      23294/java          
+tcp        0      0 ::ffff:10.32.10.200:22033   :::*                        LISTEN      9737/java           
+tcp        0      0 ::ffff:10.32.10.200:2193    :::*                        LISTEN      8776/java           
+tcp        0      0 ::ffff:10.32.10.200:3153    :::*                        LISTEN      8575/java           
+tcp        0      0 ::ffff:10.32.10.200:2290    :::*                        LISTEN      9417/java           
+tcp        0      0 ::ffff:10.32.10.200:2034    :::*                        LISTEN      9267/java           
+tcp        0      0 ::ffff:10.32.10.200:3123    :::*                        LISTEN      8624/java           
+tcp        0      0 ::ffff:10.32.10.200:2035    :::*                        LISTEN      7929/java           
+tcp        0      0 ::ffff:10.32.10.200:2036    :::*                        LISTEN      9829/java           
+tcp        0      0 ::ffff:10.32.10.200:3060    :::*                        LISTEN      9218/java           
+tcp        0      0 ::ffff:10.32.10.200:2293    :::*                        LISTEN      8527/java           
+tcp        0      0 ::ffff:10.32.10.200:2037    :::*                        LISTEN      8382/java           
+tcp        0      0 ::ffff:10.32.10.200:3061    :::*                        LISTEN      8332/java           
+tcp        0      0 ::ffff:10.32.10.200:3190    :::*                        LISTEN      9678/java           
+tcp        0      0 :::22                       :::*                        LISTEN      1022/sshd           
+tcp        0      0 ::ffff:10.32.10.200:3191    :::*                        LISTEN      8125/java           
+tcp        0      0 ::ffff:10.32.10.200:3192    :::*                        LISTEN      10048/java          
+tcp        0      0 ::ffff:10.32.10.200:23032   :::*                        LISTEN      7839/java           
+tcp        0      0 ::ffff:10.32.10.200:23033   :::*                        LISTEN      9737/java           
+tcp        0      0 ::ffff:10.32.10.200:3193    :::*                        LISTEN      8776/java           
+tcp        0      0 ::ffff:10.32.10.200:2170    :::*                        LISTEN      9627/java           
+tcp        0      0 ::ffff:10.32.10.200:3290    :::*                        LISTEN      9417/java           
+tcp        0      0 ::ffff:10.32.10.200:3034    :::*                        LISTEN      9267/java           
+tcp        0      0 ::ffff:10.32.10.200:2171    :::*                        LISTEN      8076/java           
+tcp        0      0 ::ffff:10.32.10.200:3035    :::*                        LISTEN      7929/java           
+tcp        0      0 ::ffff:10.32.10.200:2172    :::*                        LISTEN      9997/java           
+tcp        0      0 ::ffff:10.32.10.200:3036    :::*                        LISTEN      9829/java           
+tcp        0      0 ::ffff:10.32.10.200:2173    :::*                        LISTEN      8728/java           
+tcp        0      0 ::ffff:10.32.10.200:3293    :::*                        LISTEN      8527/java           
+tcp        0      0 ::ffff:10.32.10.200:3037    :::*                        LISTEN      8382/java           
+tcp        0      0 ::ffff:10.32.10.200:2270    :::*                        LISTEN      9121/java           
+tcp        0      0 ::ffff:10.32.10.200:2143    :::*                        LISTEN      8676/java           
+tcp        0      0 ::ffff:10.32.10.200:2144    :::*                        LISTEN      9572/java           
+tcp        0      0 ::ffff:10.32.10.200:2240    :::*                        LISTEN      8870/java           
+tcp        0      0 ::ffff:10.32.10.200:2273    :::*                        LISTEN      8236/java           
+tcp        0      0 ::ffff:10.32.10.200:2241    :::*                        LISTEN      7791/java           
+tcp        0      0 ::ffff:10.32.10.200:3170    :::*                        LISTEN      9627/java           
+tcp        0      0 ::ffff:10.32.10.200:2050    :::*                        LISTEN      9318/java           
+tcp        0      0 ::ffff:10.32.10.200:2115    :::*                        LISTEN      9368/java           
+tcp        0      0 ::ffff:10.32.10.200:2243    :::*                        LISTEN      8173/java           
+tcp        0      0 ::ffff:10.32.10.200:3171    :::*                        LISTEN      8076/java           
+tcp        0      0 ::ffff:10.32.10.200:2051    :::*                        LISTEN      7978/java           
+tcp        0      0 ::ffff:10.32.10.200:3172    :::*                        LISTEN      9997/java           
+tcp        0      0 ::ffff:10.32.10.200:2052    :::*                        LISTEN      9889/java           
+tcp        0      0 ::ffff:10.32.10.200:2180    :::*                        LISTEN      9169/java           
+tcp        0      0 ::ffff:10.32.10.200:22021   :::*                        LISTEN      31274/java          
+tcp        0      0 ::ffff:10.32.10.200:3173    :::*                        LISTEN      8728/java           
+tcp        0      0 ::ffff:10.32.10.200:2053    :::*                        LISTEN      8431/java           
+tcp        0      0 ::ffff:10.32.10.200:2181    :::*                        LISTEN      7881/java           
+tcp        0      0 ::ffff:10.32.10.200:22022   :::*                        LISTEN      10100/java          
+tcp        0      0 ::ffff:10.32.10.200:2182    :::*                        LISTEN      9780/java           
+tcp        0      0 ::ffff:10.32.10.200:2150    :::*                        LISTEN      9467/java           
+tcp        0      0 ::ffff:10.32.10.200:3270    :::*                        LISTEN      9121/java           
+tcp        0      0 ::ffff:10.32.10.200:2118    :::*                        LISTEN      8479/java           
+tcp        0      0 ::ffff:10.32.10.200:22023   :::*                        LISTEN      10349/java          
+tcp        0      0 ::ffff:10.32.10.200:3143    :::*                        LISTEN      8676/java           
+tcp        0      0 ::ffff:10.32.10.200:2183    :::*                        LISTEN      8284/java           
+tcp        0      0 ::ffff:10.32.10.200:2151    :::*                        LISTEN      8026/java           
+tcp        0      0 ::ffff:10.32.10.200:22024   :::*                        LISTEN      28704/java          
+tcp        0      0 ::ffff:10.32.10.200:2152    :::*                        LISTEN      9943/java           
+tcp        0      0 ::ffff:10.32.10.200:3144    :::*                        LISTEN      9572/java           
+tcp        0      0 ::ffff:10.32.10.200:2120    :::*                        LISTEN      9520/java           
+tcp        0      0 ::ffff:10.32.10.200:3240    :::*                        LISTEN      8870/java           
+tcp        0      0 ::ffff:10.32.10.200:22025   :::*                        LISTEN      23294/java          
+tcp        0      0 ::ffff:10.32.10.200:2153    :::*                        LISTEN      8575/java           
+tcp        0      0 ::ffff:10.32.10.200:3273    :::*                        LISTEN      8236/java           
+tcp        0      0 ::ffff:10.32.10.200:3241    :::*                        LISTEN      7791/java           
+tcp        0      0 ::ffff:10.32.10.200:3050    :::*                        LISTEN      9318/java           
+tcp        0      0 ::ffff:10.32.10.200:3115    :::*                        LISTEN      9368/java           
+tcp        0      0 ::ffff:10.32.10.200:2123    :::*                        LISTEN      8624/java           
+tcp        0      0 ::ffff:10.32.10.200:3243    :::*                        LISTEN      8173/java           
+tcp        0      0 ::ffff:10.32.10.200:3051    :::*                        LISTEN      7978/java           
+tcp        0      0 ::ffff:10.32.10.200:3052    :::*                        LISTEN      9889/java           
+tcp        0      0 ::ffff:10.32.10.200:2060    :::*                        LISTEN      9218/java           
+tcp        0      0 ::ffff:10.32.10.200:3180    :::*                        LISTEN      9169/java           
+tcp        0      0 ::ffff:10.32.10.200:23021   :::*                        LISTEN      31274/java          
+tcp        0      0 ::ffff:10.32.10.200:3053    :::*                        LISTEN      8431/java           
+tcp        0      0 ::ffff:10.32.10.200:2061    :::*                        LISTEN      8332/java           
+tcp        0      0 ::ffff:10.32.10.200:3181    :::*                        LISTEN      7881/java           
+tcp        0      0 ::ffff:10.32.10.200:23022   :::*                        LISTEN      10100/java          
+tcp        0      0 ::ffff:10.32.10.200:3182    :::*                        LISTEN      9780/java           
+tcp        0      0 ::ffff:10.32.10.200:2190    :::*                        LISTEN      9678/java           
+tcp        0      0 ::ffff:10.32.10.200:3150    :::*                        LISTEN      9467/java           
+tcp        0      0 ::ffff:10.32.10.200:3118    :::*                        LISTEN      8479/java           
+tcp        0      0 ::ffff:10.32.10.200:23023   :::*                        LISTEN      10349/java          
+tcp        0      0 ::ffff:10.32.10.200:3183    :::*                        LISTEN      8284/java           
+tcp        0      0 ::ffff:10.32.10.200:2191    :::*                        LISTEN      8125/java           
+tcp        0      0 ::ffff:10.32.10.200:3151    :::*                        LISTEN      8026/java           
+tcp        0      0 ::ffff:10.32.10.200:23024   :::*                        LISTEN      28704/java          
+tcp        0      0 ::ffff:10.32.10.200:2192    :::*                        LISTEN      10048/java          
+tcp        0      0 ::ffff:10.32.10.200:3152    :::*                        LISTEN      9943/java           
+tcp        0      0 ::ffff:10.32.10.200:3120    :::*                        LISTEN      9520/java           
+tcp        0      0 ::ffff:10.32.10.200:22032   :::*                        LISTEN      7839/java           
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1003/snmpd          
+2. Runlevel 3:
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+mysql          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+syslog-ng      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda6        13G  3.0G  8.7G  26% /
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+/dev/vda3        29G  4.5G   23G  17% /app
+/dev/vda1       488M   78M  386M  17% /boot
+/dev/vda5       9.6G  582M  8.5G   7% /data
+2. List Block Devices:
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sr0     11:0    1 1024M  0 rom  
+vda    253:0    0   60G  0 disk 
+├─vda1 253:1    0  512M  0 part /boot
+├─vda2 253:2    0  7.9G  0 part [SWAP]
+├─vda3 253:3    0 29.3G  0 part /app
+├─vda4 253:4    0    1K  0 part 
+├─vda5 253:5    0  9.8G  0 part /data
+└─vda6 253:6    0 12.6G  0 part /
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+3    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+4    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+5    ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:22 state NEW 
+6    ACCEPT     tcp  --  10.32.16.180         0.0.0.0/0           tcp dpt:22 state NEW 
+7    ACCEPT     tcp  --  10.32.16.181         0.0.0.0/0           tcp dpt:22 state NEW 
+8    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:22 state NEW 
+9    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:2812 state NEW 
+10   ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:4949 state NEW 
+11   ACCEPT     tcp  --  10.32.16.179         0.0.0.0/0           tcp dpt:3306 state NEW 
+12   ACCEPT     udp  --  10.32.16.180         0.0.0.0/0           udp dpt:161 state NEW 
+13   ACCEPT     udp  --  10.32.16.181         0.0.0.0/0           udp dpt:161 state NEW 
+14   ACCEPT     udp  --  10.32.16.179         0.0.0.0/0           udp dpt:161 state NEW 
+15   ACCEPT     tcp  --  10.32.10.8           0.0.0.0/0           state NEW 
+16   ACCEPT     tcp  --  10.32.10.9           0.0.0.0/0           state NEW 
+17   ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           state NEW 
+18   ACCEPT     tcp  --  10.32.100.25         0.0.0.0/0           tcp dpt:3306 state NEW,ESTABLISHED 
+19   ACCEPT     tcp  --  10.32.16.28          0.0.0.0/0           tcp multiport dports 2060:2063 state NEW 
+20   ACCEPT     tcp  --  10.32.16.24          0.0.0.0/0           tcp multiport dports 2060:2063 state NEW 
+21   MYQUEUE_GRP  tcp  --  0.0.0.0/0            0.0.0.0/0           tcp multiport dports 3306,2034,2240,2243,2118,2118,2123,2163,2283,2293,22021:22025,22032:22033 state NEW 
+22   LOGGING    all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy DROP)
+num  target     prot opt source               destination         
+1    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+2    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+3    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+4    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+5    ACCEPT     all  --  0.0.0.0/0            10.32.10.202        
+6    ACCEPT     all  --  0.0.0.0/0            10.32.10.200        
+7    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           state NEW 
+8    ACCEPT     udp  --  0.0.0.0/0            10.32.10.52         udp dpt:53 state NEW 
+9    ACCEPT     udp  --  0.0.0.0/0            10.32.10.53         udp dpt:123 state NEW 
+10   ACCEPT     tcp  --  0.0.0.0/0            10.32.15.190        tcp dpt:80 state NEW 
+11   ACCEPT     tcp  --  0.0.0.0/0            10.32.10.11         tcp dpt:25 state NEW 
+12   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.25        tcp dpt:11 state NEW 
+13   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.8         multiport dports 3306,22 state NEW 
+14   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.7         multiport dports 3306,22 state NEW 
+15   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.25        multiport dports 3306,22 state NEW 
+16   ACCEPT     tcp  --  0.0.0.0/0            10.32.100.18        tcp dpt:11 state NEW 
+
+Chain LOGGING (1 references)
+num  target     prot opt source               destination         
+1    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 3 prefix `IPTables Packet Dropped: ' 
+2    DROP       all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain MYQUEUE_GRP (1 references)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  10.32.10.26          0.0.0.0/0           
+2    ACCEPT     all  --  10.32.10.28          0.0.0.0/0           
+3    ACCEPT     all  --  10.32.10.31          0.0.0.0/0           
+4    ACCEPT     all  --  10.32.10.32          0.0.0.0/0           
+5    ACCEPT     all  --  10.32.10.72          0.0.0.0/0           
+6    ACCEPT     all  --  10.32.10.78          0.0.0.0/0           
+7    ACCEPT     all  --  10.32.10.80          0.0.0.0/0           
+8    ACCEPT     all  --  10.32.10.85          0.0.0.0/0           
+9    ACCEPT     all  --  10.32.10.87          0.0.0.0/0           
+10   ACCEPT     all  --  10.32.10.89          0.0.0.0/0           
+11   ACCEPT     all  --  10.32.10.104         0.0.0.0/0           
+12   ACCEPT     all  --  10.32.16.179         0.0.0.0/0           
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.6.4
+Installer-Version: 3.6.4
+Revision: 
+Compile-Date: Jun 23 2015 12:42:43
+Available-Modules: cryptofuncs,pseudofile,affile,afamqp,graphite,confgen,syslogformat,basicfuncs,linux-kmsg-format,afstomp,afsql,afsocket-notls,dbparser,afsocket,afsocket-tls,afuser,system-source,csvparser,afprog
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+0 * * * *	/usr/sbin/ntpdate 10.32.10.53
+0 23 * * *	/usr/local/script/client-arch/bin/client-arch
+*/10 * * * *	/etc/snmp/vmstat-cron /var/local/snmp/vmstat 
+*/10 * * * *	/etc/snmp/iostat-cron /var/local/snmp/iostat
+2. Sudoers: 
+Cmnd_Alias RSYNC = /usr/bin/rsync
+Defaults    !requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+%wheel	ALL=(ALL)	NOPASSWD: RSYNC
+User_Alias APP_ADMINS = paid
+Cmnd_Alias APP_FULL = /etc/init.d/q*, /etc/init.d/monit, /usr/bin/monit
+APP_ADMINS ALL = APP_FULL
+3. Extended sudoers:

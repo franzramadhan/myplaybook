@@ -1,0 +1,90 @@
+# Firewall configuration written by system-config-firewall
+# Manual customization of this file is not recommended.
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT DROP [0:0]
+###################################### INPUT RULES ############################################
+#
+########################################### Mandatory #########################################
+
+## Allow input that the output has been established
+-A INPUT -m state --state ESTABLISHED -j ACCEPT
+## Accept ICMP packets
+-A INPUT -p icmp -j ACCEPT
+## Allow from loopback
+-A INPUT -i lo -j ACCEPT
+##############################################################################################
+
+## Allow SSH Access
+-A INPUT -s 10.32.0.0/16 -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+-A INPUT -s 10.32.6.84 -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+-A INPUT -s 10.32.5.0/24 -m state --state NEW -m tcp -p tcp --dport 8080 -j ACCEPT
+
+#yule port configuration
+-A INPUT -s 10.32.5.0/24 -m state --state NEW -m tcp -p tcp --dport 49777 -j ACCEPT
+-A INPUT -s 10.32.10.0/24 -m state --state NEW -m tcp -p tcp --dport 49777 -j ACCEPT
+-A INPUT -s 10.32.16.0/24 -m state --state NEW -m tcp -p tcp --dport 49777 -j ACCEPT
+-A INPUT -s 10.32.100.0/24 -m state --state NEW -m tcp -p tcp --dport 49777 -j ACCEPT
+-A INPUT -s 10.32.5.0/24 -m state --state NEW -m tcp -p tcp --dport 5601 -j ACCEPT
+
+#graylog port config
+-A INPUT -s 10.32.0.0/16 -m state --state NEW,ESTABLISHED -m tcp -p tcp --dport 9000 -j ACCEPT
+-A INPUT -s 10.32.0.0/16 -m state --state NEW,ESTABLISHED -m tcp -p tcp --dport 5050 -j ACCEPT
+
+#logwatch port configuration
+-A INPUT -s 10.32.5.0/24 -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
+-A INPUT -s 10.32.5.0/24 -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+-A INPUT -s 10.32.5.0/24 -m state --state NEW -m tcp -p tcp --dport 443 -j ACCEPT
+
+#syslog-ng in house app port configuration
+-A INPUT -s 10.32.0.0/16 -p tcp -m tcp --dport 11 -j ACCEPT
+-A INPUT -s 10.32.0.0/16 -p udp -m udp --dport 1111 -j ACCEPT
+-A INPUT -s 10.32.5.0/24 -p udp -m udp --dport 11111 -j ACCEPT
+-A INPUT -s 10.32.0.0/16 -p udp -m udp --dport 514 -j ACCEPT
+-A INPUT -s 10.32.0.0/16 -p tcp --match multiport --dports 20000:30000 -j ACCEPT
+
+#-A INPUT -s 10.32.0.0/16 -m tcp -p tcp --dport 9418 -j ACCEPT
+#snmp
+-A INPUT -s 10.32.0.0/16 -m state --state NEW,ESTABLISHED -m udp -p udp --dport 161 -j ACCEPT
+
+#monit
+-A INPUT -s 10.32.5.0/24 -m state --state NEW -m tcp -p tcp --dport 2812 -j ACCEPT
+-A INPUT -m state --state NEW,ESTABLISHED -p udp --dport 53 -j ACCEPT
+
+###################################### OUTPUT RULES ###########################################
+
+######################################### Mandatory ###########################################    
+## Allow output from loopback
+-A OUTPUT -o lo -j ACCEPT 
+
+## Allow output that the input has been established
+-A OUTPUT -o eth0 -p tcp -m state --state ESTABLISHED -j ACCEPT 
+-A OUTPUT -o eth0 -p udp -m state --state ESTABLISHED -j ACCEPT 
+
+## Allow ping outside
+-A OUTPUT -p icmp -j ACCEPT
+###############################################################################################
+
+## Allow output to service hosts for service domain(tcp/53), ntp(tcp/123), http(tcp/80), and https(tcp/443)
+-A OUTPUT -d 10.32.16.238 -p udp -m multiport --dports 53,123 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.15.190 -p tcp -m multiport --dports 80,443 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.15.250 -p udp -m multiport --dports 53,123 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.10.53 -p udp -m multiport --dports 53,123 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow rdiff and ssh access to all servers
+-A OUTPUT -d 10.32.0.0/16 -p tcp -m tcp --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow MySQL access to demo and hrm server
+-A OUTPUT -d 10.32.10.104 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.10.85 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.16.245 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.100.19 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.16.179 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+-A OUTPUT -d 10.32.10.11 -p tcp -m tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+## Allow smtp access to mail server
+-A OUTPUT -d 10.32.10.11 -p tcp -m tcp --dport 25 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+-A OUTPUT -d 10.32.16.179 -p tcp -m tcp --dport 25 -m state --state NEW,ESTABLISHED -j ACCEPT
+COMMIT

@@ -1,0 +1,197 @@
+This is information for host: 10.32.10.90
+
+Host information: 
+1. Hostname : smsapiv2bridge.1rstwap.com
+2. Network Configuration:
+DEVICE=eth0
+#HWADDR=8E:7D:B1:CB:54:48
+TYPE=Ethernet
+#UUID=21b59c44-ddee-4edd-876b-c971aeaf9879
+ONBOOT=yes
+NM_CONTROLLED=no
+BOOTPROTO=none
+IPADDR=10.32.10.90
+NETMASK=255.255.255.0
+3. DNS Information: 
+- nameservers: 10.32.10.53
+
+Users and Groups Information:
+1. Non system users:
+app
+admin
+senops
+ops
+sysmon
+2. Non system groups:
+app
+admin
+senops
+firstops
+sysmon
+
+Service Information:
+1. Running Services:
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1088/sshd           
+tcp        0      0 0.0.0.0:2812                0.0.0.0:*                   LISTEN      1108/monit          
+tcp        0      0 127.0.0.1:199               0.0.0.0:*                   LISTEN      1076/snmpd          
+tcp        0      0 :::8180                     :::*                        LISTEN      6115/java           
+tcp        0      0 :::22                       :::*                        LISTEN      1088/sshd           
+tcp        0      0 :::8280                     :::*                        LISTEN      1151/java           
+tcp        0      0 :::8383                     :::*                        LISTEN      5905/java           
+udp        0      0 0.0.0.0:161                 0.0.0.0:*                               1076/snmpd          
+2. Runlevel 3:
+auditd         	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+blk-availability	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+crond          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+ip6tables      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+iptables       	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+lvm2-monitor   	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+monit          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+netfs          	0:off	1:off	2:off	3:on	4:on	5:on	6:off
+network        	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+snmpd          	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sshd           	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+syslog-ng      	0:off	1:off	2:on	3:on	4:on	5:on	6:off
+sysstat        	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+udev-post      	0:off	1:on	2:on	3:on	4:on	5:on	6:off
+
+Partition:
+1. Partition Table:
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroupThinprov-LogVolRoot
+                      3.4G  2.3G  900M  72% /
+tmpfs                 1.9G     0  1.9G   0% /dev/shm
+/dev/sda1             488M  128M  335M  28% /boot
+/dev/mapper/VolGroupThinprov-LogVolVar
+                      3.9G  362M  3.4G  10% /var
+/dev/mapper/VolGroupThinprov-LogVolApp
+                       15G   11G  3.4G  77% /app
+2. List Block Devices:
+NAME                                   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda                                      8:0    0   10G  0 disk 
+├─sda1                                   8:1    0  512M  0 part /boot
+├─sda2                                   8:2    0    2G  0 part [SWAP]
+└─sda3                                   8:3    0  7.5G  0 part 
+  ├─VolGroupThinprov-LogVolRoot (dm-0) 253:0    0  3.4G  0 lvm  /
+  └─VolGroupThinprov-LogVolVar (dm-1)  253:1    0  4.1G  0 lvm  /var
+sr0                                     11:0    1 1024M  0 rom  
+vda                                    252:0    0   20G  0 disk 
+├─vda1                                 252:1    0    5G  0 part 
+│ └─VolGroupThinprov-LogVolApp (dm-2)  253:2    0   15G  0 lvm  /app
+└─vda2                                 252:2    0   15G  0 part 
+  └─VolGroupThinprov-LogVolApp (dm-2)  253:2    0   15G  0 lvm  /app
+
+IPTables configuration:
+Table: filter
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+2    ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:22 
+3    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:8383 
+4    ACCEPT     tcp  --  10.32.5.0/24         0.0.0.0/0           tcp dpt:2812 
+5    ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:8180 
+6    ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:8280 
+7    ACCEPT     udp  --  10.32.0.0/16         0.0.0.0/0           udp dpt:161 
+8    ACCEPT     tcp  --  10.32.0.0/16         0.0.0.0/0           tcp dpt:8080 
+9    ACCEPT     all  --  0.0.0.0              255.255.255.255     PKTTYPE = broadcast 
+10   ACCEPT     all  --  0.0.0.0              224.0.0.1           PKTTYPE = multicast 
+11   LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Incoming Logged: ' 
+
+Chain FORWARD (policy DROP)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+2    ACCEPT     tcp  --  0.0.0.0/0            202.149.86.136      tcp dpt:8081 
+3    ACCEPT     tcp  --  0.0.0.0/0            202.137.2.157       tcp dpt:8080 
+4    ACCEPT     tcp  --  0.0.0.0/0            110.35.81.215       tcp dpt:8081 
+5    ACCEPT     all  --  0.0.0.0/0            10.32.10.205        
+6    ACCEPT     tcp  --  0.0.0.0/0            10.32.10.7          tcp dpt:3306 
+7    LOG        all  --  0.0.0.0/0            0.0.0.0/0           limit: avg 5/min burst 5 LOG flags 0 level 5 prefix `Outgoing Logged: ' 
+
+Syslog-ng:
+1. Information:
+syslog-ng 3.6.4
+Installer-Version: 3.6.4
+Revision: 
+Compile-Date: Jun 23 2015 12:42:43
+Available-Modules: system-source,csvparser,afstomp,linux-kmsg-format,graphite,cryptofuncs,basicfuncs,affile,afsocket-tls,afprog,afsocket-notls,afamqp,syslogformat,pseudofile,confgen,afsocket,afuser,dbparser
+Enable-Debug: off
+Enable-GProf: off
+Enable-Memtrace: off
+Enable-IPv6: on
+Enable-Spoof-Source: off
+Enable-TCP-Wrapper: on
+Enable-Linux-Caps: on
+2. Configuration:
+Please check syslog-ng.conf file on each hosts directory inside files directory
+
+Monit:
+Please check monit.conf file and monit directory on each hosts directory inside files directory
+
+Samhain configuration:
+Please check samhainrc file on each hosts directory inside files directory
+
+List of installed softwares:
+Please check installed-packages.txt file on each hosts directory inside files directory
+
+Crontab and Sudoers:
+1. Crontab: 
+MAILTO=''
+*/2 * * * *	/usr/sbin/ntpdate 10.32.10.55 > /dev/null 2>&1
+*/5 * * * *     /etc/snmp/local-snmp-cronjob > /dev/null 2>&1
+*/10 * * * *    /etc/snmp/vmstat-cron /var/local/snmp/vmstat
+*/10 * * * *    /etc/snmp/iostat-cron /var/local/snmp/iostat
+0 0 * * *	/usr/local/script/smslogs/logs_rotate.sh
+2. Sudoers: 
+Defaults    requiretty
+Defaults   !visiblepw
+Defaults    always_set_home
+Defaults    env_reset,timestamp_timeout=7200
+Defaults    env_keep =  "COLORS DISPLAY HOSTNAME HISTSIZE INPUTRC KDEDIR LS_COLORS"
+Defaults    env_keep += "MAIL PS1 PS2 QTDIR USERNAME LANG LC_ADDRESS LC_CTYPE"
+Defaults    env_keep += "LC_COLLATE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES"
+Defaults    env_keep += "LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE"
+Defaults    env_keep += "LC_TIME LC_ALL LANGUAGE LINGUAS _XKB_CHARSET XAUTHORITY"
+Defaults    secure_path = /sbin:/bin:/usr/sbin:/usr/bin
+root	ALL=(ALL) 	ALL
+%wheel	ALL=(ALL)	ALL
+Cmnd_Alias APP=/etc/init.d/jboss ,/sbin/service jboss stop ,/sbin/service jboss start , /sbin/service jboss restart , /sbin/service jboss status
+app	ALL=(ALL)	NOPASSWD: APP
+3. Extended sudoers:
+Defaults    !requiretty
+Defaults    env_reset,timestamp_timeout=7200
+Cmnd_Alias   MONIT = /etc/init.d/monit stop ,\
+                         /sbin/service monit stop
+%wheel  ALL=(ALL)       ALL, !MONIT
+Cmnd_Alias   RSYNC = /usr/bin/rsync
+Cmnd_Alias   RDIFF_BACKUP = /usr/bin/rdiff-backup
+%wheel  ALL=(ALL)        NOPASSWD: RSYNC
+%wheel  ALL=(ALL)        NOPASSWD: RDIFF_BACKUP
+User_Alias ADMINS = ops
+Cmnd_Alias BASIC =      /usr/bin/less ,\
+                        /usr/bin/tail ,\
+                        /usr/bin/head ,\
+                        /bin/cat ,\
+                        /bin/grep ,\
+                        /bin/awk ,\
+                        /bin/sed ,\
+                        /bin/cut ,\
+                        /bin/cd ,\
+                        /bin/ls
+Cmnd_Alias EXTENDED =   /etc/init.d/httpd ,\
+                        /etc/init.d/mysqld ,\
+                        /etc/init.d/jboss ,\
+                        /etc/init.d/scheduler ,\
+                        /etc/init.d/snmp ,\
+                        /etc/init.d/crond ,\
+                        /etc/init.d/syslog-ng
+Cmnd_Alias KILL = /bin/kill
+ADMINS ALL = EXTENDED
+ADMINS ALL = NOPASSWD:NOEXEC:BASIC
+%wheel ALL = NOPASSWD:NOEXEC:BASIC
+ADMINS ALL = (apache) KILL
+ADMINS ALL = (app) KILL
+devteam ALL = NOPASSWD:NOEXEC:BASIC

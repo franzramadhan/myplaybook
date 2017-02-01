@@ -1,0 +1,52 @@
+This is information for host: 10.32.6.42
+
+CPU Information: 
+1. Name :  Intel(R) Core(TM) i3-3240 CPU @ 3.40GHz
+2. Cores: 2
+3. Architecture: x86_64
+
+Memory Information:
+1. Total Size: 7676 MB
+
+Hardisk:
+1. Size: 465.76 GB
+2. Model: ST3500414CS
+3. Partition:
+Filesystem                  Size  Used Avail Use% Mounted on
+udev                        3.8G  4.0K  3.8G   1% /dev
+tmpfs                       768M  1.1M  767M   1% /run
+/dev/sda8                    47G  9.6G   35G  22% /
+none                        4.0K     0  4.0K   0% /sys/fs/cgroup
+none                        5.0M     0  5.0M   0% /run/lock
+none                        3.8G   84K  3.8G   1% /run/shm
+none                        100M   28K  100M   1% /run/user
+/dev/sda5                   945M  504M  377M  58% /boot
+/dev/sda6                    19G   45M   18G   1% /tmp
+/dev/sda7                    28G  5.3G   21G  21% /usr
+/dev/sda9                   358G   90G  250G  27% /home
+//10.32.16.241/abdul.khoir  917G  719G  152G  83% /backup
+
+IP and Hostname:
+1. IP: 10.32.6.42
+2. Hostname: abdul-php
+
+NTP, Sudoers, and Active Users:
+1. NTP: 
+2. Sudoers: 
+Defaults	env_reset
+Defaults	mail_badpass
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+root	ALL=(ALL:ALL) ALL
+%admin ALL=(ALL) ALL
+%sudo	ALL=(ALL:ALL) ALL
+abdul ALL= NOPASSWD:/etc/init.d/apache2 start, /etc/init.d/apache2 stop, /etc/init.d/apache2 restart, /sbin/services apache2 restart,/usr/bin/npm, /etc/init.d/mysql start, /etc/init.d/mysql stop, /etc/init.d/mysql restart, /bin/ls, /usr/bin/stat, /usr/bin/find
+3. Active Users: 
+abdul
+patrick
+4. Active Groups:
+abdul
+patrick
+
+USB Access Restriction: 
+#blacklist usb-storage
+#blacklist uas

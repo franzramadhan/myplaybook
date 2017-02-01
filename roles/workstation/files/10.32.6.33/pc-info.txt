@@ -1,0 +1,58 @@
+This is information for host: 10.32.6.33
+
+CPU Information: 
+1. Name :  Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz
+2. Cores: 2
+3. Architecture: x86_64
+
+Memory Information:
+1. Total Size: 7892 MB
+
+Hardisk:
+1. Size: 465.76 GB
+2. Model: ST500DM002-1BD14
+3. Partition:
+Filesystem                   Size  Used Avail Use% Mounted on
+/dev/sda9                     92G   17G   70G  20% /
+none                         4.0K     0  4.0K   0% /sys/fs/cgroup
+udev                         3.9G  4.0K  3.9G   1% /dev
+tmpfs                        790M  1.1M  789M   1% /run
+none                         5.0M     0  5.0M   0% /run/lock
+none                         3.9G  504K  3.9G   1% /run/shm
+none                         100M   36K  100M   1% /run/user
+/dev/sda1                    1.9G 1014M  763M  58% /boot
+/dev/sda2                    230G   98G  121G  45% /vm
+/dev/sda5                     46G   25G   19G  57% /home
+/dev/sda6                     46G   36G  8.0G  82% /usr
+/dev/sda7                     19G  6.9G   11G  40% /var
+/dev/sda8                     19G   48M   18G   1% /tmp
+//10.32.16.241/beni.santoso  917G  712G  159G  82% /backup
+
+IP and Hostname:
+1. IP: 10.32.6.33
+2. Hostname: angger-php
+
+NTP, Sudoers, and Active Users:
+1. NTP: server 10.32.16.238
+2. Sudoers: 
+Defaults	env_reset
+Defaults	secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+root	ALL=(ALL:ALL) ALL
+%admin ALL=(ALL) ALL
+%sudo	ALL=(ALL:ALL) ALL
+%dev ALL= NOPASSWD:/etc/init.d/apache2, /etc/init.d/mysql, /usr/sbin/tcpdump, /usr/bin/wireshark, /usr/bin/unrar 
+angger angger-php=/etc/init.d/apache2 start, /etc/init.d/apache2 stop,/etc/init.d/apache2 restart, /sbin/services apache2 restart
+angger angger-php=/etc/init.d/mysql start, /etc/init.d/mysql stop,/etc/init.d/mysql restart, /sbin/services mysql restart, /bin/ln, /usr/bin/tail
+3. Active Users: 
+training
+ops
+angger
+4. Active Groups:
+training
+dev
+ops
+angger
+
+USB Access Restriction: 
+blacklist usb-storage
+blacklist uas
