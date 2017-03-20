@@ -1,0 +1,5 @@
+---
+- hosts: maxta-cassandra
+  remote_user: root
+  roles:
+    - cassandra
